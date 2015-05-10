@@ -108,10 +108,44 @@ div#pic{
     word-break: keep-all;
 }
 
+#ack{
+    width: 100%;
+    padding-top: 3em;
+    text-align: center;
+}
+
+#octocat{
+    margin-left: auto;
+    margin-right: auto;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+}
+
+p#thanks{
+    margin-top: .4em;
+    font-family: 'Lato', sans-serif;
+    font-size: .6em;
+    /*letter-spacing: 1px;*/
+    word-spacing: 1px;
+    font-weight: 400;
+    color: #A0A0A0;
+}
+
+a#thanks-link{
+    text-decoration:none;
+    color: inherit;
+}
+
+
+
 @media (-webkit-min-device-pixel-ratio: 3),
 (min-resolution: 400dpi) {
     div#pic{
         background-image: url('../img/me@3x.jpg');
+    }
+    #octocat{
+        background-image: url('../img/octocat@3x.png');
     }
 }
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -119,11 +153,17 @@ div#pic{
     div#pic{
         background-image: url('../img/me@2x.jpg');
     }
+    #octocat{
+        background-image: url('../img/octocat@2x.png');
+    }
 }
 @media (-webkit-max-device-pixel-ratio: 1),
 (max-resolution: 191dpi) {
     div#pic{
         background-image: url('../img/me@1x.jpg');
+    }
+    #octocat{
+        background-image: url('../img/octocat@1x.png');
     }
 }
 
@@ -136,6 +176,5 @@ div#pic{
         line-height: 1.3;
     }
 }
-
 
 
