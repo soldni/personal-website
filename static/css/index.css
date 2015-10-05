@@ -2,7 +2,6 @@ body{
     margin: 30px auto;
     max-width: 640px;
     line-height: 1.4;
-    // letter-spacing: -0.3px;
     font-size: 20px;
     color: #444;
     padding: 0 20px;
@@ -67,7 +66,6 @@ em {
 }*/
 
 .pubbl{
-    // text-align: left;
     font-size: .85em;
     line-height: 1.5;
     list-style-type: disc;
@@ -105,7 +103,6 @@ div#pic{
     font-size: 0.7em;
     position:relative;
     top:-.2em;
-    // left: .5em;
     letter-spacing: 1px;
     word-spacing: 1px;
     word-break: keep-all;
