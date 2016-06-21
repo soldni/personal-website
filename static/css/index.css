@@ -1,11 +1,12 @@
 body{
     margin: 30px auto;
     max-width: 640px;
-    line-height: 1.4;
-    font-size: 20px;
+    line-height: 1.5;
+    font-size: 22px;
+    font-weight: 500;
     color: #444;
     padding: 0 20px;
-    font-family: "Input Sans Cond", monospace;
+    font-family: "Roboto Condensed", sans-serif;
     background-color: #FDFDFD;
     text-align: justify;
     hyphens: auto;
@@ -28,20 +29,21 @@ body{
     margin-top: -1em;
 }
 
+
 h2{
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
     color: #c75f20;
-    font-family: "Input Sans Comp Md", monospace;
-    letter-spacing: -1px;
-    font-weight: 500;
+    letter-spacing: 6px;
     word-spacing: 1px;
     text-align: center;
-    font-size: 1.35em;
+    font-size: 1.15em;
     margin-bottom: -.3em;
 }
 
 h3{
-    font-family: "Input Sans Comp Md", monospace;
-    font-weight: 500;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
     color: #c75f20;
     font-size: .9em;
     text-align: center;
@@ -66,7 +68,7 @@ em {
 }*/
 
 .pubbl{
-    font-size: .85em;
+    /*font-size: .85em;*/
     line-height: 1.5;
     list-style-type: disc;
     list-style-position: outside;
@@ -98,11 +100,12 @@ div#pic{
 }
 
 .files{
-    font-family: "Input Sans Comp Md", monospace;
-    font-weight: 500;
-    font-size: 0.7em;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    font-size: 0.6em;
     position:relative;
-    top:-.2em;
+    bottom: 4px;
+    left: 6px;
     letter-spacing: 1px;
     word-spacing: 1px;
     word-break: keep-all;
@@ -131,17 +134,16 @@ div#pic{
 
 @media screen and (max-width: 480px) {
     body {
-        font-size: 1.2em;
-        font-weight: 400;
-        letter-spacing: -.7px;
+        font-size: 1.4em;
         text-align: left;
-        line-height: 1.5;
+        line-height: 1.6;
     }
     h2 {
         margin-top: 0em;
     }
     .pubbl{
         font-size: .9em;
+        line-height: 1.5;
     }
     h3{
         font-size: 1em;
