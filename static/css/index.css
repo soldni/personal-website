@@ -154,6 +154,9 @@ div#pic{
     #pubbl-wrapper{
        margin-top: -2em;
     }
+    h2, h3 {
+        letter-spacing: 2px;
+    }
     div#pic{
         width: 200px;
         height: 200px;
