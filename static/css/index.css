@@ -2,7 +2,7 @@ body{
     margin: 30px auto;
     max-width: 640px;
     line-height: 1.5;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     color: #444;
     padding: 0 20px;
@@ -11,6 +11,19 @@ body{
     text-align: justify;
     hyphens: auto;
     word-spacing: -1px;
+}
+
+br{
+    margin: 32px;
+    height: 2em;
+}
+
+span#smalltext{
+    font-size: 0.6em;
+    position: relative;
+    bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #noscript{
@@ -32,24 +45,24 @@ body{
 
 h2{
     font-family: "Roboto Slab", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     color: #c75f20;
-    letter-spacing: 6px;
-    word-spacing: 1px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
     text-align: center;
-    font-size: 1.15em;
-    margin-bottom: -.3em;
+    font-size: 1.2em;
+    margin-bottom: -.2em;
 }
 
 h3{
     font-family: "Roboto Slab", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     color: #c75f20;
-    font-size: .9em;
+    font-size: 1.1em;
     text-align: center;
-    padding-top: .6em;
+    /*padding-top: .3em;*/
     margin-bottom: .7em;
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 a{
@@ -68,7 +81,7 @@ em {
 }*/
 
 .pubbl{
-    /*font-size: .85em;*/
+    font-size: 1em;
     line-height: 1.5;
     list-style-type: disc;
     list-style-position: outside;
@@ -100,14 +113,14 @@ div#pic{
 }
 
 .files{
-    font-family: "Roboto Slab", sans-serif;
-    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 0.6em;
     position:relative;
-    bottom: 4px;
+    bottom: 2px;
     left: 6px;
-    letter-spacing: 1px;
-    word-spacing: 1px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
     word-break: keep-all;
 }
 
@@ -174,5 +187,4 @@ div#pic{
         text-align: left;
         line-height: 1.5;
     }
-
-
+`
