@@ -14,8 +14,7 @@ body{
 }
 
 br{
-    margin: 32px;
-    height: 2em;
+    height: 0.5em;
 }
 
 span#smalltext{
