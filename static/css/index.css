@@ -17,6 +17,10 @@ br{
     height: 0.5em;
 }
 
+p#first{
+    margin-top: 4em;
+}
+
 span#smalltext{
     font-size: 0.6em;
     position: relative;
@@ -36,6 +40,9 @@ span#smalltext{
     margin-top: 1em;
 }
 
+li.contacts {
+    margin-bottom: 0.2em;
+}
 
 #pubbl-wrapper{
     margin-top: -1em;
@@ -64,6 +71,18 @@ h3{
     margin-top: 1.5em;
 }
 
+.orange-text{
+    color: #c75f20;
+}
+
+.black-text{
+    color: #444;
+}
+
+.pict-bullet {
+    font-size: 0.9em;
+}
+
 a{
     color: #c75f20;
     text-decoration: none;
@@ -78,6 +97,16 @@ em {
 /*a:hover {
     text-decoration: underline;
 }*/
+
+ul {
+    list-style-type: none;
+    list-style-position:inside;
+    /*margin: 0;*/
+    padding: 0em;
+    margin-top: -0.5em;
+    padding-left: 1em;
+
+}
 
 .pubbl{
     font-size: 1em;
