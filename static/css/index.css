@@ -105,7 +105,10 @@ ul.contacts {
     padding: 0em;
     margin-top: -0.5em;
     padding-left: 1em;
+}
 
+.contacts-elem {
+    padding-bottom: .2em;
 }
 
 .pubbl{
