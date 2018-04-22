@@ -4,10 +4,10 @@ body{
     line-height: 1.5;
     font-size: 20px;
     font-weight: 500;
-    color: #444;
+    color: #442d29;
     padding: 0 20px;
     font-family: "Roboto Condensed", sans-serif;
-    background-color: #FDFDFD;
+    background-color: #f7f5f5; /*#fbf6f5;*/
     text-align: justify;
     hyphens: auto;
     word-spacing: -1px;
@@ -52,7 +52,7 @@ li.contacts {
 h2{
     font-family: "Roboto Slab", sans-serif;
     font-weight: 500;
-    color: #c75f20;
+    color: #b76d55;
     letter-spacing: 2px;
     word-spacing: 2px;
     text-align: center;
@@ -63,7 +63,7 @@ h2{
 h3{
     font-family: "Roboto Slab", sans-serif;
     font-weight: 500;
-    color: #c75f20;
+    color: #b76d55;
     font-size: 1.1em;
     text-align: center;
     /*padding-top: .3em;*/
@@ -72,11 +72,11 @@ h3{
 }
 
 .orange-text{
-    color: #c75f20;
+    color: #b76d55;
 }
 
 .black-text{
-    color: #444;
+    color: #442d29;
 }
 
 .pict-bullet {
@@ -84,7 +84,7 @@ h3{
 }
 
 a{
-    color: #c75f20;
+    color: #b76d55;
     text-decoration: none;
     cursor: pointer;
 }
@@ -135,12 +135,37 @@ div#pic{
     width: 250px;
     height: 250px;
     background-size: 250px 250px;
-    background-color: #c75f20;
+    background-color: #b76d55;
     margin-left: auto;
     margin-right: auto;
     border-radius: 250px;
-    border: 2px solid #c75f20;
+    border: 2px solid #b76d55;
     margin-bottom: 52px;
+}
+
+span.monospan{
+    font-family: Roboto Mono, monospace;
+    font-size: 0.9em;
+    color: #b76d55;
+}
+
+
+.contacts-column {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+/*.contacts-element{
+    margin-left: 7em;
+}
+*/
+/* Clear floats after the columns */
+.contacts-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    text-align: center;
 }
 
 .files{
