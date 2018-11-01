@@ -49,28 +49,6 @@ li.contacts {
 }
 
 
-h2{
-    font-family: "Roboto Slab", sans-serif;
-    font-weight: 500;
-    color: #b76d55;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: -.2em;
-}
-
-h3{
-    font-family: "Roboto Slab", sans-serif;
-    font-weight: 500;
-    color: #b76d55;
-    font-size: 1.1em;
-    text-align: center;
-    /*padding-top: .3em;*/
-    margin-bottom: .7em;
-    margin-top: 1.5em;
-}
-
 .orange-text{
     color: #b76d55;
 }
@@ -141,12 +119,6 @@ div#pic{
     border-radius: 250px;
     border: 2px solid #b76d55;
     margin-bottom: 52px;
-}
-
-span.monospan{
-    font-family: Roboto Mono, monospace;
-    font-size: 0.9em;
-    color: #b76d55;
 }
 
 
