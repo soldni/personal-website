@@ -4,10 +4,10 @@ body{
     line-height: 1.5;
     font-size: 20px;
     font-weight: 500;
-    color: #442d29;
+    color: #32364e;
     padding: 0 20px;
     font-family: "Roboto Condensed", sans-serif;
-    background-color: #f7f5f5; /*#fbf6f5;*/
+    background-color: #f4f3f7; /*#fbf6f5;*/
     text-align: justify;
     hyphens: auto;
     word-spacing: -1px;
@@ -49,12 +49,10 @@ li.contacts {
 }
 
 
-.orange-text{
-    color: #b76d55;
-}
+.orange-text{color: #636ba3;}
 
 .black-text{
-    color: #442d29;
+    color: #32364e;
 }
 
 .pict-bullet {
@@ -62,8 +60,8 @@ li.contacts {
 }
 
 a{
-    color: #b76d55;
     text-decoration: none;
+    color: #636ba3;
     cursor: pointer;
 }
 
@@ -109,16 +107,28 @@ ul.year{
     padding: 0;
 }
 
-div#pic{
-    width: 250px;
+
+div#pic-wrapper{
+    width: 250px; 
     height: 250px;
-    background-size: 250px 250px;
-    background-color: #b76d55;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 250px;
-    border: 2px solid #b76d55;
-    margin-bottom: 52px;
+    /* display: inline-block; */
+    padding: 4px; 
+    border-radius: 50%; 
+    background: #424242; 
+    background: -webkit-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089); 
+    background: -o-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089); 
+    background: -moz-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089); 
+    background: conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089); 
+}
+
+div#pic{
+    width: 250px; 
+    height: 250px;
+    background: #424242; 
+    background-size: 250px 250px;
+    border-radius: 50%;
 }
 
 
