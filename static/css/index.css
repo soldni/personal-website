@@ -18,7 +18,7 @@ br{
 }
 
 p#first{
-    margin-top: 4em;
+    margin-top: 3em;
 }
 
 span#smalltext{
@@ -53,6 +53,15 @@ li.contacts {
 
 .black-text{
     color: #32364e;
+}
+
+.rainbow-text{
+    background: #32364e;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .pict-bullet {
@@ -184,6 +193,9 @@ div#pic{
 }
 
 @media screen and (max-width: 480px) {
+    p#first{
+        margin-top: 2em;
+    }
     body {
         font-size: 1.4em;
         text-align: left;
@@ -209,11 +221,14 @@ div#pic{
         letter-spacing: 2px;
     }
     div#pic{
-        width: 200px;
-        height: 200px;
-        background-size: 200px 200px;
-        border-radius: 200px;
-        margin-bottom: 24px;
+        width: 220px;
+        height: 220px;
+        background-size: 220px 220px;
+        border-radius: 220px;
+    }
+    div#pic-wrapper {
+        width: 220px;
+        height: 220px;
     }
 }
 
