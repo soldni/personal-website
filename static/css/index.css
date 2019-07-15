@@ -52,10 +52,6 @@ li.contacts {
 .orange-text{color: #636ba3;}
 
 .black-text{
-    color: #32364e;
-}
-
-.rainbow-text{
     background: #32364e;
     -webkit-background-clip: text;
     background-clip: text;
