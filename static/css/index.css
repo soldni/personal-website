@@ -100,10 +100,12 @@ ul.contacts {
     padding-left: 30px;
 }
 
+/*
 a.on-dark-background:link, a.on-dark-background:visited, a.on-dark-background:hover, a.on-dark-background:active {
     color: white;
     text-decoration: underline;
 }
+*/
 
 ul.year{
     list-style-type: none;
@@ -114,24 +116,24 @@ ul.year{
 
 
 div#pic-wrapper{
-    width: 250px; 
+    width: 250px;
     height: 250px;
     margin-left: auto;
     margin-right: auto;
     /* display: inline-block; */
-    padding: 4px; 
-    border-radius: 50%; 
-    background: #424242; 
-    background: -webkit-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089); 
-    background: -o-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089); 
-    background: -moz-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089); 
-    background: conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089); 
+    padding: 4px;
+    border-radius: 50%;
+    background: #424242;
+    background: -webkit-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
+    background: -o-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
+    background: -moz-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
+    background: conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
 }
 
 div#pic{
-    width: 250px; 
+    width: 250px;
     height: 250px;
-    background: #424242; 
+    background: #424242;
     background-size: 250px 250px;
     border-radius: 50%;
 }
@@ -236,4 +238,23 @@ div#pic{
         text-align: left;
         line-height: 1.5;
     }
-`
+}
+
+@media(prefers-color-scheme:dark) {
+    /* Overrides for Dark Mode. */
+    body {
+        color: #f4f3f7;
+        background: #171a1c;
+    }
+    a {
+        color: #919dee;
+    }
+    .orange-text{
+        color: #919dee;
+    }
+    .black-text{
+        background-color: #919dee;
+    }
+}
+
+
