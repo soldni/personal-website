@@ -48,6 +48,10 @@ li.contacts {
     margin-top: -1em;
 }
 
+p {
+  text-align: left;
+}
+
 
 .orange-text{color: #636ba3;}
 
@@ -75,9 +79,13 @@ em {
 
 }
 
-/*a:hover {
-    text-decoration: underline;
-}*/
+a:hover {
+    /* text-decoration: underline; */
+    text-decoration: none;
+    border-bottom: 1pt dashed;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
 
 ul.contacts {
     list-style-type: none;
@@ -247,14 +255,12 @@ div#pic{
         background: #171a1c;
     }
     a {
-        color: #919dee;
+        color: #b9afd8;
     }
     .orange-text{
-        color: #919dee;
+        color: #b9afd8;
     }
     .black-text{
-        background-color: #919dee;
+        background-color: #b3afbf;
     }
 }
-
-
