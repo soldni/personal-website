@@ -2,8 +2,8 @@
 title = "Publications"
 +++
 
-List of peer-reviewed conference papers and journal articles I have authored.
-For additional non-peer reviewed publications and talks, please see my [resumé](/resume.pdf).
+This page contains a list of peer-reviewed conference papers and journal articles I have authored.
+For additional publications and talks, please see my [resumé](/resume.pdf).
 
 ## 2020
 
