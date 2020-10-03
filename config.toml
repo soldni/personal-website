@@ -35,4 +35,4 @@ math = false  # enable KaTeX (https://katex.org/) globally
 
 
 [markup.goldmark.renderer]
-  unsafe = false  # allow raw HTML in markdown files
+  unsafe = true  # allow raw HTML in markdown files

@@ -18,7 +18,7 @@ When not in front of a screen, I enjoys running, geeking out about public transp
 - [GitHub](https://github.com/soldni)
 - [LinkedIn](https://www.linkedin.com/in/soldni)
 - [ORCID iD](https://orcid.org/0000-0001-6998-9863)
-- [Email](mailto:luca@soldaini.net)
+- <a href="mailto:%6c%75ca@%73%6fl&#100;a%69n%69.&#110;%65t">Email</a>
 
 
 [1]: https://www.amazon.science/author/luca-soldaini
