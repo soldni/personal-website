@@ -1,0 +1,35 @@
+baseURL = "https://soldaini.net/"
+languageCode = "en-us"
+title = "Luca Soldaini"
+theme = "researcher"
+enableEmoji = true
+math = false  # enable KaTeX (https://katex.org/) globally
+
+[params]
+  author = "Luca Soldaini"
+  description = "A simple monospaced resume theme for Hugo."
+  favicon = "favicon.ico"  # path to a .ico to use as favicon
+  customCss = ["custom.css"]
+
+[permalinks]
+  "/" = "/:filename"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications"
+    weight = 2
+
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume.pdf"
+    weight = 3
+
+
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown files
