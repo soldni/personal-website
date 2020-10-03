@@ -1,0 +1,9 @@
+[submodule "themes/archie"]
+	path = themes/archie
+	url = https://github.com/athul/archie
+[submodule "themes/hallo"]
+	path = themes/hallo
+	url = https://github.com/EmielH/hallo-hugo.git
+[submodule "themes/researcher"]
+	path = themes/researcher
+	url = https://github.com/ojroques/hugo-researcher.git
