@@ -10,7 +10,7 @@ My research efforts are currently focused on building ranking and generative mod
 I obtained a B.Eng. in Computer Engineering from the [University of Florence][3] in Italy, and I have a Ph.D. in Computer Science from [Georgetown University][4].
 During my doctoral studies, I investigated natural language processing techniques to improve access to medical literature for both medical professionals and lay people.
 
-When not in front of a screen, I enjoy running, geeking out about public transportation systems, and stocking an ever-growing collection of stickers and pins.
+When not in front of a screen, I enjoy running, dreaming about utopian mass transit systems, and curating my ever-growing laptop stickers collection.
 
 ## Contacts
 
