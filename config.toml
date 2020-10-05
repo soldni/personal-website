@@ -24,14 +24,19 @@ math = false  # enable KaTeX (https://katex.org/) globally
     weight = 1
 
   [[menu.main]]
+    name = "Facts"
+    url = "/facts"
+    weight = 2
+
+  [[menu.main]]
     name = "Publications"
     url = "/publications"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     name = "Resume"
     url = "/resume.pdf"
-    weight = 3
+    weight = 4
 
 
 [markup.goldmark.renderer]
