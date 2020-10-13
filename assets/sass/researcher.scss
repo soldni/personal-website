@@ -4,13 +4,6 @@
     font-family: "Inconsolata";
     font-size: 14pt;
     line-height: normal;
-    // @media(prefers-color-scheme: dark) {
-    //     background-color: $dark_white;
-    // }
-    // @media(prefers-color-scheme: light) {
-    //     background-color: $white;
-    // }
-
 }
 
 hr {
@@ -124,14 +117,6 @@ hr {
         }
     }
 
-    // .avatar > img {
-    //     border-radius: 50%;
-    //     float: right;
-    //     margin: -8px 0px 16px 16px;
-    //     height: $avatar-size;
-    //     width: $avatar-size;
-    // }
-    // @media screen and (max-width: 500 px) {
     .avatar > img {
         height: $avatar-size;
         width: $avatar-size;
@@ -147,11 +132,6 @@ hr {
             margin: -8px 0px 16px 16px;
         }
 
-        // padding: 3px;
-        // background: -webkit-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
-        // background: -o-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
-        // background: -moz-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
-        // background: conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
     }
 
     .highlight {
