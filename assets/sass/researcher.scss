@@ -4,7 +4,40 @@
     font-family: "Inconsolata";
     font-size: 14pt;
     line-height: normal;
+    // @media(prefers-color-scheme: dark) {
+    //     background-color: $dark_white;
+    // }
+    // @media(prefers-color-scheme: light) {
+    //     background-color: $white;
+    // }
+
 }
+
+hr {
+    margin-bottom: 1.5em;
+}
+
+body {
+    @media(prefers-color-scheme: dark) {
+        background-color: $dark_white;
+        color: $dark_text;
+    }
+    @media(prefers-color-scheme: light) {
+        background-color: $white;
+        color: $text;
+    }
+}
+
+hr {
+    @media(prefers-color-scheme: dark) {
+        border-top: 1px solid $dark_lightgrey;
+    }
+    @media(prefers-color-scheme: light) {
+        border-top: 1px solid $lightgrey;
+    }
+
+}
+
 .container {
     max-width: $max-width;
 }
@@ -76,8 +109,8 @@
         margin: $margin-y auto;
         width: 100%;
         & tr {
-            background-color: white;
-            border: 1px solid #cccccc;
+            background-color: $white;
+            border: 1px solid $lightgrey;
             & td {
                 @extend %table-cell;
             }
@@ -86,7 +119,7 @@
                 font-weight: bold;
             }
             &:nth-child(2n) {
-                background-color: #f8f8f8;
+                background-color: $lightgrey;
             }
         }
     }
@@ -114,8 +147,12 @@
             margin: -8px 0px 16px 16px;
         }
 
+        // padding: 3px;
+        // background: -webkit-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
+        // background: -o-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
+        // background: -moz-conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
+        // background: conic-gradient(#760089, #e70000,#ff8c00,#ffef00,#00811f,#0044ff, #760089);
     }
-    // }
 
     .highlight {
         margin: $margin-y auto;

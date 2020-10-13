@@ -19,10 +19,10 @@ When not in front of a screen, I enjoy running, dreaming about utopian mass tran
 - [GitHub](https://github.com/soldni)
 - [LinkedIn](https://www.linkedin.com/in/soldni)
 - [ORCID iD](https://orcid.org/0000-0001-6998-9863)
-- [Email:]() first-name (at) last-name (dot) net
+- [Email](mailto:luca@soldaini.net)
 
 
 [1]: https://www.amazon.science/author/luca-soldaini
 [2]: https://www.google.com/maps/place/Manhattan+Beach,+CA+90266/
-[3]: https://www.google.com/search?client=safari&rls=en&q=ingegneria+informatica+firenze&ie=UTF-8&oe=UTF-8
+[3]: https://www.ing-inl.unifi.it
 [4]: https://cs.georgetown.edu/

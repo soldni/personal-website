@@ -7,13 +7,34 @@ $mobile-width: 500px;
 // Colors
 $green: #28a745;
 $red: #8450df;
+$white: #fafafa;
+$lightgrey: #cfcfcf;
+$text: #313131;
+
+// Dark colors
+$dark_green: #28a745;
+$dark_red: #bc94e9;
+$dark_white: #1e1e1e;
+$dark_lightgrey: #626262;
+$dark_text: #c6c7c7;
+
 
 // Placeholders
 %link-default {
-    color: $red;
+    @media(prefers-color-scheme: dark) {
+        color: $dark_red;
+    }
+    @media(prefers-color-scheme: light) {
+        color: $red;
+    }
     text-decoration: none;
     &:hover {
-        color: $red;
+        @media(prefers-color-scheme: dark) {
+            color: $dark_red;
+        }
+        @media(prefers-color-scheme: light) {
+            color: $red;
+        }
         text-decoration: underline;
     }
 }
