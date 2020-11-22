@@ -34,8 +34,8 @@ math = false  # enable KaTeX (https://katex.org/) globally
     weight = 3
 
   [[menu.main]]
-    name = "Resume"
-    url = "/resume.pdf"
+    name = "CV"
+    url = "/cv.pdf"
     weight = 4
 
 
