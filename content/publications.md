@@ -5,9 +5,13 @@ title = "Publications"
 This page contains a list of peer-reviewed conference papers and journal articles I have authored.
 For additional publications and talks, please see my [resumé](/resume.pdf).
 
+## 2021
+
+- Rujun Han, **Luca Soldaini**, and Alessandro Moschitti. [*"Modeling Context in Answer Sentence Selection Systems on a Latency Budget"*](/publications). Annual Conference of the European Chapter of the Association for Computational Linguistics (EACL). 2021.
+
 ## 2020
 
-- Mingda Li, Xinyue Liu, Weitong Ruan, **Luca Soldaini**, Wael Hamza, and Chengwei Su. [*"Multi-task Learning of Spoken Language Understanding by Integrating N-Best Hypotheses with Hierarchical Attention"*](/publications). Conference on Computational Linguistics (COLING). 2020.
+- Mingda Li, Xinyue Liu, Weitong Ruan, **Luca Soldaini**, Wael Hamza, and Chengwei Su. [*"Multi-task Learning of Spoken Language Understanding by Integrating N-Best Hypotheses with Hierarchical Attention"*](https://doi.org/10.18653/v1/2020.coling-industry.11). Conference on Computational Linguistics (COLING). 2020.
 - **Luca Soldaini** and Alessandro Moschitti. [*"The Cascade Transformer: Efficient Answer Sentence Selection"*](https://doi.org/10.18653/v1/2020.acl-main.504). Annual Conference of the Association for Computational Linguistics (ACL). 2020.
 - Subendhu Rongali, **Luca Soldaini**, Emilio Monti, and Wael Hamza. [*"Don't Parse, Generate! A Sequence to Sequence Architecture for Task-Oriented Semantic Parsing"*](https://doi.org/10.1145/3366423.3380064). The Web Conference (formerly WWW). 2020.
 - Sean MacAvaney, **Luca Soldaini**, and Nazli Goharian. [*"Teaching a New Dog Old Tricks: Resurrecting Multilingual Retrieval Using Zero-shot Learning"*](https://doi.org/10.1007/978-3-030-45442-5_31). European Conference on Information Retrieval (ECIR). 2020.
