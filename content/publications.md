@@ -7,7 +7,7 @@ For additional publications and talks, please see my [resumé](/resume.pdf).
 
 ## 2021
 
-- Rujun Han, **Luca Soldaini**, and Alessandro Moschitti. [*"Modeling Context in Answer Sentence Selection Systems on a Latency Budget"*](/publications). Annual Conference of the European Chapter of the Association for Computational Linguistics (EACL). 2021.
+- Rujun Han, **Luca Soldaini**, and Alessandro Moschitti. [*"Modeling Context in Answer Sentence Selection Systems on a Latency Budget"*](https://arxiv.org/abs/2101.12093). Annual Conference of the European Chapter of the Association for Computational Linguistics (EACL). 2021.
 
 ## 2020
 
