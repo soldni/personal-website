@@ -10,6 +10,11 @@ hr {
     margin-bottom: 1.5em;
 }
 
+a.nav-link{
+    margin-left: .3em;
+    margin-right: .3em;
+}
+
 body {
     @media(prefers-color-scheme: dark) {
         background-color: $dark_white;
