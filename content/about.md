@@ -2,7 +2,7 @@
 title = "Luca Soldaini"
 +++
 
-{{< figure class="avatar" src="/me.jpg" >}}
+{{< figure class="avatar" alt="Portrait of Luca; he has wavy, puffy, pink hair and he is wearing sunglasses." src="/me.jpg" >}}
 
 Hello 👋 My name is Luca Soldaini ([he/him](/facts)) and I am applied scientist at [Amazon Alexa Search][1] in [Manhattan Beach, California][2].
 My research efforts are currently focused on building ranking and generative models for natural language understanding tasks, such as open-domain question answering.
