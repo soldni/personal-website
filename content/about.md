@@ -7,7 +7,7 @@ title = "Luca Soldaini"
         <img src="/me.jpg" alt="Luca Soldaini" title="Portrait of Luca; he has wavy, puffy, pink hair and he is wearing sunglasses." class="avatar">
     </div>
     <div id="back-avatar">
-        <img src="/bayes.jpg" alt="Hari Seldon" title="Alt: a drawing of a raccoon on a blue background; they are wearing glasses and a pink sleveless sweater with blue hearts; they are holding a green chili in their left hand." class="avatar">
+        <img src="/bayes.jpg" alt="Luca as a Raccoon" title="Alt: a drawing of a raccoon on a blue background; they are wearing glasses and a pink sleveless sweater with blue hearts; they are holding a green chili in their left hand." class="avatar">
         <p class="tiny-text center">Drawing by <a href="https://cljacobs.net/">Cassandra Jacobs</a></p>
     </div>
 </div>
