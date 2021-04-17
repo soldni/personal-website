@@ -168,14 +168,15 @@ div#avatar-container {
 
 
 @media(max-width: $tiny-width) {
-    .flex-row-redux{
-        flex-direction:column;
+
+    .nav-item {
+        padding: .0em;
+        font-size: .85em;
     }
     .mx-1 {
-        display: none;
-    }
-    .nav-item {
+        opacity: 0;
         padding: .3em;
+        font-size: .5em;
     }
     .navbar-brand {
         display: inline;
@@ -188,13 +189,6 @@ div#avatar-container {
     }
 
 }
-
-@media(min-width: $tiny-width + 1) {
-    .flex-row-redux {
-        flex-direction: row!important;
-    }
-}
-
 
 .tiny-text {
     font-size: .7em;
