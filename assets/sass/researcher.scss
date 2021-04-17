@@ -10,6 +10,10 @@ hr {
     margin-bottom: 1.5em;
 }
 
+a {
+    font-size: 1em;
+}
+
 a.nav-link{
     margin-left: .3em;
     margin-right: .3em;
@@ -122,7 +126,7 @@ hr {
         }
     }
 
-    .avatar > img {
+    .avatar {
         height: $avatar-size;
         width: $avatar-size;
         border-radius: 50%;
@@ -134,7 +138,7 @@ hr {
         }
         @media(min-width: $mobile-width) {
             float: right;
-            margin: -8px 0px 16px 16px;
+            margin: -8px -8px 16px 16px;
         }
 
     }
@@ -146,6 +150,60 @@ hr {
         }
     }
 }
+
+div#avatar-container {
+    height: $avatar-size;
+    width: $avatar-size;
+    @media(max-width: $mobile-width) {
+        margin-bottom: 2.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media(min-width: $mobile-width) {
+        margin-bottom: 1.5em;
+        float: right;
+    }
+}
+
+
+
+@media(max-width: $tiny-width) {
+    .flex-row-redux{
+        flex-direction:column;
+    }
+    .mx-1 {
+        display: none;
+    }
+    .nav-item {
+        padding: .3em;
+    }
+    .navbar-brand {
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .3em;
+        white-space: pre-wrap;
+        padding: 0em;
+
+    }
+
+}
+
+@media(min-width: $tiny-width + 1) {
+    .flex-row-redux {
+        flex-direction: row!important;
+    }
+}
+
+
+.tiny-text {
+    font-size: .7em;
+}
+p.center {
+    text-align: center;
+    margin: auto;
+}
+
 #footer {
     a {
         @extend %link-dark;

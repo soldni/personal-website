@@ -2,7 +2,16 @@
 title = "Luca Soldaini"
 +++
 
-{{< figure class="avatar" alt="Portrait of Luca; he has wavy, puffy, pink hair and he is wearing sunglasses." src="/me.jpg" >}}
+<div id="avatar-container">
+    <div id="front-avatar">
+        <img src="/me.jpg" alt="Luca Soldaini" title="Portrait of Luca; he has wavy, puffy, pink hair and he is wearing sunglasses." class="avatar">
+    </div>
+    <div id="back-avatar">
+        <img src="/bayes.jpg" alt="Hari Seldon" title="Alt: a drawing of a raccoon on a blue background; they are wearing glasses and a pink sleveless sweater with blue hearts; they are holding a green chili in their left hand." class="avatar">
+        <p class="tiny-text center">Drawing by <a href="https://cljacobs.net/">Cassandra Jacobs</a></p>
+    </div>
+</div>
+
 
 Hello 👋 My name is Luca Soldaini ([he/him](/facts)) and I am applied scientist at [Amazon Alexa Search][1] in [Manhattan Beach, California][2].
 My research efforts are currently focused on building ranking and generative models for natural language understanding tasks, such as open-domain question answering.
