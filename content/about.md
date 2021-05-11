@@ -13,8 +13,10 @@ title = "Luca Soldaini"
 </div>
 
 
-Hello 👋 My name is Luca Soldaini ([he/him](/facts)) and I am applied scientist at [Amazon Alexa Search][1] in [Manhattan Beach, California][2].
-My research efforts are currently focused on building ranking and generative models for natural language understanding tasks, such as open-domain question answering.
+Hello 👋 My name is Luca Soldaini ([he/him](/facts)) and I am applied scientist at [Amazon Alexa][1] in [Manhattan Beach, California][2].
+My current research efforts are focused on developing techniques for question answering at web scale; in particular, I am interested in building efficient ranking solutions and expressive generative models.
+
+I am also one of the [Queer In AI][5] core organizers, where I help running events, collaborate on our scholarship program, and contribute in coordination with sponsors.
 
 I obtained a B.Eng. in Computer Engineering from the [University of Florence][3] in Italy, and I have a Ph.D. in Computer Science from [Georgetown University][4].
 During my doctoral studies, I investigated natural language processing techniques to improve access to medical literature for both medical professionals and lay people.
@@ -26,7 +28,6 @@ When not in front of a screen, I enjoy running, dreaming about utopian mass tran
 
 - [Twitter](https://twitter.com/soldni)
 - [GitHub](https://github.com/soldni)
-- [Google Scholar](https://scholar.google.com/citations?user=3KPvwcgAAAAJ&hl=en)
 - [Semantic Scholar](https://www.semanticscholar.org/author/Luca-Soldaini/3328733)
 - [LinkedIn](https://www.linkedin.com/in/soldni)
 - [Email](mailto:luca@soldaini.net)
@@ -36,3 +37,4 @@ When not in front of a screen, I enjoy running, dreaming about utopian mass tran
 [2]: https://www.google.com/maps/place/Manhattan+Beach,+CA+90266/
 [3]: https://www.ing-inl.unifi.it
 [4]: https://cs.georgetown.edu/
+[5]: http://queerinai.org/
