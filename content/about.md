@@ -16,7 +16,7 @@ title = "Luca Soldaini"
 Hello 👋 My name is Luca Soldaini ([he/him](/facts)) and I am applied scientist at [Amazon Alexa][1] in [Manhattan Beach, California][2].
 My current research efforts are focused on developing techniques for question answering at web scale; in particular, I am interested in building efficient ranking solutions and expressive generative models.
 
-I am also one of the [Queer In AI][5] core organizers, where I help running events, collaborate on our scholarship program, and contribute in coordination with sponsors.
+I am also a [Queer In AI][5] core organizer, where I help with event organization, scholarship programs, and sponsors relations.
 
 I obtained a B.Eng. in Computer Engineering from the [University of Florence][3] in Italy, and I have a Ph.D. in Computer Science from [Georgetown University][4].
 During my doctoral studies, I investigated natural language processing techniques to improve access to medical literature for both medical professionals and lay people.
