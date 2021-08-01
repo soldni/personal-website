@@ -13,7 +13,7 @@ title = "Luca Soldaini"
 </div>
 
 
-Hello 👋 My name is Luca Soldaini ([he/him](/facts)) and I am a senior applied scientist at [Amazon Alexa][1] in [Manhattan Beach, California][2].
+Hello 👋 My name is Luca Soldaini ([he/him](/facts) or [they/them](/facts)) and I am a senior applied scientist at [Amazon Alexa][1] in [Manhattan Beach, California][2].
 My current research efforts are focused on developing techniques for question answering at web scale; in particular, I am interested in building efficient ranking solutions and expressive generative models.
 
 I am also a core organizer at [Queer In AI][5], where I help with event organization, scholarship programs, and sponsors relations.
