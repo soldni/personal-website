@@ -64,7 +64,13 @@ hr {
         }
     }
     code {
-        color: $green;
+        @media(prefers-color-scheme: dark) {
+            color: $lightgrey;
+        }
+        @media(prefers-color-scheme: light) {
+            color:$dark_lightgrey;
+        }
+
     }
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
