@@ -26,6 +26,9 @@ When not in front of a screen, I enjoy running, dreaming about utopian mass tran
 
 ## Contacts
 
+<!-- <ul class="fa-ul">
+      <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href="https://twitter.com/soldni">@soldni</a></li>
+</ul> -->
 - [Twitter](https://twitter.com/soldni)
 - [GitHub](https://github.com/soldni)
 - [Semantic Scholar](https://www.semanticscholar.org/author/Luca-Soldaini/3328733)
