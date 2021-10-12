@@ -1,18 +1,23 @@
 @import "variables";
 
 * {
-    font-family: "Inconsolata";
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 14pt;
     line-height: normal;
+}
+
+a {
+    font-size: 1em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   letter-spacing: 1px;
 }
 
 hr {
     margin-bottom: 1.5em;
 }
 
-a {
-    font-size: 1em;
-}
 
 a.nav-link{
     margin-left: .3em;
@@ -46,7 +51,9 @@ hr {
 .navbar-brand {
     @extend %link-dark;
     font-size: 2rem;
+    text-decoration: none;
 }
+
 .nav-link {
     @extend %link-default;
 }
@@ -191,7 +198,7 @@ div#avatar-container {
         margin-bottom: .3em;
         white-space: pre-wrap;
         padding: 0em;
-
+        text-decoration: none;
     }
 
 }
