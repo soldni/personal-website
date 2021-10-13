@@ -115,9 +115,11 @@ hr {
         padding-left: 0;
     }
     ul {
-        list-style: inside;
+
+        list-style-position: outside;
+        // list-style: inside;
         & > li {
-            margin: 4px 0;
+            margin: .3em 0;
         }
     }
     table {
