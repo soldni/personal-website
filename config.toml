@@ -7,9 +7,9 @@ math = false  # enable KaTeX (https://katex.org/) globally
 
 [params]
   author = "Luca Soldaini"
-  description = "Luca Soldaini is an Applied Scientist at Amazon Alexa Search."
+  description = "Personal website of Luca Soldaini. Applied research scientist at AI2 and core organizer at Queer in AI."
   favicon = "favicon.ico"  # path to a .ico to use as favicon
-  keywords = "luca, soldaini, personal, homepage, georgetown, university, amazon, alexa, search"
+  keywords = "luca, soldaini, personal, homepage, georgetown, university, amazon, alexa, search, ai, machine learning, natural language processing, allen ai, semantic scholar, queer in ai"
   google_site_validation = "0w6io-9zaQ-219xst17NcKH0e3I5FzbrkNcr8R7vL4U"
   msvalidate_01 = "6A330A58006408660C4D6B81B04E8740"
   google_analytics = "UA-72750578-2"
