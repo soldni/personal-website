@@ -13,8 +13,9 @@ title = "Luca Soldaini"
 </div>
 
 
-Hello 👋 My name is Luca Soldaini ([he/him](/facts) or [they/them](/facts)) and I am a senior applied scientist at [Amazon Alexa][1] in [Manhattan Beach, California][2].
-My current research efforts are focused on developing techniques for question answering at web scale; in particular, I am interested in building efficient ranking solutions and expressive generative models.
+Hello 👋  My name is Luca Soldaini ([they/them](/facts) or [he/him](/facts)); I am an applied research scientist at the [Allen Institute for Artificial Intelligence (AI2)][6] working on [Semantic Scholar][7].
+My current research interests are question answering and information retrieval systems operating at scale.
+Before joining AI2, I was an applied scientist at [Amazon Alexa][1].
 
 I am also a core organizer at [Queer In AI][5], where I help with event organization, scholarship programs, and sponsors relations.
 
@@ -26,18 +27,18 @@ When not in front of a screen, I enjoy running, dreaming about utopian mass tran
 
 ## Contacts
 
-<!-- <ul class="fa-ul">
-      <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href="https://twitter.com/soldni">@soldni</a></li>
-</ul> -->
-- [Twitter](https://twitter.com/soldni)
-- [GitHub](https://github.com/soldni)
-- [Semantic Scholar](https://www.semanticscholar.org/author/Luca-Soldaini/3328733)
-- [LinkedIn](https://www.linkedin.com/in/soldni)
-- [Email](mailto:luca@soldaini.net)
-
+<ul class="fa-ul">
+      <li><span class="fa-li"><i aria-hidden="true" class="fab fa-twitter"></i></span><a href="https://twitter.com/soldni">Twitter</a></li>
+      <li><span class="fa-li"><i aria-hidden="true" class="fab fa-github"></i></span><a href="https://github.com/soldni">GitHub</a></li>
+      <li><span class="fa-li"><i aria-hidden="true" class="fas fa-graduation-cap"></i></span><a href="https://www.semanticscholar.org/author/Luca-Soldaini/3328733">Semantic Scholar</a></li>
+      <li><span class="fa-li"><i aria-hidden="true" class="fab fa-linkedin"></i></span><a href="https://www.linkedin.com/in/soldni">LinkedIn</a></li>
+      <li><span class="fa-li"><i aria-hidden="true" class="fas fa-paper-plane"></i></span><a href="mailto:luca@soldaini.net">Email</a></li>
+</ul>
 
 [1]: https://www.amazon.science/author/luca-soldaini
 [2]: https://www.google.com/maps/place/Manhattan+Beach,+CA+90266/
 [3]: https://www.ing-inl.unifi.it
 [4]: https://cs.georgetown.edu/
 [5]: http://queerinai.org/
+[6]: https://allenai.org
+[7]: https://research.semanticscholar.org
