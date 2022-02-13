@@ -13,7 +13,7 @@ title = "Luca Soldaini"
 </div>
 
 
-Hello 👋  My name is Luca Soldaini ([they/them](/facts) or [he/him](/facts)); I am an applied research scientist at the [Allen Institute for Artificial Intelligence (AI2)][6] working on [Semantic Scholar][7].
+Hello 👋  My name is Luca Soldaini ([they/them](https://pronoun.is/they/them) or [he/him](https://pronoun.is/he/him)); I am an applied research scientist at the [Allen Institute for Artificial Intelligence (AI2)][6] working on [Semantic Scholar][7].
 My current research interests are question answering and information retrieval systems operating at scale.
 Before joining AI2, I was an applied scientist at [Amazon Alexa][1].
 

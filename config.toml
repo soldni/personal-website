@@ -7,6 +7,7 @@ math = false  # enable KaTeX (https://katex.org/) globally
 
 [params]
   author = "Luca Soldaini"
+  lang = "en"
   description = "Personal website of Luca Soldaini. Applied research scientist at AI2 and core organizer at Queer in AI."
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   keywords = "luca, soldaini, personal, homepage, georgetown, university, amazon, alexa, search, ai, machine learning, natural language processing, allen ai, semantic scholar, queer in ai"
