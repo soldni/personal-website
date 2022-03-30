@@ -5,6 +5,10 @@ title = "Publications"
 This page contains a list of peer-reviewed conference papers and journal articles I have authored.
 For additional publications and talks, please see my [resumé](/resume.pdf).
 
+## Pre-prints
+
+- Yoshitomo Matsubara, **Luca Soldaini**, and Alessandro Moschitti. [*"Ensemble Transformer for Efficient and Accurate Ranking Tasks: an Application to Question Answering Systems."*](<https://arxiv.org/abs/2201.05767>) ArXiv 2201.05767.
+
 ## 2021
 
 - Chao-Chun Hsu, Eric Lind, **Luca Soldaini**, and Alessandro Moschitti. [*"Answer Generation for Retrieval-based Question Answering Systems."*](http://dx.doi.org/10.18653/v1/2021.findings-acl.374) Findings of Annual Conference of the Association for Computational Linguistics (ACL). 2021.
