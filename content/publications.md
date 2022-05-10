@@ -10,11 +10,14 @@ For additional publications and talks, please see my [resumé](/resume.pdf).
 - Yoshitomo Matsubara, **Luca Soldaini**, and Alessandro Moschitti. [*"Ensemble Transformer for Efficient and Accurate Ranking Tasks: an Application to Question Answering Systems."*](https://arxiv.org/abs/2201.05767) ArXiv 2201.05767.
 - Benjamin Muller, **Luca Soldaini**, Rik Koncel-Kedziorski, Eric Lind, and Alessandro Moschitti. [*"Cross-Lingual GenQA: A Language-Agnostic Generative Question Answering Approach for Open-Domain Question Answering."*](https://arxiv.org/abs/2110.07150) ArXiv 2110.07150.
 
+## 2022
+
+- Luca Di Liello, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. [*"Paragraph-based Transformer Pre-training for Multi-Sentence Inference."*](https://arxiv.org/abs/2205.01228) Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT). 2022.
 
 ## 2021
 
 - Chao-Chun Hsu, Eric Lind, **Luca Soldaini**, and Alessandro Moschitti. [*"Answer Generation for Retrieval-based Question Answering Systems."*](http://dx.doi.org/10.18653/v1/2021.findings-acl.374) Findings of Annual Conference of the Association for Computational Linguistics (ACL). 2021.
-- Rujun Han, **Luca Soldaini**, and Alessandro Moschitti. [*"Modeling Context in Answer Sentence Selection Systems on a Latency Budget"*](https://aclanthology.org/2021.eacl-main.261). Annual Conference of the European Chapter of the Association for Computational Linguistics (EACL). 2021.
+- Rujun Han, **Luca Soldaini**, and Alessandro Moschitti. [*"Modeling Context in Answer Sentence Selection Systems on a Latency Budget."*](https://aclanthology.org/2021.eacl-main.261) Annual Conference of the European Chapter of the Association for Computational Linguistics (EACL). 2021.
 
 ## 2020
 
