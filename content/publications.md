@@ -7,6 +7,7 @@ For additional publications and talks, please see my [resumé](/resume.pdf).
 
 ## Pre-prints
 
+- Luca Di Liello, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. [*"Pre-training Transformer Models with Sentence-Level Objectives for Answer Sentence Selection."*](https://arxiv.org/abs/2205.10455) ArXiv 2205.10455.
 - Yoshitomo Matsubara, **Luca Soldaini**, and Alessandro Moschitti. [*"Ensemble Transformer for Efficient and Accurate Ranking Tasks: an Application to Question Answering Systems."*](https://arxiv.org/abs/2201.05767) ArXiv 2201.05767.
 - Benjamin Muller, **Luca Soldaini**, Rik Koncel-Kedziorski, Eric Lind, and Alessandro Moschitti. [*"Cross-Lingual GenQA: A Language-Agnostic Generative Question Answering Approach for Open-Domain Question Answering."*](https://arxiv.org/abs/2110.07150) ArXiv 2110.07150.
 
