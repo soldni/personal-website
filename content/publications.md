@@ -7,13 +7,14 @@ For additional publications and talks, please see my [resumé](/resume.pdf).
 
 ## Pre-prints
 
+- Jon Saad-Falcon, Amanpreet Singh, **Luca Soldaini**, Mike D'Arcy, Arman Cohan, and Doug Downey. [*"Embedding Recycling for Language Models."*](https://arxiv.org/abs/2207.04993) ArXiv 2207.04993.
 - Luca Di Liello, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. [*"Pre-training Transformer Models with Sentence-Level Objectives for Answer Sentence Selection."*](https://arxiv.org/abs/2205.10455) ArXiv 2205.10455.
 - Yoshitomo Matsubara, **Luca Soldaini**, and Alessandro Moschitti. [*"Ensemble Transformer for Efficient and Accurate Ranking Tasks: an Application to Question Answering Systems."*](https://arxiv.org/abs/2201.05767) ArXiv 2201.05767.
 - Benjamin Muller, **Luca Soldaini**, Rik Koncel-Kedziorski, Eric Lind, and Alessandro Moschitti. [*"Cross-Lingual GenQA: A Language-Agnostic Generative Question Answering Approach for Open-Domain Question Answering."*](https://arxiv.org/abs/2110.07150) ArXiv 2110.07150.
 
 ## 2022
 
-- Luca Di Liello, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. [*"Paragraph-based Transformer Pre-training for Multi-Sentence Inference."*](https://arxiv.org/abs/2205.01228) Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT). 2022.
+- Luca Di Liello, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. [*"Paragraph-based Transformer Pre-training for Multi-Sentence Inference."*](https://aclanthology.org/2022.naacl-main.181/) Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT). 2022.
 
 ## 2021
 
