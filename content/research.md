@@ -4,8 +4,8 @@ title = "Research"
 
 # Research
 
-Here is a list of current and past research thread I have been pursuing.
-For a list of publications, hop over to the [publication page](/publications).
+Here is a list of current and past research threads I have been pursuing.
+For a list of publications, hop over to [this page](/publications).
 
 <div id='research-full'>
 
@@ -16,7 +16,7 @@ For a list of publications, hop over to the [publication page](/publications).
 Information systems are only [as good as they are fast][15].
 How do we build systems that can quickly retrieve, process, and present succinct information to users?
 
-I have looked at this problem from the perspective on question answering systems that operates at web-scale, focusing on both model ([Soldaini and Moschitti 2020][17]; [Matsubara et al 2022][18]) and data efficiency ([Han et al 2021][19]). I also collaborated on Embedding Recycling, a promising technique to reduce model computation across many tasks ([Saad-Falcon et al 2022][20]).
+I have looked at this problem from the perspective of question answering systems that operates at web-scale, focusing on both model ([Soldaini and Moschitti 2020][17]; [Matsubara et al 2022][18]) and data efficiency ([Han et al 2021][19]). I have also collaborated on Embedding Recycling, a promising technique to reduce model computation across many tasks ([Saad-Falcon et al 2022][20]).
 
 Currently, I am interested in efficient information systems for **scientific text**:
 
@@ -31,11 +31,11 @@ Currently, I am interested in efficient information systems for **scientific tex
 
 While there are hundreds of languages spoken in the world, most of the content on the web is [concentrated in a few languages][16].
 
-I've looked at how to build cross-language information retrieval systems ([MacAvaney et al 2020][21]) and explored the use of generative models to combine information in different languages ([Muller et al 2021][22]).
+In the past, I have looked at how to build cross-language information retrieval systems ([MacAvaney et al 2020][21]) and explored the use of generative models to combine information in different languages ([Muller et al 2021][22]).
 
 In 2022, I am co-organizing [NeuCLIR][23], a shared task at [TREC][24] focused on cross-language information retrieval in Chinese, Farsi, and Russian.
 
-Going forward I am interested in what other **domains** and **tasks** can benefit from a cross-lingual approach, with a particular eye towards **data-efficient** approaches.
+Going forward, I am interested in exploring other **domains** and **tasks** can benefit from a cross-lingual approach, with a particular eye towards **data-efficient** approaches.
 
 </div>
 
@@ -47,7 +47,7 @@ Generative NLP modes can be used to process the output of any information system
 
 I have worked on projects to improve presentation in question answering in both English ([Hsu et al 2021][31]), as well as other languages ([Muller et al 2021][22]). Before that, I also looked at using generative models for structured parsing of user input ([Rongali et al 2020][32]).
 
-Going forward, I am interested in collaborating on other tasks that can use **generation** to **refine the output** of information systems, particularly in scientific settings.
+I am open to collaboration on other tasks that can use **generation** to **refine the output** of information systems, particularly in scientific settings.
 
 </div>
 

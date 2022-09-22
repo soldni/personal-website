@@ -12,13 +12,9 @@ title = "Luca Soldaini"
     </div>
 </div>
 
-👋 Hello, visitor! 👋
+👋 Hello, visitor! 👋 I am Luca Soldaini and I use [they/them](https://pronoun.is/they/them) pronouns.
 
 <div id='about-me'>
-
-## About Me
-
-My name is Luca Soldaini and I use [they/them](https://pronoun.is/they/them) pronouns.
 
 Hats <span aria-hidden="true">👒</span> I am currently wearing:
 
@@ -43,10 +39,10 @@ Raccoons are [the best][13].
 My current research is in the field of Natural Language Processing (NLP) and Information Retrieval (IR).
 In particular, I am interested in:
 
-- [Building effective and efficient information systems](/research#eff-info-sys), such as retrieval and question answering. Lately, I've been following on **scientific literature** applications: how do researchers look for information? How can we support them in processing literature more effectively?
+- [Building effective and efficient information systems](/research#eff-info-sys), for tasks such as information retrieval and question answering. Lately, I have been investigating **scientific literature** applications: *How do academic researchers and practitioners look for information?* *How can we support them in processing literature more effectively*?
 - [Cross-language information ranking and selection](/research#cross-lang). Since the vast majority of online content is concentrated in **few languages**, how do we close the gap for those who **do not speak** them?
 - [Generative models for improving presentation of information](/research#generation). How can we use natural language generation to **improve the output** of information systems?
-- [Open source tools and data for NLP](/research#oss-nlp). I develop and maintain several tools and datasets to support NLP research.
+- [Open source tools and data for NLP](/research#oss-nlp). I develop and maintain several tools and datasets that power my research and that I hope will be useful to others.
 
 Please visit my [research page](/research) for more details!
 
@@ -57,7 +53,7 @@ Please visit my [research page](/research) for more details!
 ## Contacts
 
 I 💗 forging new **research collaborations** and building **connections** with other scholars!
-Do **get in touch** if you are interested in any of the areas above, or if you have a research ideas that you think I might be interested in!
+Do **get in touch** if you are interested in any of the areas above, or if you have a research ideas that you think I might be interested in.
 
 <ul class="fa-ul">
       <li><span class="fa-li"><i aria-hidden="true" class="fab fa-twitter"></i></span><a href="https://twitter.com/soldni">Twitter</a></li>
