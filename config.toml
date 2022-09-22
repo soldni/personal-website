@@ -20,8 +20,8 @@ math = false  # enable KaTeX (https://katex.org/) globally
 
 [menu]
   [[menu.main]]
-    name = "About"
-    url = "/"
+    name = "Research"
+    url = "/research"
     weight = 1
 
   [[menu.main]]

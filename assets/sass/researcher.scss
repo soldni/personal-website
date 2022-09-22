@@ -3,7 +3,7 @@
 * {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 14pt;
-    line-height: normal;
+    line-height: 1.3em;
 }
 
 // p {
@@ -14,7 +14,7 @@ a {
     font-size: 1em;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4 {
    letter-spacing: 1px;
 }
 
@@ -74,9 +74,7 @@ hr {
     @extend %link-default;
 }
 #content {
-    a {
-        @extend %link-default;
-    }
+
     blockquote {
         border-left: 4px solid;
         font-style: italic;
@@ -95,12 +93,38 @@ hr {
         }
 
     }
+    a {
+        @extend %link-default;
+        code {
+            text-decoration: underline dotted;
+            text-decoration-thickness: 1px;
+
+            @media(prefers-color-scheme: dark) {
+                color: $dark_red;
+            }
+
+            @media(prefers-color-scheme: light) {
+                color: $red;
+            }
+
+        }
+    }
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
         font-weight: bold;
-        line-height: normal;
         margin: 1.2rem 0 0.8rem 0;
+        margin-top: 2em;
     }
+
+
+    h3, h4, h5, h6 {
+        margin-top: 1em;
+    }
+
+    // h1, h2, h3 {
+    //     margin-top: 3em;
+    // }
+
     @for $i from 1 through 4 {
         h#{$i} {
             font-size: 1.2rem + 0.2 * (4 - $i);
@@ -233,4 +257,49 @@ p.center {
     a {
         @extend %link-dark;
     }
+}
+
+#research-summary, #research-full {
+    h5 {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            letter-spacing: 0px;
+            font-size: 1em;
+            margin-top: 2em;
+            margin-bottom: .5em;
+
+        }
+    ul {
+        margin-top: -.5em;
+    }
+    hr {
+        margin-top: 2em;
+        margin-bottom: -1em;
+    }
+}
+
+#research-full {
+    h3 {
+        margin-top: 3em;
+    }
+
+}
+
+h1#research, h1#publications, h2#about-me, h1#facts {
+    margin-top: 1em;
+}
+
+span#suit {
+    font-size: .7em;
+    font-weight: 400;
+    padding-bottom: .3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    vertical-align: middle;
+}
+
+ul#suit {
+    list-style: none;
+
 }
