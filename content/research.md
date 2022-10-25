@@ -45,7 +45,7 @@ Going forward, I am interested in exploring other **domains** and **tasks** can 
 
 Generative NLP modes can be used to process the output of any information system to better suit the needs of the user.
 
-I have worked on projects to improve presentation in question answering in both English ([Hsu et al 2021][31]), as well as other languages ([Muller et al 2021][22]). Before that, I also looked at using generative models for structured parsing of user input ([Rongali et al 2020][32]).
+I have worked on projects to improve presentation in question answering in both English ([Hsu et al 2021][31],[Gabburo et al 2022][33]), as well as other languages ([Muller et al 2021][22]). Before that, I also looked at using generative models for structured parsing of user input ([Rongali et al 2020][32]).
 
 I am open to collaboration on other tasks that can use **generation** to **refine the output** of information systems, particularly in scientific settings.
 
@@ -84,3 +84,4 @@ I enjoy building open source tools and data for NLP and ML practitioners, such a
 [30]: https://github.com/Georgetown-IR-Lab/QuickUMLS
 [31]: http://dx.doi.org/10.18653/v1/2021.findings-acl.374
 [32]: https://doi.org/10.1145/3366423.3380064
+[33]: https://arxiv.org/abs/2210.12865

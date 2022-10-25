@@ -52,7 +52,7 @@ Please visit my [research page](/research) for more details!
 
 ## Contacts
 
-I 💗 forging new **research collaborations** and building **connections** with other scholars!
+I 💗 starting new **research collaborations** and building **connections** with other scholars!
 Do **get in touch** if you are interested in any of the areas above, or if you have a research ideas that you think I might be interested in.
 
 <ul class="fa-ul">
