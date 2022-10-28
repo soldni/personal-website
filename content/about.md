@@ -57,6 +57,7 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
 
 <ul class="fa-ul">
       <li><span class="fa-li"><i aria-hidden="true" class="fab fa-twitter"></i></span><a href="https://twitter.com/soldni">Twitter</a></li>
+      <li><span class="fa-li"><i aria-hidden="true" class="fa-brands fa-mastodon"></i></span><a rel="me" href="https://mastodon.social/@soldni">Mastodon</a></li>
       <li><span class="fa-li"><i aria-hidden="true" class="fab fa-github"></i></span><a href="https://github.com/soldni">GitHub</a></li>
       <li><span class="fa-li"><i aria-hidden="true" class="fas fa-graduation-cap"></i></span><a href="https://www.semanticscholar.org/author/Luca-Soldaini/3328733">Semantic Scholar</a></li>
       <li><span class="fa-li"><i aria-hidden="true" class="fab fa-linkedin"></i></span><a href="https://www.linkedin.com/in/soldni">LinkedIn</a></li>
