@@ -86,19 +86,18 @@ hr {
     }
     code {
         @media(prefers-color-scheme: dark) {
-            color: $lightgrey;
+            color: $dark_text;
+            font-style: italic;
         }
         @media(prefers-color-scheme: light) {
-            color:$dark_lightgrey;
+            color: $text;
+            font-style: italic;
         }
 
     }
     a {
         @extend %link-default;
         code {
-            text-decoration: underline dotted;
-            text-decoration-thickness: 1px;
-
             @media(prefers-color-scheme: dark) {
                 color: $dark_red;
             }
@@ -106,9 +105,17 @@ hr {
             @media(prefers-color-scheme: light) {
                 color: $red;
             }
-
         }
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-underline-offset: 2px;
     }
+
+    a:hover {
+        text-decoration-style: solid;
+        // text-decoration-thickness: .5px;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
         font-weight: bold;
