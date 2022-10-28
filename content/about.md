@@ -4,10 +4,10 @@ title = "Luca Soldaini"
 
 <div id="avatar-container">
     <div id="front-avatar">
-        <img src="/me.jpg" alt="Luca Soldaini" title="Portrait of Luca; he has wavy, puffy, pink hair and he is wearing sunglasses." class="avatar">
+        <img src="/me.webp" alt="Luca Soldaini" title="Portrait of Luca; he has wavy, puffy, pink hair and he is wearing sunglasses." class="avatar">
     </div>
     <div id="back-avatar">
-        <img src="/bayes.jpg" alt="Luca as a Raccoon" title="Alt: a drawing of a raccoon on a blue background; they are wearing glasses and a pink sleveless sweater with blue hearts; they are holding a green chili in their left hand." class="avatar">
+        <img src="/bayes.webp" alt="Luca as a Raccoon" title="Alt: a drawing of a raccoon on a blue background; they are wearing glasses and a pink sleveless sweater with blue hearts; they are holding a green chili in their left hand." class="avatar">
         <p class="tiny-text center">Drawing by <a href="https://cljacobs.net/">Cassandra Jacobs</a></p>
     </div>
 </div>
@@ -75,8 +75,8 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
 [7]: https://research.semanticscholar.org
 [8]: https://twitter.com/soldni/status/708678097483276289
 [9]: https://twitter.com/soldni/status/1541146251537698816
-[10]: /transit.jpg
-[11]: /laptop.jpg
+[10]: /transit.webp
+[11]: /laptop.webp
 [12]: https://twitter.com/soldni/status/1444411540480749569
 [13]: https://twitter.com/soldni/status/1437451814249517056
 [14]: http://hdl.handle.net/10822/1050758
