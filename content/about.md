@@ -12,7 +12,7 @@ title = "Luca Soldaini"
     </div>
 </div>
 
-👋 Hello, visitor! 👋 I am Luca Soldaini and I use [they/them](https://pronoun.is/they/them) pronouns.
+Hello, visitor! 👋 My name is Luca Soldaini and I use [they/them](https://pronoun.is/they/them) pronouns.
 
 <div id='about-me'>
 
