@@ -83,6 +83,16 @@ body {
     }
 }
 
+.navbar-text {
+    @media(prefers-color-scheme: dark) {
+        color: $dark_text;
+    }
+
+    @media(prefers-color-scheme: light) {
+        color: $text;
+    }
+}
+
 hr {
     @media(prefers-color-scheme: dark) {
         border-top: 1px solid $dark_lightgrey;
