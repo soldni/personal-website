@@ -276,22 +276,33 @@ div#avatar-container {
     .nav-item {
         padding: .0em;
         font-size: .85em;
+        text-align: center;
     }
     .mx-1 {
         opacity: 0;
-        padding: .3em;
-        font-size: .5em;
+        padding: 0em;
+        font-size: 0em;
     }
     .navbar-brand {
         display: inline;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: .3em;
-        white-space: pre-wrap;
+        white-space: normal;
         padding: 0em;
         text-decoration: none;
+        text-align: center;
     }
+    // .flex-row {
+    //     flex-direction: column;
+    // }
 
+}
+
+@media(min-width: $mobile-width) {
+    .navbar-expand-sm {
+        justify-content: space-between;
+    }
 }
 
 .tiny-text {
