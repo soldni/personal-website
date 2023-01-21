@@ -4,14 +4,18 @@ title = "Research"
 
 # Publications
 
-This page contains a list of peer-reviewed conference papers and journal articles I have authored.
-For additional publications and talks, please see my [resumé](/resume.pdf).
+This page contains a list of manuscripts that I have authored.
 
 ### Pre-prints
 
 - John Giorgi, **Luca Soldaini**, Bo Wang, Gary Bader, Kyle Lo, Lucy Lu Wang, and Arman Cohan. [*"Exploring the Challenges of Open Domain Multi-Document Summarization."*](https://arxiv.org/abs/2212.10526) ArXiv 2212.10526.
-- Jon Saad-Falcon, Amanpreet Singh, **Luca Soldaini**, Mike D'Arcy, Arman Cohan, and Doug Downey. [*"Embedding Recycling for Language Models."*](https://arxiv.org/abs/2207.04993) ArXiv 2207.04993.
 - Raymond Fok, Hita Kambhamettu, **Luca Soldaini**, Jonathan Bragg, Kyle Lo, Andrew Head, Marti A. Hearst, and Daniel S. Weld. [*"SCIM: Intelligent Skimming Support for Scientific Papers."*](https://arxiv.org/abs/2205.04561) ArXiv 2205.04561.
+
+### 2023
+
+
+- Jon Saad-Falcon, Amanpreet Singh, **Luca Soldaini**, Mike D'Arcy, Arman Cohan, and Doug Downey. [*"Embedding Recycling for Language Models."*](https://arxiv.org/abs/2207.04993) Findings of EACL 2023.
+
 
 ### 2022
 
