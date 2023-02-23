@@ -4,13 +4,13 @@ title = "Research"
 
 # Publications
 
-This page contains a list of manuscripts that I have authored.
+This page contains a list of manuscripts that I have authored. \* indicates equal contribution.
 
 
 ### 2023
 
 
-- Sean MacAvaney and **Luca Soldaini**. [*"One-Shot Labeling for Automatic Relevance Estimation."*](https://arxiv.org/abs/2302.11266) ArXiv 2302.11266. **PREPRINT**
+- Sean MacAvaney\* and **Luca Soldaini**\*. [*"One-Shot Labeling for Automatic Relevance Estimation."*](https://arxiv.org/abs/2302.11266) ArXiv 2302.11266. **PREPRINT**
 - Jon Saad-Falcon, Amanpreet Singh, **Luca Soldaini**, Mike D'Arcy, Arman Cohan, and Doug Downey. [*"Embedding Recycling for Language Models."*](https://arxiv.org/abs/2207.04993) Findings of EACL 2023.
 
 
@@ -40,7 +40,7 @@ This page contains a list of manuscripts that I have authored.
 
 - Sean MacAvaney, Andrew Yates, Arman Cohan, **Luca Soldaini**, Kai Hui, Nazli Goharian, and Ophir Frieder. [*"Overcoming Low-Utility Facets for Complex Answer Retrieval"*](https://doi.org/10.1007/s10791-018-9343-0). Information Retrieval Journal, 2018.
 - Ziling Fan, **Luca Soldaini**, Arman Cohan, and Nazli Goharian. [*"Relation Extraction for Protein-Protein Interactions Affected by Mutation"*](https://doi.org/10.1145/3233547.3233617). ACM-BCB 2018.
-- Arman Cohan, Bart Desmet, Andrew Yates, **Luca Soldaini**, Sean MacAvaney, and Nazli Goharian. [*"SMHD: a Large-Scale Resource for Exploring Online Language Usage for Multiple Mental Health Conditions"*](https://www.aclweb.org/anthology/C18-1126/). COLING 2018.
+- Arman Cohan\*, Bart Desmet\*, Andrew Yates\*, **Luca Soldaini**, Sean MacAvaney, and Nazli Goharian. [*"SMHD: a Large-Scale Resource for Exploring Online Language Usage for Multiple Mental Health Conditions"*](https://www.aclweb.org/anthology/C18-1126/). COLING 2018.
 - **Luca Soldaini**, Timothy Walsh, Arman Cohan, Julien Han, and Nazli Goharian. [*"Helping or Hurting? Predicting Changes in Users' Risk of Self-Harm Through Online Community Interactions"*](http://doi.org/10.18653/v1/W18-0621). CLPsych Workshop, NAACL-HLT 2018.
 - **Luca Soldaini**. [*"The Knowledge and Language Gap in Medical Information Seeking"*](https://repository.library.georgetown.edu/handle/10822/1050758). PhD Thesis, Georgetown University. 2018.
 - Sean MacAvaney, Bart Desmet, Arman Cohan, **Luca Soldaini**, Andrew Yates, Ayah Zirikly, and Nazli Goharian. [*"RSDD-Time: Temporal Annotation of Self-Reported Mental Health Diagnoses"*](https://www.aclweb.org/anthology/W18-0618/). CLPsych Workshop, NAACL-HLT 2018.
