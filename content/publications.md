@@ -6,23 +6,22 @@ title = "Research"
 
 This page contains a list of manuscripts that I have authored.
 
-### Pre-prints
-
-- John Giorgi, **Luca Soldaini**, Bo Wang, Gary Bader, Kyle Lo, Lucy Lu Wang, and Arman Cohan. [*"Exploring the Challenges of Open Domain Multi-Document Summarization."*](https://arxiv.org/abs/2212.10526) ArXiv 2212.10526.
-- Raymond Fok, Hita Kambhamettu, **Luca Soldaini**, Jonathan Bragg, Kyle Lo, Andrew Head, Marti A. Hearst, and Daniel S. Weld. [*"SCIM: Intelligent Skimming Support for Scientific Papers."*](https://arxiv.org/abs/2205.04561) ArXiv 2205.04561.
 
 ### 2023
 
 
+- Sean MacAvaney and **Luca Soldaini**. [*"One-Shot Labeling for Automatic Relevance Estimation."*](https://arxiv.org/abs/2302.11266) ArXiv 2302.11266. **PREPRINT**
 - Jon Saad-Falcon, Amanpreet Singh, **Luca Soldaini**, Mike D'Arcy, Arman Cohan, and Doug Downey. [*"Embedding Recycling for Language Models."*](https://arxiv.org/abs/2207.04993) Findings of EACL 2023.
 
 
 ### 2022
 
+- John Giorgi, **Luca Soldaini**, Bo Wang, Gary Bader, Kyle Lo, Lucy Lu Wang, and Arman Cohan. [*"Exploring the Challenges of Open Domain Multi-Document Summarization."*](https://arxiv.org/abs/2212.10526) ArXiv 2212.10526. **PREPRINT**
 - Matteo Gabburo, Rik Koncel-Kedziorski, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. [*"Knowledge Transfer from Answer Ranking to Answer Generation."*](https://arxiv.org/abs/2210.12865) EMNLP 2022.
 - Luca Di Liello, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. [*"Pre-training Transformer Models with Sentence-Level Objectives for Answer Sentence Selection."*](https://arxiv.org/abs/2205.10455) EMNLP 2022.
 - Yoshitomo Matsubara, **Luca Soldaini**, Eric Lind, and Alessandro Moschitti. [*"Ensemble Transformer for Efficient and Accurate Ranking Tasks: an Application to Question Answering Systems."*](https://arxiv.org/abs/2201.05767) Findings of EMNLP 2022.
 - Benjamin Muller, **Luca Soldaini**, Rik Koncel-Kedziorski, Eric Lind, and Alessandro Moschitti. [*"Cross-Lingual GenQA: A Language-Agnostic Generative Question Answering Approach for Open-Domain Question Answering."*](https://arxiv.org/abs/2110.07150) AACL 2022.
+- Raymond Fok, Hita Kambhamettu, **Luca Soldaini**, Jonathan Bragg, Kyle Lo, Andrew Head, Marti A. Hearst, and Daniel S. Weld. [*"SCIM: Intelligent Skimming Support for Scientific Papers."*](https://arxiv.org/abs/2205.04561) ArXiv 2205.04561. **PREPRINT**
 - Luca Di Liello, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. [*"Paragraph-based Transformer Pre-training for Multi-Sentence Inference."*](https://aclanthology.org/2022.naacl-main.181/) NAACL-HLT 2022.
 
 ### 2021
