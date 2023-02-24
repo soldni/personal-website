@@ -9,9 +9,8 @@ This page contains a list of manuscripts that I have authored. \* indicates equa
 
 ### 2023
 
-
-- Raymond Fok, Hita Kambhamettu, **Luca Soldaini**, Jonathan Bragg, Kyle Lo, Andrew Head, Marti A. Hearst, and Daniel S. Weld. [*"SCIM: Intelligent Skimming Support for Scientific Papers."*](https://arxiv.org/abs/2205.04561) IUI 2023.
 - Sean MacAvaney\* and **Luca Soldaini**\*. [*"One-Shot Labeling for Automatic Relevance Estimation."*](https://arxiv.org/abs/2302.11266) ArXiv 2302.11266. **PREPRINT**
+- Raymond Fok, Hita Kambhamettu, **Luca Soldaini**, Jonathan Bragg, Kyle Lo, Andrew Head, Marti A. Hearst, and Daniel S. Weld. [*"SCIM: Intelligent Skimming Support for Scientific Papers."*](https://arxiv.org/abs/2205.04561) IUI 2023.
 - Jon Saad-Falcon, Amanpreet Singh, **Luca Soldaini**, Mike D'Arcy, Arman Cohan, and Doug Downey. [*"Embedding Recycling for Language Models."*](https://arxiv.org/abs/2207.04993) Findings of EACL 2023.
 
 
