@@ -363,3 +363,59 @@ ul#suit {
     list-style: none;
 
 }
+
+span.short-authors {
+    // make the '+nn authors' text smaller
+    font-size: .7em;
+
+    // add a nice round border around the text with some padding
+    border-radius: 1em;
+    padding: .3em .2em .2em .4em;
+
+    // add a thin border around the text
+    @media(prefers-color-scheme: dark) {
+        border: 1px solid $dark_lightgrey;
+    }
+    @media(prefers-color-scheme: light) {
+        border: 1px solid $lightgrey;
+    }
+
+    // change the default cursor to a pointer
+    cursor: pointer;
+
+    // raise the span vertically by .15em so it looks like it is properly
+    // centered with the rest of the text
+    vertical-align: .2em;
+
+    // add some nice margin to the left/right of the span
+    margin-left: .4em;
+    margin-right: .4em;
+
+}
+
+span.long-authors {
+    // change the cursor to a pointer
+    cursor: pointer;
+}
+
+span.preprint {
+    // make the text small caps
+    font-variant: small-caps;
+    font-size: .9em;
+    vertical-align: .1em;
+
+    // add a nice round border around the text with some padding
+    border-radius: .3em;
+    padding: .0em .2em;
+
+    // change color to either `red` or `darkred` depending on whether we
+    // are in light or dark mode
+    @media(prefers-color-scheme: dark) {
+        color: $dark_red;
+        border: 1px solid $dark_red;
+    }
+    @media(prefers-color-scheme: light) {
+        color: $red;
+        border: 1px solid $red;
+    }
+}

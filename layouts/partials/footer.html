@@ -11,21 +11,86 @@
 <script type="text/javascript">
     var front = document.getElementById('front-avatar');
     var back = document.getElementById('back-avatar');
-    front.style.display = 'block';
-    back.style.display = 'none';
 
-    document.getElementById('avatar-container').onclick = function () {
-        console.log('Swapping!');
+    if (front != null && back != null) {
+        front.style.display = 'block';
+        back.style.display = 'none';
 
-        console.log('front: ' + front.style.display);
-        console.log('back: ' + back.style.display);
-
-        if (front.style.display == 'none') {
-            front.style.display = 'block';
-            back.style.display = 'none';
-        } else if (back.style.display == 'none') {
-            back.style.display = 'block';
-            front.style.display = 'none';
+        document.getElementById('avatar-container').onclick = function () {
+            if (front.style.display == 'none') {
+                front.style.display = 'block';
+                back.style.display = 'none';
+            } else if (back.style.display == 'none') {
+                back.style.display = 'block';
+                front.style.display = 'none';
+            }
         }
     }
+
+    // function that toggles the visibility of the `long-authors` and `short-authors` spans
+    // within a span with class `hide-authors`. meant to be attached to an onclick event
+    // for a given span of class `hide-authors`
+    function toggleAuthors(span) {
+        var shortAuthors = span.getElementsByClassName('short-authors')[0];
+        var longAuthors = span.getElementsByClassName('long-authors')[0];
+        if (shortAuthors.style.display == 'none') {
+            shortAuthors.style.display = 'inline';
+            longAuthors.style.display = 'none';
+            // toggle aria visibility
+            shortAuthors.setAttribute('aria-hidden', 'false');
+            longAuthors.setAttribute('aria-hidden', 'true');
+        } else {
+            shortAuthors.style.display = 'none';
+            longAuthors.style.display = 'inline';
+
+            // toggle aria visibility
+            shortAuthors.setAttribute('aria-hidden', 'true');
+            longAuthors.setAttribute('aria-hidden', 'false');
+        }
+    }
+
+    // loop through all spans with class 'hide-authors'
+    var hideAuthors = document.getElementsByClassName('hide-authors');
+    for (var i = 0; i < hideAuthors.length; i++) {
+        innerText = hideAuthors[i].innerText;
+        // count the number of commas in the span
+        var num_authors = innerText.split(',').length - 1;
+
+        // if there are less than 3 authors, skip to the next span
+        if (num_authors < 3) {
+            continue;
+        }
+
+        // replace the inner html with two spans:
+        // - one contains the text '{num_authors} authors' and is visible
+        // - the other contains the text '{innerText}' and is hidden
+        hideAuthors[i].innerHTML = (
+            '<span class="short-authors">+' + num_authors + ' authors </span>' +
+            '<span class="long-authors">' + innerText + '</span>'
+        )
+        shortAuthorsSpan = hideAuthors[i].getElementsByClassName('short-authors')[0];
+        longAuthorsSpan = hideAuthors[i].getElementsByClassName('long-authors')[0];
+
+        // set title of 'short-authors' and 'long-authors' spans
+        shortAuthorsSpan.title = 'Click to show full author list.';
+        longAuthorsSpan.title = 'Click to hide full author list.';
+
+        // set aria visibility of 'short-authors' and 'long-authors' spans
+        shortAuthorsSpan.setAttribute('aria-hidden', 'false');
+        longAuthorsSpan.setAttribute('aria-hidden', 'true');
+
+        // set the `short-authors` span to be visible and the `long-authors` span to be hidden
+        shortAuthorsSpan.style.display = 'inline';
+        longAuthorsSpan.style.display = 'none';
+
+        // attach the toggleAuthors function to the onclick event of the span
+        hideAuthors[i].onclick = function() { toggleAuthors(this); };
+    }
+
+    // change the text of all spans with class `preprint` to 'preprint'
+    var preprints = document.getElementsByClassName('preprint');
+    for (var i = 0; i < preprints.length; i++) {
+        preprints[i].innerText = 'preprint';
+    }
+
 </script>
