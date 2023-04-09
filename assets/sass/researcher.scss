@@ -115,8 +115,8 @@ hr {
 .nav-link {
     @extend %link-default;
 }
-#content {
 
+#content {
     blockquote {
         border-left: 4px solid;
         font-style: italic;
@@ -170,10 +170,6 @@ hr {
         margin-top: 1em;
     }
 
-    // h1, h2, h3 {
-    //     margin-top: 3em;
-    // }
-
     @for $i from 1 through 4 {
         h#{$i} {
             font-size: 1.2rem + 0.2 * (4 - $i);
@@ -208,7 +204,7 @@ hr {
         list-style-position: outside;
         // list-style: inside;
         & > li {
-            margin: .3em 0;
+            margin: .7em 0;
         }
     }
     table {
@@ -255,6 +251,13 @@ hr {
     }
 }
 
+
+div#about-me {
+    li {
+        margin: 0.4em 0;
+    }
+}
+
 div#avatar-container {
     height: $avatar-size;
     width: $avatar-size;
@@ -293,10 +296,6 @@ div#avatar-container {
         text-decoration: none;
         text-align: center;
     }
-    // .flex-row {
-    //     flex-direction: column;
-    // }
-
 }
 
 @media(min-width: $mobile-width) {
