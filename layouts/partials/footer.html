@@ -52,7 +52,7 @@
     // loop through all spans with class 'hide-authors'
     var hideAuthors = document.getElementsByClassName('hide-authors');
     for (var i = 0; i < hideAuthors.length; i++) {
-        innerText = hideAuthors[i].innerText;
+        innerText = hideAuthors[i].innerHTML;
         // count the number of commas in the span
         var num_authors = innerText.split(',').length - 1;
 
