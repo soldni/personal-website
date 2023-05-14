@@ -14,3 +14,4 @@ In no particular order, here are some facts about me:
 - I love raccoons [VERY](https://twitter.com/soldni/status/1514126786052861959), [VERY](https://twitter.com/soldni/status/1552342467915046913) [MUCH](https://twitter.com/soldni/status/1419372837886902275). Please send me raccoon content.
 - I maintain a website with all my favorite nonsensical AI-generated images at [ThisPrintDoesNotExist.com](https://thisprintdoesnotexist.com/).
 - Like [Helen](https://www.mathemakitten.dev/#work), I enjoy building unnecessary things with machine learning.
+- My 10th degree academic ancestor is [Siméon Denis Poisson](https://en.wikipedia.org/wiki/Sim%C3%A9on_Denis_Poisson). Find the rest of my academic lineage [on this page](/academic-lineage).
