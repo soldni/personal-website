@@ -59,7 +59,7 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
 
 <ul class="fa-ul">
       <li><span class="fa-li"><i aria-hidden="true" class="fab fa-twitter"></i></span><a href="https://twitter.com/soldni">Twitter<span class="username-link" aria-hidden="true">@soldni</code></a></li>
-      <li><span class="fa-li"><i aria-hidden="true" class="fas fa-cloud"></i></span><a href="https://bsky.app/profile/soldaini.net">Bluesky<span class="username-link" aria-hidden="true">soldaini.net</code></a></li>
+      <li><span class="fa-li"><i aria-hidden="true" class="fas fa-cloud"></i></span><a href="https://bsky.app/profile/soldaini.net">Bluesky<span class="username-link" aria-hidden="true">@soldaini.net</code></a></li>
       <li><span class="fa-li"><i aria-hidden="true" class="fa-brands fa-mastodon"></i></span><a rel="me" href="https://mastodon.social/@soldni">Mastodon<span class="username-link" aria-hidden="true">@soldni@mastodon.social</code></a></li>
       <li><span class="fa-li"><i aria-hidden="true" class="fab fa-github"></i></span><a href="https://github.com/soldni">GitHub<span class="username-link" aria-hidden="true">@soldni</code></a></li>
       <li><span class="fa-li"><i aria-hidden="true" class="fas fa-graduation-cap"></i></span><a href="https://www.semanticscholar.org/author/Luca-Soldaini/3328733">Semantic Scholar</a></li>
