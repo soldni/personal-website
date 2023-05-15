@@ -29,7 +29,7 @@ Fun fact: when H.A. Newton joined Yale as faculty in 1855, he was the only profe
 
 **²** Michel Chasles does not seem to have published a dissertation; [Michel and Smadja (2021)][16] indicate that his first published work was "Aperçu historique sur l’origine et le développement des méthodes en géométrie" in 1837.
 
-**³** Soon after starting his university studies in 1798, Poisson was noted by Lagrange and Laplace, who became his mentors [(Connor and Robertson)][21]. He graduated early in 1800, was hired as teaching assistant (répétiteur). In 1802, he was named deputy professor at the École Polytechnique in 1802.
+**³** Soon after starting his university studies in 1798, Poisson was noted by Lagrange and Laplace, who became his mentors [(Connor and Robertson 2002)][21]. He graduated early in 1800, was hired as teaching assistant (répétiteur). In 1802, he was named deputy professor at the École Polytechnique in 1802.
 
 
 
