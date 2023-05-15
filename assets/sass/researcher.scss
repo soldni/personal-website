@@ -211,17 +211,32 @@ hr {
         margin: $margin-y auto;
         width: 100%;
         & tr {
-            background-color: $white;
-            border: 1px solid $lightgrey;
             & td {
                 @extend %table-cell;
+                font-size: 0.85em;
+                @media(prefers-color-scheme: dark) {
+                    border: 1px solid $dark_lightgrey;
+                }
+
+                @media(prefers-color-scheme: light) {
+                    border: 1px solid $lightgrey;
+                }
             }
             & th {
                 @extend %table-cell;
                 font-weight: bold;
-            }
-            &:nth-child(2n) {
-                background-color: $lightgrey;
+                font-size: 0.85em;
+                @media(prefers-color-scheme: dark) {
+                    background-color: $dark_lightgrey;
+                    border: 1px solid $dark_lightgrey;
+                    color: $white;
+                }
+
+                @media(prefers-color-scheme: light) {
+                    background-color: $lightgrey;
+                    border: 1px solid $lightgrey;
+                }
+                text-align: center;
             }
         }
     }

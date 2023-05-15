@@ -1,4 +1,6 @@
-+++ title = "Academic Lineage" +++
++++
+title = "Academic Lineage"
++++
 
 |   | Name | Fields of Study | Dissertation | University | Year | Advisor |
 |:-:|------|-----------------|--------------|------------|------|---------|
