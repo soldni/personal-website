@@ -2,6 +2,10 @@
 title = "Academic Lineage"
 +++
 
+# Academic Lineage
+
+Here is a table with my 10 most-recent academic ancestors:
+
 |   | Name | Fields of Study | Dissertation | University | Year | Advisor |
 |:-:|------|-----------------|--------------|------------|------|---------|
 |0| [Luca Soldaini][1] | Natural Language Processing, Information Retrieval | [The Knowledge and Language Gap in Medical Information Seeking][2] | Georgetown University | 2018 | Nazli Goharian |
