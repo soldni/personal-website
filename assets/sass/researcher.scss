@@ -433,3 +433,28 @@ span.preprint {
         border: 1px solid $red;
     }
 }
+
+span.username-link {
+    font-size: .65em;
+    vertical-align: .5em;
+    letter-spacing: -.4px;
+    font-family: var(--bs-font-monospace);
+    border-radius: .3em;
+    padding: .0em .2em;
+    margin-left: .2em;
+    text-decoration: none;
+    display: inline-block;
+
+    @media(prefers-color-scheme: dark) {
+            // background-color: $dark_red;
+            color: $dark_grey;
+            // border: 1px solid $dark_red;
+    }
+
+    @media(prefers-color-scheme: light) {
+        // background-color: $dark_red;
+        color: $text;
+        color: $grey;
+        // border: 1px solid $red;
+    }
+}
