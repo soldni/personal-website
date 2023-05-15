@@ -30,23 +30,23 @@ Fun fact: when H.A. Newton joined Yale as faculty in 1855, he was the only profe
 
 
 [1]: /
-[2]: /static/soldaini_2018.pdf
+[2]: /soldaini_2018.pdf
 [3]: https://people.cs.georgetown.edu/~nazli/
 [4]: https://dl.acm.org/doi/book/10.5555/933553
 [5]: https://www.seas.gwu.edu/tarek-el-ghazawi
 [6]: https://www.semanticscholar.org/author/G.-M.-Flachs/2912801
-[7]: /static/flachs_1967.pdf
+[7]: /flachs_1967.pdf
 [8]: https://www.semanticscholar.org/author/J.-S.-Frame/49423510
 [9]: https://id.loc.gov/authorities/names/no2007124069.html
 [10]: https://en.wikipedia.org/wiki/George_David_Birkhoff
 [11]: https://en.wikipedia.org/wiki/E._H._Moore
 [12]: https://en.wikipedia.org/wiki/Hubert_A._Newton
-[13]: /static/batterson_2008.pdf
+[13]: /batterson_2008.pdf
 [14]: https://www.mathgenealogy.org/id.php?id=7865
 [15]: https://en.wikipedia.org/wiki/Michel_Chasles
-[16]: /static/michel_smadja_2021.pdf
+[16]: /michel_smadja_2021.pdf
 [17]: https://en.wikipedia.org/wiki/Sim%C3%A9on_Denis_Poisson
 [18]: https://en.wikipedia.org/wiki/Joseph-Louis_Lagrange
 [19]: https://en.wikipedia.org/wiki/Pierre-Simon_Laplace
 [20]: https://www.genealogy.math.ndsu.nodak.edu/id.php?id=17865
-[21]: /static/connor_robertson_2002.pdf
+[21]: /connor_robertson_2002.pdf
