@@ -412,7 +412,7 @@ span.long-authors {
     cursor: pointer;
 }
 
-span.preprint {
+span.call-in {
     // make the text small caps
     font-variant: small-caps;
     font-size: .9em;
@@ -430,6 +430,31 @@ span.preprint {
     }
     @media(prefers-color-scheme: light) {
         color: $red;
+        border: 1px solid $red;
+    }
+}
+
+span.call-out {
+    // make the text small caps
+    font-variant: small-caps;
+    font-size: .9em;
+    vertical-align: .1em;
+
+    // add a nice round border around the text with some padding
+    border-radius: .3em;
+    padding: .0em .2em;
+
+    // change color to either `red` or `darkred` depending on whether we
+    // are in light or dark mode
+    @media(prefers-color-scheme: dark) {
+        color: $white;
+        background-color: $dark_red;
+        border: 1px solid $dark_red;
+    }
+
+    @media(prefers-color-scheme: light) {
+        color: $white;
+        background-color: $red;
         border: 1px solid $red;
     }
 }
