@@ -18,7 +18,7 @@ Hello, visitor! 👋 My name is Luca Soldaini and I use [they/them](https://pron
 
 Hats <span aria-hidden="true">👒</span> I am currently wearing:
 
-- **Applied research scientist** at the [Allen Institute for AI][6] on the [Semantic Scholar][7] team.
+- **Senior applied research scientist** at the [Allen Institute for AI][6] on the [Semantic Scholar][7] team.
 - **Core organizer** at [Queer In AI][5], where I help with event planning, scholarship programs, and sponsors relations.
 
 Hats <span aria-hidden="true">🧢</span> I have worn in the past:
