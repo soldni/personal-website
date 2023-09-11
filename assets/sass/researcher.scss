@@ -150,7 +150,8 @@ hr {
         }
         text-decoration: underline;
         text-decoration-style: dashed;
-        text-underline-offset: 2px;
+        text-decoration-thickness: 1px;
+        text-underline-offset: .15em;
     }
 
     a:hover {
@@ -245,6 +246,16 @@ hr {
         height: $avatar-size;
         width: $avatar-size;
         border-radius: 50%;
+
+        @media(prefers-color-scheme: dark) {
+            border: 3px solid $dark_red;
+        }
+
+        @media(prefers-color-scheme: light) {
+            border: 3px solid $red;
+        }
+        box-sizing: border-box;
+
         @media(max-width: $mobile-width) {
             float: center;
             margin-top: -8px;
@@ -276,6 +287,8 @@ div#about-me {
 div#avatar-container {
     height: $avatar-size;
     width: $avatar-size;
+
+
     @media(max-width: $mobile-width) {
         margin-bottom: 2.5em;
         margin-left: auto;
@@ -286,8 +299,6 @@ div#avatar-container {
         float: right;
     }
 }
-
-
 
 @media(max-width: $tiny-width) {
 
