@@ -11,7 +11,7 @@ This page contains a list of manuscripts that I have authored. \* indicates equa
 
 <!-- <span class="call-in">to appear</span> -->
 
-- Orion Weller, Kyle Lo, David Wadden, Dawn Lawrie, Benjamin Van Durme, Arman Cohan, and **Luca Soldaini**. [*"When do Generative Query and Document Expansions Fail? A Comprehensive Study Across Methods, Retrievers, and Datasets"*](https://arxiv.org/abs/2309.08541) ArXiv 2309.08541. <span class="call-in preprint"/>
+- Orion Weller, Kyle Lo, David Wadden, Dawn Lawrie, Benjamin Van Durme, Arman Cohan, and **Luca Soldaini**. [*"When do Generative Query and Document Expansions Fail? A Comprehensive Study Across Methods, Retrievers, and Datasets"*](https://arxiv.org/abs/2309.08541). ArXiv 2309.08541. <span class="call-in preprint"/>
 - Organizers of Queer in AI, Nathan Dennler, Anaelia Ovalle, Ashwin Singh, **Luca Soldaini**, Arjun Subramonian, Huy Tu, William Agnew, Avijit Ghosh, Kyra Yee, Irene Font Peradejordi, Zeerak Talat, Mayra Russo, Jess de Jesus de Pinho Pinhal. [*"Bound to the Bounty: Collaboratively Shaping Evaluation Processes for Queer AI Harms"*](https://arxiv.org/abs/2307.10223). AIES 2023.
 - Benjamin Newman, Luca Soldaini, Raymond Fok, Arman Cohan, and Kyle Lo [*"A Controllable QA-based Framework for Decontextualization"*](https://arxiv.org/abs/2305.14772). ArXiv 2305.14772. <span class="call-in preprint"/>
 - Dawn Lawrie, Sean MacAvaney, James Mayfield, Paul McNamee, Douglas W. Oard, **Luca Soldaini**, and Eugene Yang. [*Overview of the TREC 2022 NeuCLIR Track*](https://arxiv.org/abs/2304.12367). TREC 2022.
