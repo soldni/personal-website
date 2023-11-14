@@ -24,7 +24,7 @@ Hats <span aria-hidden="true">👒</span> I am currently wearing:
 Hats <span aria-hidden="true">🧢</span> I have worn in the past:
 
 - `2018-2021:` Applied scientist at [Amazon Alexa][1] working on question answering.
-- `2013-2018:` Computer science Ph.D. student at [Georgetown University][4].
+- `2013-2018:` Computer science Ph.D. student in the [Information Retrieval Lab][32] at [Georgetown University][4].
 - `2009-2012:` B.Eng. student in computer engineering at the [University of Florence][3].
 - `????-2009:` A [baby][12].
 
@@ -99,3 +99,5 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
 [30]: https://github.com/Georgetown-IR-Lab/QuickUMLS
 [31]: http://dx.doi.org/10.18653/v1/2021.findings-acl.374
 [32]: https://doi.org/10.1145/3366423.3380064
+[32]: https://ir.cs.georgetown.edu
+[33]: https://people.cs.georgetown.edu/~nazli/
