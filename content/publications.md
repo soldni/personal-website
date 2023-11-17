@@ -10,7 +10,7 @@ This page contains a list of manuscripts that I have authored. \* indicates equa
 ### 2023
 
 <!-- <span class="call-in">to appear</span> -->
-
+- Hyunji Lee, **Luca Soldaini**, Arman Cohan, Minjoon Seo, and Kyle Lo. [*"Back to Basics: A Simple Recipe for Improving Out-of-Domain Retrieval in Dense Encoders"*](https://arxiv.org/abs/2311.09765). ArXiv 2311.09765. <span class="call-in preprint"/>
 - Yanai Elazar, Akshita Bhagia, Ian Magnusson, Abhilasha Ravichander, Dustin Schwenk, Alane Suhr, Pete Walsh, Dirk Groeneveld, **Luca Soldaini**, Sameer Singh, Hanna Hajishirzi, Noah A. Smith, and Jesse Dodge. [*"What's In My Big Data?"*](https://arxiv.org/abs/2310.20707) ArXiv 2310.20707. <span class="call-in preprint"/>
 - Kyle Lo<sup>†</sup>, Zejiang Shen<sup>†</sup>, Benjamin Newman<sup>†</sup>, Joseph Chee Chang<sup>†</sup><span class="hide-authors">, Russell Authur, Erin Bransom, Stefan Candra, Yoganand Chandrasekhar, Regan Huff, Bailey Kuehl, Amanpreet Singh, Chris Wilhelm, Angele Zamarron, Marti A. Hearst, Daniel S. Weld, Doug Downey</span>, and **Luca Soldaini**<sup>†</sup>. [*"PaperMage: A Unified Toolkit for Processing, Representing, and Manipulating Visually-Rich Scientific Documents"*](https://github.com/allenai/papermage/blob/3781ae08a787f1b2e755a9eff69ec029a6749a8c/tests/fixtures/papermage.pdf). System Demonstration, EMNLP 2023.
 - Benjamin Newman, Luca Soldaini, Raymond Fok, Arman Cohan, and Kyle Lo [*"A Question Answering Framework for Decontextualizing User-facing Snippets from Scientific Documents"*](https://arxiv.org/abs/2305.14772). EMNLP 2023.
