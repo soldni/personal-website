@@ -176,10 +176,6 @@ hr {
             font-size: 1.2rem + 0.2 * (4 - $i);
         }
     }
-    img {
-        display: block;
-        margin: $margin-y auto;
-    }
     div > ol {
         padding-left: 0;
     }
@@ -489,8 +485,60 @@ span.username-link {
 
     @media(prefers-color-scheme: light) {
         // background-color: $dark_red;
-        color: $text;
         color: $grey;
         // border: 1px solid $red;
+    }
+}
+
+ul.fa-ul {
+    list-style-type: none;
+}
+
+.icon-bluesky {
+    mask: url(/logos/BlueSky.svg);
+}
+.icon-email {
+    mask: url(/logos/Email.svg);
+}
+.icon-github {
+    mask: url(/logos/GitHub.svg);
+}
+.icon-linkedin {
+    mask: url(/logos/LinkedIn.svg);
+}
+.icon-s2 {
+    mask: url(/logos/S2.svg);
+}
+.icon-twitter {
+    mask: url(/logos/Twitter.svg);
+}
+
+
+.list-icon {
+    height: 1.2em;
+    width: 1.2em;
+    background-size: cover;
+    display: inline-block;
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    vertical-align: middle;
+
+    @media(prefers-color-scheme: dark) {
+        background-color: $dark_text;
+    }
+
+    @media(prefers-color-scheme: light) {
+        background-color: $text;
+    }
+
+}
+
+.list-icon:hover {
+    @media(prefers-color-scheme: dark) {
+        background-color: $dark_red;
+    }
+
+    @media(prefers-color-scheme: light) {
+        background-color: $red;
     }
 }

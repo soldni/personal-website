@@ -4,11 +4,11 @@ title = "Luca Soldaini"
 
 <div id="avatar-container">
     <div id="front-avatar">
-        <img src="/me.webp" alt="Luca Soldaini" title="Portrait of Luca; they have pink hair parted to one side, with undercut. They are wearing an hawaiian shirt." class="avatar">
+        <img src="/me.webp" loading="lazy" alt="Luca Soldaini" title="Portrait of Luca; they have pink hair parted to one side, with undercut. They are wearing an hawaiian shirt." class="avatar">
     </div>
     <div id="back-avatar">
-        <img src="/alt.webp" alt="Luca as a Raccoon" title="DALL•E (April 2022) generated image for the following prompt: 'oil painting of a raccoon with a tophat and monocle with a slice of fancy pizza.' Luca uses this image for theirs work account" class="avatar">
-        <p class="tiny-text center">DALL-E 2 generation (April 2022)</a></p>
+        <img src="/alt.webp" loading="lazy" alt="A raccoon wearing a top hat and holding a pizza slice. Luca sometimes uses this image as their online profile picture." title="DALL•E (April 2022) generated image for the following prompt: 'oil painting of a raccoon with a tophat and monocle with a slice of fancy pizza.' Luca uses this image for theirs work account" class="avatar">
+        <p class="tiny-text center">DALL•E 2 generation (April 2022)</a></p>
     </div>
 </div>
 
@@ -56,13 +56,29 @@ I <span aria-label="love">❤</span> starting new **research collaborations** an
 Do **get in touch** if you are interested in any of the areas above, or if you have a research ideas that you think I might be interested in.
 
 <ul class="fa-ul">
-      <li><span class="fa-li"><i aria-hidden="true" class="fab fa-twitter"></i></span><a href="https://twitter.com/soldni">Twitter<span class="username-link" aria-hidden="true">@soldni</code></a></li>
-      <li><span class="fa-li"><i aria-hidden="true" class="fas fa-cloud"></i></span><a href="https://bsky.app/profile/soldaini.net">Bluesky<span class="username-link" aria-hidden="true">@soldaini.net</code></a></li>
-      <li><span class="fa-li"><i aria-hidden="true" class="fa-brands fa-mastodon"></i></span><a rel="me" href="https://mastodon.social/@soldni">Mastodon<span class="username-link" aria-hidden="true">@soldni@mastodon.social</code></a></li>
-      <li><span class="fa-li"><i aria-hidden="true" class="fab fa-github"></i></span><a href="https://github.com/soldni">GitHub<span class="username-link" aria-hidden="true">@soldni</code></a></li>
-      <li><span class="fa-li"><i aria-hidden="true" class="fas fa-graduation-cap"></i></span><a href="https://www.semanticscholar.org/author/Luca-Soldaini/3328733">Semantic Scholar</a></li>
-      <li><span class="fa-li"><i aria-hidden="true" class="fab fa-linkedin"></i></span><a href="https://www.linkedin.com/in/soldni">LinkedIn</a></li>
-      <li><span class="fa-li"><i aria-hidden="true" class="fas fa-paper-plane"></i></span><a href="mailto:luca@soldaini.net">Email</a></li>
+    <li>
+        <span class="list-icon icon-twitter" aria-hidden="true"></span>
+        <a href="https://twitter.com/soldni">Twitter</a>
+        <span class="username-link" aria-hidden="true">@soldni</span>
+    </li>
+    <li>
+        <span class="list-icon icon-bluesky" aria-hidden="true"></span>
+        <a href="https://bsky.app/profile/soldaini.net">Bluesky</a>
+        <span class="username-link" aria-hidden="true">@soldaini.net</span>
+    </li>
+    <li>
+        <span class="list-icon icon-github" aria-hidden="true"></span>
+        <a href="https://github.com/soldni" target="_blank">GitHub</a>
+        <span class="username-link" aria-hidden="true">@soldni</span>
+    </li>
+    <li>
+        <span class="list-icon icon-linkedin" aria-hidden="true"></span>
+        <a href="https://www.linkedin.com/in/soldni" target="_blank">LinkedIn</a>
+    </li>
+    <li>
+        <span class="list-icon icon-email" aria-hidden="true"></span>
+        <a href="mailto:luca@soldaini.net">Email</a>
+    </li>
 </ul>
 
 </div>

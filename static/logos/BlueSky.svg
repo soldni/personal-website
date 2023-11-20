@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BlueSky</title>
+    <g id="BlueSky" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15.5594403,51 L49.2489914,51 C64.2745312,50.3981972 64.0471267,28.4708982 49.0145683,28.1828315 C45.4827803,9.26597272 19.3186328,9.27880738 15.7938635,28.1828315 C0.755690128,28.4737504 0.539515508,50.4010493 15.5594403,51 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>
