@@ -24,7 +24,7 @@ Hats <span aria-hidden="true">👒</span> I am currently wearing:
 Hats <span aria-hidden="true">🧢</span> I have worn in the past:
 
 - `2018-2021:` Applied scientist at [Amazon Alexa][1] working on question answering.
-- `2013-2018:` Computer science Ph.D. student in the [Information Retrieval Lab][32] at [Georgetown University][4].
+- `2013-2018:` Computer science Ph.D. student in the [Information Retrieval Lab][34] at [Georgetown University][4].
 - `2009-2012:` B.Eng. student in computer engineering at the [University of Florence][3].
 - `????-2009:` A [baby][12].
 
@@ -83,7 +83,7 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
 
 </div>
 
-[1]: https://www.amazon.science/author/luca-soldaini
+[1]: https://www.amazon.science/search?q=Luca+Soldaini&type=91d74bfc-4a20-30f0-8926-e52f02f15c04&type=5be10472-b2e0-37b5-b6f8-8f381832e94f&type=4f8e492c-6f2f-390e-bc61-f176d3a37ab9&s=0&expandedFilters=Type%2CResearch%2520area%2CTag%2CConference%2CJournal%2CAuthor%2CDate%2C
 [2]: https://www.google.com/maps/place/Manhattan+Beach,+CA+90266/
 [3]: https://www.ing-inl.unifi.it
 [4]: https://cs.georgetown.edu/
@@ -115,5 +115,5 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
 [30]: https://github.com/Georgetown-IR-Lab/QuickUMLS
 [31]: http://dx.doi.org/10.18653/v1/2021.findings-acl.374
 [32]: https://doi.org/10.1145/3366423.3380064
-[32]: https://ir.cs.georgetown.edu
 [33]: https://people.cs.georgetown.edu/~nazli/
+[34]: https://ir.cs.georgetown.edu
