@@ -7,8 +7,12 @@ title = "Research"
 This page contains a list of manuscripts that I have authored. \* indicates equal contribution; † indicates core contributors.
 
 
-### 2023
+### 2024
 
+- Li Lucy, Suchin Gururangan, **Luca Soldaini**, Emma Strubell, David Bamman, Lauren Klein, and Jesse Dodge. [*"AboutMe: Using Self-Descriptions in Webpages to Document the Effects of English Pretraining Data Filters"*](https://arxiv.org/abs/2401.06408) ArXiv 2401.06408. <span class="call-in preprint"/>
+
+
+### 2023
 
 - Ian Magnusson, Akshita Bhagia, Valentin Hofmann, **Luca Soldaini**<span class="hide-authors">, Ananya Harsh Jha, Oyvind Tafjord, Dustin Schwenk, Evan Pete Walsh, Yanai Elazar, Kyle Lo, Dirk Groeneveld, Iz Beltagy, Hannaneh Hajishirzi, Noah A. Smith, Kyle Richardson</span>, and Jesse Dodge [*"Paloma: A Benchmark for Evaluating Language Model Fit"*](<https://arxiv.org/abs/2312.10523>). ArXiv 2312.10523. <span class="call-in preprint"/>
 - Hyunji Lee, **Luca Soldaini**, Arman Cohan, Minjoon Seo, and Kyle Lo. [*"Back to Basics: A Simple Recipe for Improving Out-of-Domain Retrieval in Dense Encoders"*](https://arxiv.org/abs/2311.09765). ArXiv 2311.09765. <span class="call-in preprint"/>
