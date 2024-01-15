@@ -4,7 +4,7 @@ title = "Luca Soldaini"
 
 <div id="avatar-container">
     <div id="front-avatar">
-        <img src="/me.webp" alt="Luca Soldaini" title="Portrait of Luca; they have pink hair parted to one side, with undercut. They are wearing an hawaiian shirt." class="avatar">
+        <img src="personal-me/me-512.webp" alt="Luca Soldaini" title="Portrait of Luca; they have pink hair parted to one side, with undercut. They are wearing an hawaiian shirt." class="avatar">
     </div>
     <div id="back-avatar">
         <img src="/alt.webp" loading="lazy" alt="A raccoon wearing a top hat and holding a pizza slice. Luca sometimes uses this image as their online profile picture." title="DALL•E (April 2022) generated image for the following prompt: 'oil painting of a raccoon with a tophat and monocle with a slice of fancy pizza.' Luca uses this image for theirs work account" class="avatar">
