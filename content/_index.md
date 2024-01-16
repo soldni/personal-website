@@ -72,6 +72,14 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
         <span class="username-link" aria-hidden="true">@soldni</span>
     </li>
     <li>
+        <span class="list-icon icon-s2" aria-hidden="true"></span>
+        <a href="https://www.semanticscholar.org/author/Luca-Soldaini/3328733" target="_blank">Semantic Scholar</a>
+    </li>
+    <li>
+        <span class="list-icon icon-gs" aria-hidden="true"></span>
+        <a href="https://scholar.google.com/citations?user=3KPvwcgAAAAJ" target="_blank">Google Scholar</a>
+    </li>
+    <li>
         <span class="list-icon icon-linkedin" aria-hidden="true"></span>
         <a href="https://www.linkedin.com/in/soldni" target="_blank">LinkedIn</a>
     </li>

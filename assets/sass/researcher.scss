@@ -512,7 +512,60 @@ ul.fa-ul {
 .icon-twitter {
     mask: url(/logos/Twitter.svg);
 }
+.icon-gs {
+    mask: url(/logos/GoogleScholar.svg);
+}
 
+.href-icon {
+    height: 1em;
+    width: 1em;
+    background-size: cover;
+    display: inline-block;
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    vertical-align: middle;
+    margin-bottom: .1em;
+    margin-right: .05em;
+
+    @media(prefers-color-scheme: dark) {
+        background-color: $dark_red;
+    }
+
+    @media(prefers-color-scheme: light) {
+        background-color: $red;
+    }
+}
+
+ul.fa-ul {
+    margin-top: -1em;
+
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+
+    column-gap: 20%;
+    -webkit-column-gap: 20%;
+    -moz-column-gap: 20%;
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.note {
+    font-size: .8em;
+    font-style: italic;
+
+    @media(prefers-color-scheme: dark) {
+        // color: $dark_text;
+        color: $dark_grey;
+    }
+
+    @media(prefers-color-scheme: light) {
+        // color: $text;
+        color: $grey;
+    }
+}
 
 .list-icon {
     height: 1.2em;
