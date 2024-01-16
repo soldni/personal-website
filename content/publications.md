@@ -9,14 +9,14 @@ This page contains a list of manuscripts that I have authored. \* indicates equa
 
 ### 2024
 
-- Li Lucy, Suchin Gururangan, **Luca Soldaini**, Emma Strubell, David Bamman, Lauren Klein, and Jesse Dodge. [*"AboutMe: Using Self-Descriptions in Webpages to Document the Effects of English Pretraining Data Filters"*](https://arxiv.org/abs/2401.06408) ArXiv 2401.06408. <span class="call-in preprint"/>
+- Yanai Elazar, Akshita Bhagia, Ian Magnusson, Abhilasha Ravichander, Dustin Schwenk, Alane Suhr, Pete Walsh, Dirk Groeneveld, **Luca Soldaini**, Sameer Singh, Hanna Hajishirzi, Noah A. Smith, and Jesse Dodge. [*"What's In My Big Data?"*](https://arxiv.org/abs/2310.20707) ICLR 2024 (spotlight).
+- Li Lucy, Suchin Gururangan, **Luca Soldaini**, Emma Strubell, David Bamman, Lauren Klein, and Jesse Dodge. [*"AboutMe: Using Self-Descriptions in Webpages to Document the Effects of English Pretraining Data Filters"*](https://arxiv.org/abs/2401.06408). ArXiv 2401.06408. <span class="call-in preprint"/>
 
 
 ### 2023
 
 - Ian Magnusson, Akshita Bhagia, Valentin Hofmann, **Luca Soldaini**<span class="hide-authors">, Ananya Harsh Jha, Oyvind Tafjord, Dustin Schwenk, Evan Pete Walsh, Yanai Elazar, Kyle Lo, Dirk Groeneveld, Iz Beltagy, Hannaneh Hajishirzi, Noah A. Smith, Kyle Richardson</span>, and Jesse Dodge [*"Paloma: A Benchmark for Evaluating Language Model Fit"*](<https://arxiv.org/abs/2312.10523>). ArXiv 2312.10523. <span class="call-in preprint"/>
 - Hyunji Lee, **Luca Soldaini**, Arman Cohan, Minjoon Seo, and Kyle Lo. [*"Back to Basics: A Simple Recipe for Improving Out-of-Domain Retrieval in Dense Encoders"*](https://arxiv.org/abs/2311.09765). ArXiv 2311.09765. <span class="call-in preprint"/>
-- Yanai Elazar, Akshita Bhagia, Ian Magnusson, Abhilasha Ravichander, Dustin Schwenk, Alane Suhr, Pete Walsh, Dirk Groeneveld, **Luca Soldaini**, Sameer Singh, Hanna Hajishirzi, Noah A. Smith, and Jesse Dodge. [*"What's In My Big Data?"*](https://arxiv.org/abs/2310.20707) ArXiv 2310.20707. <span class="call-in preprint"/>
 - Kyle Lo<sup>†</sup>, Zejiang Shen<sup>†</sup>, Benjamin Newman<sup>†</sup>, Joseph Chee Chang<sup>†</sup><span class="hide-authors">, Russell Authur, Erin Bransom, Stefan Candra, Yoganand Chandrasekhar, Regan Huff, Bailey Kuehl, Amanpreet Singh, Chris Wilhelm, Angele Zamarron, Marti A. Hearst, Daniel S. Weld, Doug Downey</span>, and **Luca Soldaini**<sup>†</sup>. [*"PaperMage: A Unified Toolkit for Processing, Representing, and Manipulating Visually-Rich Scientific Documents"*](https://aclanthology.org/2023.emnlp-demo.45/). System Demonstration, EMNLP 2023. <span class="call-out">best paper award</span>
 - Benjamin Newman, Luca Soldaini, Raymond Fok, Arman Cohan, and Kyle Lo [*"A Question Answering Framework for Decontextualizing User-facing Snippets from Scientific Documents"*](https://arxiv.org/abs/2305.14772). EMNLP 2023.
 - John Giorgi, **Luca Soldaini**, Bo Wang, Gary Bader, Kyle Lo, Lucy Lu Wang, and Arman Cohan. [*"Open Domain Multi-document Summarization: A Comprehensive Study of Model Brittleness under Retrieval."*](<https://arxiv.org/abs/2212.10526>) Findings of EMNLP 2023.
