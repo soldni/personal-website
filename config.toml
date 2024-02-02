@@ -18,10 +18,10 @@ math = false  # enable KaTeX (https://katex.org/) globally
   "/" = "/:filename"
 
 [menu]
-  [[menu.main]]
-    name = "Research"
-    url = "/research"
-    weight = 1
+  # [[menu.main]]
+  #   name = "Research"
+  #   url = "/research"
+  #   weight = 1
 
   [[menu.main]]
     name = "Facts"
@@ -31,12 +31,12 @@ math = false  # enable KaTeX (https://katex.org/) globally
   [[menu.main]]
     name = "Publications"
     url = "/publications"
-    weight = 3
+    weight = 1
 
-  [[menu.main]]
-    name = "CV"
-    url = "/resume.pdf"
-    weight = 4
+  # [[menu.main]]
+  #   name = "CV"
+  #   url = "/resume.pdf"
+  #   weight = 4
 
 
 [markup.goldmark.renderer]

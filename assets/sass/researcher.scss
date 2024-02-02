@@ -273,7 +273,6 @@ hr {
     }
 }
 
-
 div#about-me {
     li {
         margin: 0.4em 0;
@@ -537,19 +536,30 @@ ul.fa-ul {
 }
 
 ul.fa-ul {
-    margin-top: -1em;
 
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+    @media(min-width: $mobile-width) {
+        margin-top: -1em;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
 
-    column-gap: 20%;
-    -webkit-column-gap: 20%;
-    -moz-column-gap: 20%;
+        column-gap: 10%;
+        -webkit-column-gap: 10%;
+        -moz-column-gap: 10%;
 
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media(max-width: $mobile-width) {
+        margin-top: -.5em;
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        width: 95%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 .note {

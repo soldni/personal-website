@@ -8,7 +8,7 @@ title = "Luca Soldaini"
     </div>
     <div id="back-avatar">
         <img src="/alt.webp" loading="lazy" alt="A raccoon wearing a top hat and holding a pizza slice. Luca sometimes uses this image as their online profile picture." title="DALL•E (April 2022) generated image for the following prompt: 'oil painting of a raccoon with a tophat and monocle with a slice of fancy pizza.' Luca uses this image for theirs work account" class="avatar">
-        <p class="tiny-text center">DALL•E 2 generation (April 2022)</a></p>
+        <p class="tiny-text center caption-avatar">DALL•E 2 generation (April 2022)</a></p>
     </div>
 </div>
 
@@ -18,15 +18,11 @@ Hello, visitor! 👋 My name is Luca Soldaini and I use [they/them](https://pron
 
 Hats <span aria-hidden="true">👒</span> I am currently wearing:
 
-- **Senior applied research scientist** at the [Allen Institute for AI][6] on the [Semantic Scholar][7] team.
-- **Core organizer** at [Queer In AI][5], where I help with event planning, scholarship programs, and sponsors relations.
+- **Senior applied research scientist** at the [Allen Institute for AI][6] in the [Semantic Scholar][7] and [OLMo][35] teams.
+- **Organizer** at [Queer In AI][5], where I help with event planning at NLP conference and scholarship programs.
 
-Hats <span aria-hidden="true">🧢</span> I have worn in the past:
-
-- `2018-2021:` Applied scientist at [Amazon Alexa][1] working on question answering.
-- `2013-2018:` Computer science Ph.D. student in the [Information Retrieval Lab][34] at [Georgetown University][4].
-- `2009-2012:` B.Eng. student in computer engineering at the [University of Florence][3].
-- `????-2009:` A [baby][12].
+Prior to joining AI2, I was an applied scientist at [Amazon Alexa][1].
+I completed my Ph.D. in computer science at [Georgetown University][4] in 2018 in the [Information Retrieval Lab][34] working with [Nazli Goharian][33].
 
 When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], dreaming about utopian [mass transit systems][10], and curating my ever-growing [laptop stickers collection][11].
 Raccoons are [the best][13].
@@ -36,16 +32,18 @@ Raccoons are [the best][13].
 
 ## Research Interests
 
-My current research is in the field of Natural Language Processing (NLP) and Information Retrieval (IR).
-In particular, I am interested in:
+These days, my research focuses on best practices for curation and exploration of large corpora, mostly in the context of (Large) Language Model.
+I also like techniques for efficient domain adaptation in Information Retrieval (IR).
+A sample of recent topics I have been working on:
 
-- [Building effective and efficient information systems](/research#eff-info-sys), for tasks such as information retrieval and question answering. Lately, I have been investigating **scientific literature** applications: How do academic researchers and practitioners look for information? How can we support them in processing literature more effectively?
-- [Cross-language information ranking and selection](/research#cross-lang). Since the vast majority of online content is concentrated in **few languages**, how do we close the gap for those who **do not speak** them?
-- [Generative models for improving presentation of information](/research#generation). How can we use natural language generation to **improve the output** of information systems?
-- [Open source tools and data for NLP](/research#oss-nlp). I develop and maintain several tools and datasets that power my research and that I hope will be useful to others.
+- 🍇 I co-lead the **data curation efforts** for [OLMo][35], AI2's language model. OLMo is a state of the art model designed to accelerate the science of LMs. In 2023, we released the first version of [Dolma](https://arxiv.org/abs/2402.00159), an open dataset of 3 trillion tokens for language model pretraining.
+- 🔎 I am co-organizing [NeuCLIR][23], a shared task at [TREC][24] focused on **cross-language information retrieval** in Chinese, Farsi, and Russian.
+- 📊 Two data projects I have been excited about: [Lucy Li](https://lucy3.github.io)'s [**AboutMe**](https://arxiv.org/abs/2401.06408), where we use self-description web pages to study curation practices for LLMs exclude certain groups, and [Yanai Elazar](https://yanaiela.github.io)'s [**WIMBD**](https://arxiv.org/abs/2310.20707), an efficient toolkit to investigate the content of large corpora.
+- 🔄 On the IR side, there's much to do on **making LLMs interface with retrieval systems** well! With [Orion Weller](https://orionweller.github.io), we [investigated](https://arxiv.org/abs/2309.08541) when generative models can be used to augment queries and documents in IR systems. With [Sean MacAvaney](https://macavaney.us), we [found evidence](https://arxiv.org/abs/2302.11266) that LLMs are effective labelers for IR tasks.
+- 📚 Processing **scientific PDFs** remains challenging. We created [**PaperMage**](https://aclanthology.org/2023.emnlp-demo.45/), a toolkit to make multimodal PDF processing easier. Folks [seem to like it](), and it won an award at EMNLP 2023!
+- 🏳️‍🌈 Participatory AI is fun! With [Queer In AI](https://www.queerinai.com), we [documented](https://arxiv.org/abs/2303.16972) what has lead to the creation of our organization, how we apply community-lead decentralized governance, and our initiatives. The paper won an award at FAccT 2023!
 
-Please visit my [research page](/research) for more details!
-
+Hop over the [publications page](/publications) for a complete list of my work.
 </div>
 
 <div id='contacts'>
@@ -125,3 +123,4 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
 [32]: https://doi.org/10.1145/3366423.3380064
 [33]: https://people.cs.georgetown.edu/~nazli/
 [34]: https://ir.cs.georgetown.edu
+[35]: https://allenai.org/olmo

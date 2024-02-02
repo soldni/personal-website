@@ -11,6 +11,7 @@ For a list of publications, hop over to [this page](/publications).
 
 <div id='eff-info-sys'>
 
+
 ### Efficient Information Systems
 
 Information systems are only [as good as they are fast][15].
