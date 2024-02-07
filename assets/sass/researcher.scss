@@ -514,6 +514,12 @@ ul.fa-ul {
 .icon-gs {
     mask: url(/logos/GoogleScholar.svg);
 }
+.icon-cc {
+    mask: url(/logos/cc.svg);
+}
+.icon-by {
+    mask: url(/logos/by.svg);
+}
 
 .href-icon {
     height: 1em;
@@ -603,5 +609,59 @@ ul.fa-ul {
 
     @media(prefers-color-scheme: light) {
         background-color: $red;
+    }
+}
+
+
+div#license{
+    margin-top: 2em;
+    margin-bottom: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    p {
+        font-size: .8em;
+    }
+
+    @media(prefers-color-scheme: dark) {
+        color: $dark_grey;
+        a {
+            color: $dark_grey;
+        }
+        a:hover {
+            color: $dark_grey;
+        }
+    }
+
+    @media(prefers-color-scheme: light) {
+        // color: $text;
+        color: $grey;
+        a {
+            color: $grey;
+        }
+        a:hover {
+            color: $grey;
+        }
+    }
+
+    .license-icon {
+        height: .9em;
+        width: .9em;
+        background-size: cover;
+        display: inline-block;
+        mask-size: 100%;
+        mask-repeat: no-repeat;
+        vertical-align: middle;
+        margin-left: 1px;
+        margin-bottom: 4px;
+
+        @media(prefers-color-scheme: dark) {
+            background-color: $dark_grey;
+        }
+
+        @media(prefers-color-scheme: light) {
+            background-color: $grey;
+        }
+
     }
 }

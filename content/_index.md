@@ -40,8 +40,8 @@ A sample of recent topics I have been working on:
 - 🔎 I am co-organizing [NeuCLIR][23], a shared task at [TREC][24] focused on **cross-language information retrieval** in Chinese, Farsi, and Russian.
 - 📊 Two data projects I have been excited about: [Lucy Li](https://lucy3.github.io)'s [**AboutMe**](https://arxiv.org/abs/2401.06408), where we use self-description web pages to study curation practices for LLMs exclude certain groups, and [Yanai Elazar](https://yanaiela.github.io)'s [**WIMBD**](https://arxiv.org/abs/2310.20707), an efficient toolkit to investigate the content of large corpora.
 - 🔄 On the IR side, there's much to do on **making LLMs interface with retrieval systems** well! With [Orion Weller](https://orionweller.github.io), we [investigated](https://arxiv.org/abs/2309.08541) when generative models can be used to augment queries and documents in IR systems. With [Sean MacAvaney](https://macavaney.us), we [found evidence](https://arxiv.org/abs/2302.11266) that LLMs are effective labelers for IR tasks.
-- 📚 Processing **scientific PDFs** remains challenging. We created [**PaperMage**](https://aclanthology.org/2023.emnlp-demo.45/), a toolkit to make multimodal PDF processing easier. Folks [seem to like it](), and it won an award at EMNLP 2023!
-- 🏳️‍🌈 Participatory AI is fun! With [Queer In AI](https://www.queerinai.com), we [documented](https://arxiv.org/abs/2303.16972) what has lead to the creation of our organization, how we apply community-lead decentralized governance, and our initiatives. The paper won an award at FAccT 2023!
+- 📚 Processing **scientific PDFs** remains challenging. We created [**PaperMage**](https://aclanthology.org/2023.emnlp-demo.45/), a toolkit to make multimodal PDF processing easier. This work won a **best demo award** at EMNLP 2023!
+- 🏳️‍🌈 **Participatory AI** is fun! With [Queer In AI](https://www.queerinai.com), we [documented](https://arxiv.org/abs/2303.16972) what has lead to the creation of our organization, how we apply community-lead decentralized governance, and our initiatives. This work won a **best paper award** at FAccT 2023!
 
 Hop over the [publications page](/publications) for a complete list of my work.
 </div>
@@ -86,7 +86,17 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
         <a href="mailto:luca@soldaini.net">Email</a>
     </li>
 </ul>
+</div>
 
+<div id="license">
+    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+        This website is licensed under
+        <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+            CC BY 4.0
+        </a>
+        <span class="license-icon icon-cc" aria-hidden="true"></span>
+        <span class="license-icon icon-by" aria-hidden="true"></span>
+    </p>
 </div>
 
 [1]: https://www.amazon.science/search?q=Luca+Soldaini&type=91d74bfc-4a20-30f0-8926-e52f02f15c04&type=5be10472-b2e0-37b5-b6f8-8f381832e94f&type=4f8e492c-6f2f-390e-bc61-f176d3a37ab9&s=0&expandedFilters=Type%2CResearch%2520area%2CTag%2CConference%2CJournal%2CAuthor%2CDate%2C
