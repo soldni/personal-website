@@ -84,17 +84,6 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
 </ul>
 </div>
 
-<div id="license">
-    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-        This website is licensed under
-        <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-            CC BY 4.0
-        </a>
-        <span class="license-icon icon-cc" aria-hidden="true"></span>
-        <span class="license-icon icon-by" aria-hidden="true"></span>
-    </p>
-</div>
-
 [1]: https://www.amazon.science/search?q=Luca+Soldaini&type=91d74bfc-4a20-30f0-8926-e52f02f15c04&type=5be10472-b2e0-37b5-b6f8-8f381832e94f&type=4f8e492c-6f2f-390e-bc61-f176d3a37ab9&s=0&expandedFilters=Type%2CResearch%2520area%2CTag%2CConference%2CJournal%2CAuthor%2CDate%2C
 [2]: https://www.google.com/maps/place/Manhattan+Beach,+CA+90266/
 [3]: https://www.ing-inl.unifi.it
