@@ -428,6 +428,9 @@ span.call-in {
     border-radius: .3em;
     padding: .0em .2em;
 
+    // no wrapping
+    white-space: nowrap;
+
     // change color to either `red` or `darkred` depending on whether we
     // are in light or dark mode
     @media(prefers-color-scheme: dark) {
@@ -449,6 +452,9 @@ span.call-out {
     // add a nice round border around the text with some padding
     border-radius: .3em;
     padding: .0em .2em;
+
+    // no wrapping
+    white-space: nowrap;
 
     // change color to either `red` or `darkred` depending on whether we
     // are in light or dark mode
