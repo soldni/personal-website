@@ -16,8 +16,8 @@ Hello, visitor! 👋 My name is Luca Soldaini.
 
 <div id='about-me'>
 
-I am a **senior research scientist** at the [Allen Institute for AI][6] in the [Semantic Scholar][7] and [OLMo][35] teams, and an organizer at [Queer In AI][5].
-Prior to joining AI2, I was a senior applied scientist at [Amazon Alexa][1].
+I am a **senior research scientist** at the [Allen Institute for AI][6] in the [OLMo][35] team.
+Prior to joining Ai2, I was a senior applied scientist at [Amazon Alexa][1].
 I completed my Ph.D. in computer science at [Georgetown University][4] in 2018 in the [Information Retrieval Lab][34] working with [Nazli Goharian][33].
 
 When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], dreaming about utopian [mass transit systems][10], and curating my ever-growing [laptop stickers collection][11].
@@ -28,16 +28,14 @@ Raccoons are [the best][13].
 
 ## Research Interests
 
-These days, my research focuses on best practices for curation and exploration of large corpora, mostly in the context of (Large) Language Model.
+These days, my research focuses on best practices for curation and exploration of large corpora, mostly in the context of development of language models.
 I also like techniques for efficient domain adaptation in Information Retrieval (IR).
 A sample of recent topics I have been working on:
 
-- 🍇 I co-lead the **data curation team** for [OLMo][35], AI2's language model. OLMo is a state of the art model designed to accelerate the science of LMs. In 2023, we released the first version of [Dolma](https://arxiv.org/abs/2402.00159), an open dataset of 3 trillion tokens for language model pretraining. The latest version of Dolma (1.7), [improves OLMo performance significantly](https://blog.allenai.org/olmo-1-7-7b-a-24-point-improvement-on-mmlu-92b43f7d269d) thanks to better sources and improved deduplication.
-- 🔎 I am co-organizing [NeuCLIR][23], a shared task at [TREC][24] focused on **cross-language information retrieval** in Chinese, Farsi, and Russian.
+- 🍇 I co-lead the **data team** for [OLMo][35], Ai2's language model. OLMo is a state-of-the-art, fully-open model designed to accelerate the science of LMs. In 2024, we released [dense](https://huggingface.co/allenai/OLMo-7B-0724-Instruct-hf), [mixture-of-experts](https://huggingface.co/allenai/OLMoE-1B-7B-0924-Instruct), and [multimodal](https://huggingface.co/allenai/Molmo-72B-0924) models, alongside their data, code, and and checkpoints. The OLMo project has been recognized with **two [best paper awards](https://2024.aclweb.org/program/best_papers)** at ACL 2024.
 - 📊 Two data projects I have been excited about: [Lucy Li](https://lucy3.github.io)'s [**AboutMe**](https://arxiv.org/abs/2401.06408), where we use self-description web pages to study curation practices for LLMs exclude certain groups, and [Yanai Elazar](https://yanaiela.github.io)'s [**WIMBD**](https://arxiv.org/abs/2310.20707), an efficient toolkit to investigate the content of large corpora.
-- 🔄 On the IR side, there's much to do on **making LLMs interface with retrieval systems** well! With [Orion Weller](https://orionweller.github.io), we [investigated](https://arxiv.org/abs/2309.08541) when generative models can be used to augment queries and documents in IR systems, and [studied](https://arxiv.org/abs/2403.15246) how to adapt neural IR models to work with instructions. With [Sean MacAvaney](https://macavaney.us), we [found evidence](https://arxiv.org/abs/2302.11266) that LLMs are effective labelers for IR tasks.
+- 🔎 On the IR side, there's much to do on improving **interface between language models and retrieval systems** well! With [Orion Weller](https://orionweller.github.io), we [investigated](https://arxiv.org/abs/2309.08541) when generative models can be used to augment queries and documents in IR systems, and [studied](https://arxiv.org/abs/2403.15246) how to adapt neural IR models to work with instructions. With [Sean MacAvaney](https://macavaney.us), we [found evidence](https://arxiv.org/abs/2302.11266) that language models are effective labelers for IR tasks. I am  an organizer for [NeuCLIR][23], a shared task at [TREC][24] focused on **cross-language information retrieval** in Chinese, Farsi, and Russian.
 - 📚 Processing **scientific PDFs** remains challenging. We created [**PaperMage**](https://aclanthology.org/2023.emnlp-demo.45/), a toolkit to make multimodal PDF processing easier. This work won a **best demo award** at EMNLP 2023!
-- 🏳️‍🌈 **Participatory AI** is fun! With [Queer In AI](https://www.queerinai.com), we [documented](https://arxiv.org/abs/2303.16972) what has lead to the creation of our organization, how we apply community-lead decentralized governance, and our initiatives. This work won a **best paper award** at FAccT 2023!
 
 Hop over the [publications page](/publications) for a complete list of my work.
 </div>
@@ -46,8 +44,8 @@ Hop over the [publications page](/publications) for a complete list of my work.
 
 ## Contacts
 
-I <span aria-label="love">❤</span> collaborating and connecting with other scholars and practicioners!
-Do **get in touch** if you are interested in any of the areas above, or if you have a research ideas that you think I might be interested in.
+I <span aria-label="love">❤</span> collaborating and connecting with other researchers!
+Do **get in touch** if you are interested in any of the areas above, or if you have ideas that you think I might be interested in.
 
 <ul class="fa-ul">
     <li>
