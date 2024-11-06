@@ -16,7 +16,7 @@ Hello, visitor! 👋 My name is Luca Soldaini.
 
 <div id='about-me'>
 
-I am a **senior research scientist** at the [Allen Institute for AI][6] in the [OLMo][35] team.
+I am a **research scientist** at the [Allen Institute for AI][6] in the [OLMo][35] team.
 Prior to joining Ai2, I was a senior applied scientist at [Amazon Alexa][1].
 I completed my Ph.D. in computer science at [Georgetown University][4] in 2018 in the [Information Retrieval Lab][34] working with [Nazli Goharian][33].
 
