@@ -12,7 +12,7 @@ This page contains a list of manuscripts that I have authored. For bibliographic
 ### 2025
 
 - Orion Weller, Benjamin Chang, Eugene Yang, Mahsa Yarmohammadi, Sam Barham, Sean MacAvaney, Arman Cohan, **Luca Soldaini**, Benjamin Van Durme, and Dawn Lawrie. [*"mFollowIR: a Multilingual Benchmark for Instruction Following in Information Retrieval"*](/). ECIR 2025. <span class="call-in">to appear</span>
-- Hyunji Lee, **Luca Soldaini**, Arman Cohan, Minjoon Seo, and Kyle Lo. [RouterRetriever: Exploring the Benefits of Routing over Multiple Expert Embedding Models](https://arxiv.org/abs/2409.02685). AIII 2025.
+- Hyunji Lee, **Luca Soldaini**, Arman Cohan, Minjoon Seo, and Kyle Lo. [RouterRetriever: Exploring the Benefits of Routing over Multiple Expert Embedding Models](https://arxiv.org/abs/2409.02685). AAAI 2025.
 
 
 ### 2024
