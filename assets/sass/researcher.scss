@@ -400,6 +400,9 @@ span.short-authors {
         border: 1px solid $lightgrey;
     }
 
+    // no wrapping
+    white-space: nowrap;
+
     // change the default cursor to a pointer
     cursor: pointer;
 
