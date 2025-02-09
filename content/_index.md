@@ -12,7 +12,7 @@ title = "Luca Soldaini"
     </div>
 </div>
 
-Hello, visitor! 👋 My name is Luca Soldaini.
+Hello, visitor! 👋 
 
 <div id='about-me'>
 
@@ -28,14 +28,16 @@ Raccoons are [the best][13].
 
 ## Research Interests
 
-These days, my research focuses on best practices for curation and exploration of large corpora, mostly in the context of development of language models.
-I also like techniques for efficient domain adaptation in Information Retrieval (IR).
-A sample of recent topics I have been working on:
+These days, my research focuses on maximizing transparency in all aspects of how large language models (LLMs) are created, trained, and evaluated.  
 
-- 🍇 I co-lead the **data team** for [OLMo][35], Ai2's language model. OLMo is a state-of-the-art, fully-open model designed to accelerate the science of LMs. In 2024, we released [dense](https://huggingface.co/allenai/OLMo-7B-0724-Instruct-hf), [mixture-of-experts](https://huggingface.co/allenai/OLMoE-1B-7B-0924-Instruct), and [multimodal](https://huggingface.co/allenai/Molmo-72B-0924) models, alongside their data, code, and and checkpoints. The OLMo project has been recognized with **two [best paper awards](https://2024.aclweb.org/program/best_papers)** at ACL 2024.
-- 📊 Two data projects I have been excited about: [Lucy Li](https://lucy3.github.io)'s [**AboutMe**](https://arxiv.org/abs/2401.06408), where we use self-description web pages to study curation practices for LLMs exclude certain groups, and [Yanai Elazar](https://yanaiela.github.io)'s [**WIMBD**](https://arxiv.org/abs/2310.20707), an efficient toolkit to investigate the content of large corpora.
-- 🔎 On the IR side, there's much to do on improving **interface between language models and retrieval systems** well! With [Orion Weller](https://orionweller.github.io), we [investigated](https://arxiv.org/abs/2309.08541) when generative models can be used to augment queries and documents in IR systems, and [studied](https://arxiv.org/abs/2403.15246) how to adapt neural IR models to work with instructions. With [Sean MacAvaney](https://macavaney.us), we [found evidence](https://arxiv.org/abs/2302.11266) that language models are effective labelers for IR tasks. I am  an organizer for [NeuCLIR][23], a shared task at [TREC][24] focused on **cross-language information retrieval** in Chinese, Farsi, and Russian.
-- 📚 Processing **scientific PDFs** remains challenging. We created [**PaperMage**](https://aclanthology.org/2023.emnlp-demo.45/), a toolkit to make multimodal PDF processing easier. This work won a **best demo award** at EMNLP 2023!
+- 🏎️ I co-lead the **data team for [OLMo][35]**, Ai2's language model. OLMo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. In 2024, we released [dense][38] and [mixture-of-experts][37] variants, alongside data, code, recipes, and checkpoints we made to create them. The OLMo project has been recognized with [**two best paper awards**](https://2024.aclweb.org/program/best_papers) at ACL 2024. We recently published [OLMo 2 7B and 13B][36], the best fully-open models yet.
+- ⚙️ With my colleagues at Ai2, I develop **recipes for adaptation** of language models. In 2024, we launched [Tülu 3][39], a state-of-the-art pipeline to post-train language models [up to 405B parameters][40]. We also launched [Molmo][41], a family of open state-of-the-art multimodal AI models. 
+- 🧬 I collaborated on several projects to **rigorously analyze pipelines** for language models. [**AboutMe**](https://arxiv.org/abs/2401.06408) and [**WIMBD**](https://arxiv.org/abs/2310.20707) provide tools to analyze large pretraining corpora. We developed [**predictive techniques**](https://arxiv.org/abs/2412.04403) and [**benchmarks**](https://arxiv.org/abs/2312.10523) to characterize the behavior of language models while pretraining.
+
+Beside core language modeling research, I am interested in adapting language models to information retrieval and document understanding tasks. 
+
+- 🔎 I have been investigating how to improve **interface between language models and retrieval systems**. With [Orion Weller](https://orionweller.github.io), we [studied](https://arxiv.org/abs/2309.08541) when generative models can be used to augment queries and documents in IR systems, and [proposed FollowIR](https://arxiv.org/abs/2403.15246), a technique to adapt neural IR models to work with instructions. FollowIR [was recently extended](https://arxiv.org/abs/2501.19264) to multilingual systems. 
+- 📚 Adapting LLMs to literature-grounded scientific tasks remains challenging, from [**document parsing**](https://aclanthology.org/2023.emnlp-demo.45/), to **[instruction](https://arxiv.org/abs/2403.03866) [following](https://arxiv.org/abs/2406.07835)**, and [**interface design**](https://dl.acm.org/doi/10.1145/3665648). In late 2024, I collaborated on [**OpenSciLLM**](https://openscilm.allen.ai), an end-to-end demo showing how language models can be used for literature synthesis. 
 
 Hop over the [publications page](/publications) for a complete list of my work.
 </div>
@@ -117,3 +119,9 @@ Do **get in touch** if you are interested in any of the areas above, or if you h
 [33]: https://people.cs.georgetown.edu/~nazli/
 [34]: https://ir.cs.georgetown.edu
 [35]: https://allenai.org/olmo
+[36]: https://allenai.org/blog/olmo2
+[37]: https://allenai.org/blog/olmoe-an-open-small-and-state-of-the-art-mixture-of-experts-model-c258432d0514
+[38]: https://allenai.org/blog/olmo-open-language-model-87ccfc95f580
+[39]: https://allenai.org/blog/tulu-3
+[40]: https://allenai.org/blog/tulu-3-405B
+[41]: https://molmo.allenai.org/blog
