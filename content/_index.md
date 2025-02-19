@@ -32,7 +32,7 @@ These days, my research focuses on maximizing transparency in all aspects of how
 
 - 🏎️ I co-lead the **data team for [OLMo][35]**, Ai2's language model. OLMo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. In 2024, we released [dense][38] and [mixture-of-experts][37] variants, alongside data, code, recipes, and checkpoints we made to create them. The OLMo project has been recognized with [**two best paper awards**](https://2024.aclweb.org/program/best_papers) at ACL 2024. We recently published [OLMo 2 7B and 13B][36], the best fully-open models yet.
 - ⚙️ With my colleagues at Ai2, I develop **recipes for adaptation** of language models. In 2024, we launched [Tülu 3][39], a state-of-the-art pipeline to post-train language models [up to 405B parameters][40]. We also launched [Molmo][41], a family of open state-of-the-art multimodal AI models.
-- 🧬 I collaborated on several projects to **rigorously analyze pipelines** for language models. [*AboutMe*](https://arxiv.org/abs/2401.06408) and [*WIMBD*](https://arxiv.org/abs/2310.20707) provide tools to analyze large pretraining corpora. We developed [predictive techniques](https://arxiv.org/abs/2412.04403) and [benchmarks](https://arxiv.org/abs/2312.10523) to characterize the behavior of language models while pretraining.
+- 🧬 I collaborated on several projects to **rigorously analyze pipelines** for language models. [*AboutMe*](https://arxiv.org/abs/2401.06408), [*WIMBD*](https://arxiv.org/abs/2310.20707), and [*WebOrganizer*](https://arxiv.org/abs/2502.10341) are tools to analyze large pretraining corpora. We also developed [predictive techniques](https://arxiv.org/abs/2412.04403) and [benchmarks](https://arxiv.org/abs/2312.10523) to characterize the behavior of language models during pretraining.
 
 Beside core language modeling research, I am interested in adapting language models to information retrieval and document understanding tasks.
 
@@ -64,10 +64,6 @@ Do **get in touch** if you are working in any of the areas above, or if you have
         <span class="list-icon icon-github" aria-hidden="true"></span>
         <a href="https://github.com/soldni" target="_blank">GitHub</a>
         <span class="username-link" aria-hidden="true">@soldni</span>
-    </li>
-    <li>
-        <span class="list-icon icon-s2" aria-hidden="true"></span>
-        <a href="https://www.semanticscholar.org/author/Luca-Soldaini/3328733" target="_blank">Semantic Scholar</a>
     </li>
     <li>
         <span class="list-icon icon-gs" aria-hidden="true"></span>
@@ -125,3 +121,9 @@ Do **get in touch** if you are working in any of the areas above, or if you have
 [39]: https://allenai.org/blog/tulu-3
 [40]: https://allenai.org/blog/tulu-3-405B
 [41]: https://molmo.allenai.org/blog
+
+
+<!-- <li>
+        <span class="list-icon icon-s2" aria-hidden="true"></span>
+        <a href="https://www.semanticscholar.org/author/Luca-Soldaini/3328733" target="_blank">Semantic Scholar</a>
+</li> -->
