@@ -32,7 +32,7 @@ These days, my research focuses on maximizing transparency in all aspects of how
 
 - 🏎️ I co-lead the **data team for [OLMo][35]**, Ai2's language model. OLMo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. In 2024, we released [dense][38] and [mixture-of-experts][37] variants, alongside data, code, recipes, and checkpoints we made to create them. The OLMo project has been recognized with [**two best paper awards**](https://2024.aclweb.org/program/best_papers) at ACL 2024. We recently published [OLMo 2 7B and 13B][36], the best fully-open models yet.
 - ⚙️ With my colleagues at Ai2, I develop **recipes for adaptation** of language models. In 2024, we launched [Tülu 3][39], a state-of-the-art pipeline to post-train language models [up to 405B parameters][40]. We also launched [Molmo][41], a family of open state-of-the-art multimodal AI models.
-- 🧬 I collaborated on several projects to **rigorously analyze pipelines** for language models. [*AboutMe*](https://arxiv.org/abs/2401.06408), [*WIMBD*](https://arxiv.org/abs/2310.20707), and [*WebOrganizer*](https://arxiv.org/abs/2502.10341) are tools to analyze large pretraining corpora. We also developed [predictive techniques](https://arxiv.org/abs/2412.04403) and [benchmarks](https://arxiv.org/abs/2312.10523) to characterize the behavior of language models during pretraining.
+- 🧬 I collaborated on several projects to **analyze and improve pipelines** for language models. [*AboutMe*](https://arxiv.org/abs/2401.06408), [*WIMBD*](https://arxiv.org/abs/2310.20707), and [*WebOrganizer*](https://arxiv.org/abs/2502.10341) are tools to analyze large pretraining corpora. [*olmOCR*](https://olmocr.allenai.org) is an high-performance toolkit for PDF text extraction. We also developed [predictive techniques](https://arxiv.org/abs/2412.04403) and [benchmarks](https://arxiv.org/abs/2312.10523) to characterize the behavior of language models during pretraining.
 
 Beside core language modeling research, I am interested in adapting language models to information retrieval and document understanding tasks.
 
@@ -48,36 +48,42 @@ Hop over the [publications page](/publications) for a complete list of my work.
 
 I <span aria-label="love">❤</span> collaborating and connecting with other researchers!
 Do **get in touch** if you are working in any of the areas above, or if you have ideas that you think I might be interested in.
-
+<div id="contact-list">
 <ul class="fa-ul">
-    <li>
+    <li class="contact-item">
         <span class="list-icon icon-twitter" aria-hidden="true"></span>
         <a href="https://twitter.com/soldni">Twitter</a>
         <span class="username-link" aria-hidden="true">@soldni</span>
     </li>
-    <li>
+    <li class="contact-item">
         <span class="list-icon icon-bluesky" aria-hidden="true"></span>
         <a href="https://bsky.app/profile/soldaini.net">Bluesky</a>
         <span class="username-link" aria-hidden="true">@soldaini.net</span>
     </li>
-    <li>
+    <li class="contact-item">
         <span class="list-icon icon-github" aria-hidden="true"></span>
         <a href="https://github.com/soldni" target="_blank">GitHub</a>
         <span class="username-link" aria-hidden="true">@soldni</span>
     </li>
-    <li>
+</ul>
+<ul class="fa-ul">
+    <li class="contact-item">
         <span class="list-icon icon-gs" aria-hidden="true"></span>
         <a href="https://scholar.google.com/citations?user=3KPvwcgAAAAJ" target="_blank">Google Scholar</a>
+        <span class="username-link" aria-hidden="true"></span>
     </li>
-    <li>
+    <li class="contact-item">
         <span class="list-icon icon-linkedin" aria-hidden="true"></span>
         <a href="https://www.linkedin.com/in/soldni" target="_blank">LinkedIn</a>
+        <span class="username-link" aria-hidden="true"></span>
     </li>
-    <li>
+    <li class="contact-item">
         <span class="list-icon icon-email" aria-hidden="true"></span>
         <a href="mailto:luca@soldaini.net">Email</a>
+        <span class="username-link" aria-hidden="true"></span>
     </li>
 </ul>
+</div>
 </div>
 
 [1]: https://www.amazon.science/search?q=Luca+Soldaini&type=91d74bfc-4a20-30f0-8926-e52f02f15c04&type=5be10472-b2e0-37b5-b6f8-8f381832e94f&type=4f8e492c-6f2f-390e-bc61-f176d3a37ab9&s=0&expandedFilters=Type%2CResearch%2520area%2CTag%2CConference%2CJournal%2CAuthor%2CDate%2C

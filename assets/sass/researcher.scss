@@ -452,13 +452,15 @@ span.call-out {
 }
 
 span.username-link {
-    font-size: .65em;
-    vertical-align: .5em;
+    font-size: .6em;
+    // vertical-align: .5em;
+    position: relative;
+    bottom: .7em;
     letter-spacing: -.4px;
     font-family: var(--bs-font-monospace);
     border-radius: .3em;
-    padding: .0em .2em;
-    margin-left: .2em;
+    // padding: .0em .2em;
+    // margin-left: .2em;
     text-decoration: none;
     display: inline-block;
 
@@ -477,6 +479,42 @@ span.username-link {
 
 ul.fa-ul {
     list-style-type: none;
+    // margin-top: -.5em;
+    // columns: 1;
+    // -webkit-columns: 1;
+    // -moz-columns: 1;
+    // width: 50%;
+    // margin-left: 10%;
+    // margin-right: 10%;
+    margin-bottom: 0em;
+    margin-left: 10%;
+}
+
+#contact-list {
+    display: grid;
+    width: 100%;
+    margin-top: -1em;
+
+
+    @media(min-width: $mobile-width) {
+        /* Two equal columns */
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(max-width: $mobile-width) {
+        /* One column */
+        grid-template-columns: 1fr;
+
+        .contact-item {
+            margin-bottom: 0em;
+            margin-top: .7em;
+        }
+
+        .fa-ul {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
 }
 
 .icon-bluesky {
@@ -527,32 +565,32 @@ ul.fa-ul {
     }
 }
 
-ul.fa-ul {
+// ul.fa-ul {
 
-    @media(min-width: $mobile-width) {
-        margin-top: -1em;
-        columns: 2;
-        -webkit-columns: 2;
-        -moz-columns: 2;
+//     @media(min-width: $mobile-width) {
+//         margin-top: -1em;
+//         columns: 2;
+//         -webkit-columns: 2;
+//         -moz-columns: 2;
 
-        column-gap: 10%;
-        -webkit-column-gap: 10%;
-        -moz-column-gap: 10%;
+//         column-gap: 10%;
+//         -webkit-column-gap: 10%;
+//         -moz-column-gap: 10%;
 
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    @media(max-width: $mobile-width) {
-        margin-top: -.5em;
-        columns: 1;
-        -webkit-columns: 1;
-        -moz-columns: 1;
-        width: 95%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
+//         width: 95%;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+//     @media(max-width: $mobile-width) {
+//         margin-top: -.5em;
+//         columns: 1;
+//         -webkit-columns: 1;
+//         -moz-columns: 1;
+//         width: 95%;
+//         margin-left: 10%;
+//         margin-right: 10%;
+//     }
+// }
 
 .note {
     font-size: .8em;

@@ -11,6 +11,7 @@ This page contains a list of manuscripts that I have authored. For bibliographic
 
 ### 2025
 
+- Jake Poznanski<sup>†</sup>, Jon Borchardt, Jason Dunkelberger, Regan Huff, Daniel Lin, Aman Rangapur, Christopher Wilhelm, Kyle Lo<sup>†</sup>, and <b>Luca Soldaini<sup>†</sup></b>. [*"olmOCR: Unlocking Trillions of Tokens in PDFs with Vision Language Models"*](https://arxiv.org/abs/2502.18443). ArXiv 2502.18443. <span class="call-in">preprint</span>
 - Alexander Wettig, Kyle Lo, Sewon Min, Hannaneh Hajishirzi, Danqi Chen, and **Luca Soldaini**. [*"Organize the Web: Constructing Domains Enhances Pre-Training Data Curation"*](https://arxiv.org/abs/2502.10341). ArXiv 2502.10341. <span class="call-in">preprint</span>
 - Sami Baral, Li Lucy, Ryan Knight, Alice Ng, **Luca Soldaini**, Neil T. Heffernan, and Kyle Lo. [*"DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students' Hand-Drawn Math Images"*](https://arxiv.org/abs/2501.14877). ArXiv 2501.14877. <span class="call-in">preprint</span>
 - Niklas Muennighoff, **Luca Soldaini**, Dirk Groeneveld<span class="hide-authors">, Kyle Lo, Jacob Morrison, Sewon Min, Weijia Shi, Pete Walsh, Oyvind Tafjord, Nathan Lambert, Yuling Gu, Shane Arora, Akshita Bhagia, Dustin Schwenk, David Wadden, Alexander Wettig, Binyuan Hui, Tim Dettmers, Douwe Kiela, Ali Farhadi, Noah A. Smith,</span> Pang Wei Koh, Amanpreet Singh, and Hannaneh Hajishirzi. [*"OLMoE: Open Mixture-of-Experts Language Models"*](https://arxiv.org/abs/2409.02060). ICLR 2025. <span class="call-out">oral</span>
