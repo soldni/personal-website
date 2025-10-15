@@ -12,7 +12,7 @@ Here is a table with my 10 most-recent academic ancestors:
 |1| [Nazli Goharian][3] | Information Retrieval, Natural Language Processing | [A Sparse Matrix Approach for Information Retrieval][4] | Florida Institute of Technology | 2001 | Tarek El-Ghazawi |
 |2| [Tarek El-Ghazawi][5] | Distributed Systems | Theory and Design of a Real-Time Motion Detection Computer System | New Mexico State University | 1988 | Gerald M. Flachs |
 |3| [Gerald M. Flachs][6] | Computer Vision | [Stability and Cut Points of Probabilistic Automata][7] | Michigan State University | 1967 | J. S. (James Sutherland) Frame |
-|4| [J. S. (James Sutherland) Frame][8] | Mathematics | The Theory of Tables of Group Characteristics | Harvard University | 1933 | Heinrich Wilhelm Brinkma |
+|4| [J. S. (James Sutherland) Frame][8] | Mathematics | The Theory of Tables of Group Characteristics | Harvard University | 1933 | Heinrich Wilhelm Brinkmann |
 |5| [Heinrich Wilhelm Brinkmann][9] | Mathematics | Contribution to the Theory of Riemann Spaces | Harvard University | 1925 | George David Birkhoff |
 |6| [George David Birkhoff][10] | Mathematics | Asymptotic Properties of Certain Ordinary Differential Equations with Applications to Boundary Value and Expansion Problems | University of Chicago | 1907 | E. H. (Eliakim Hastings) Moore |
 |7| [E. H. (Eliakim Hastings) Moore][11] | Mathematics | Extensions of Certain Theorems of Clifford and Cayley in the Geometry of n Dimensions | Yale University | 1885 | H. A. (Hubert Anson) Newton |
@@ -24,12 +24,12 @@ Academic genealogy prior to Poisson can be explored on the [Math Genealogy proje
 
 ------
 
-**¹** After obtaining a Bachelor's Degree from Yale University, H.A. Newton did not pursue a Ph.D., as no American university offered a doctoral degree in 1850 [(Batterson 2008)][13]. In correspondence with Yale treasurer and librarian Edward Herrick, he notes attending Michel Chasles lectures in 1855 at Sorbonne University, and mentions them as highly influential. Following the [Math Genealogy Project][14], I have included Chasles as his advisor.
+**¹** After obtaining a Bachelor's Degree from Yale University, H.A. Newton did not pursue a Ph.D., as no American university offered a doctoral degree in 1850 [(Batterson 2008)][13]. In correspondence with Yale treasurer and librarian Edward Herrick, he notes attending Michel Chasles' lectures in 1855 at Sorbonne University, and mentions them as highly influential. Following the [Math Genealogy Project][14], I have included Chasles as his advisor.
 Fun fact: when H.A. Newton joined Yale as faculty in 1855, he was the only professor in Mathematics at the university.
 
 **²** Michel Chasles does not seem to have published a dissertation; [Michel and Smadja (2021)][16] indicate that his first published work was "Aperçu historique sur l’origine et le développement des méthodes en géométrie" in 1837.
 
-**³** Soon after starting his university studies in 1798, Poisson was noted by Lagrange and Laplace, who became his mentors [(Connor and Robertson 2002)][21]. He graduated early in 1800, was hired as teaching assistant (répétiteur). In 1802, he was named deputy professor at the École Polytechnique in 1802.
+**³** Soon after starting his university studies in 1798, Poisson was noted by Lagrange and Laplace, who became his mentors [(Connor and Robertson 2002)][21]. He graduated early in 1800, was hired as a teaching assistant (répétiteur). In 1802, he was named deputy professor at the École Polytechnique in 1802.
 
 
 

@@ -17,7 +17,7 @@ For a list of publications, hop over to [this page](/publications).
 Information systems are only [as good as they are fast][15].
 How do we build systems that can quickly retrieve, process, and present succinct information to users?
 
-I have looked at this problem from the perspective of question answering systems that operates at web-scale, focusing on both model ([Soldaini and Moschitti 2020][17]; [Matsubara et al 2022][18]) and data efficiency ([Han et al 2021][19]). I have also collaborated on Embedding Recycling, a promising technique to reduce model computation across many tasks ([Saad-Falcon et al 2022][20]).
+I have looked at this problem from the perspective of question answering systems that operate at web scale, focusing on both model ([Soldaini and Moschitti 2020][17]; [Matsubara et al 2022][18]) and data efficiency ([Han et al 2021][19]). I have also collaborated on Embedding Recycling, a promising technique to reduce model computation across many tasks ([Saad-Falcon et al 2022][20]).
 
 Currently, I am interested in efficient information systems for **scientific text**:
 
@@ -34,9 +34,9 @@ While there are hundreds of languages spoken in the world, most of the content o
 
 In the past, I have looked at how to build cross-language information retrieval systems ([MacAvaney et al 2020][21]) and explored the use of generative models to combine information in different languages ([Muller et al 2021][22]).
 
-In 2022, I am co-organizing [NeuCLIR][23], a shared task at [TREC][24] focused on cross-language information retrieval in Chinese, Farsi, and Russian.
+In 2022, I co-organized [NeuCLIR][23], a shared task at [TREC][24] focused on cross-language information retrieval in Chinese, Farsi, and Russian.
 
-Going forward, I am interested in exploring other **domains** and **tasks** can benefit from a cross-lingual approach, with a particular eye towards **data-efficient** approaches.
+Going forward, I am interested in exploring other **domains** and **tasks** that can benefit from a cross-lingual approach, with a particular eye towards **data-efficient** approaches.
 
 </div>
 
@@ -44,9 +44,9 @@ Going forward, I am interested in exploring other **domains** and **tasks** can 
 
 ### Generative Models for Better Content Presentation
 
-Generative NLP modes can be used to process the output of any information system to better suit the needs of the user.
+Generative NLP models can be used to process the output of any information system to better suit the needs of the user.
 
-I have worked on projects to improve presentation in question answering in both English ([Hsu et al 2021][31],[Gabburo et al 2022][33]), as well as other languages ([Muller et al 2021][22]). Before that, I also looked at using generative models for structured parsing of user input ([Rongali et al 2020][32]).
+I have worked on projects to improve presentation in question answering in both English ([Hsu et al 2021][31], [Gabburo et al 2022][33]), as well as other languages ([Muller et al 2021][22]). Before that, I also looked at using generative models for structured parsing of user input ([Rongali et al 2020][32]).
 
 I am open to collaboration on other tasks that can use **generation** to **refine the output** of information systems, particularly in scientific settings.
 
@@ -56,10 +56,10 @@ I am open to collaboration on other tasks that can use **generation** to **refin
 
 ### Open-Source for NLP
 
-I enjoy building open source tools and data for NLP and ML practitioners, such as:
+I enjoy building open-source tools and data for NLP and ML practitioners, such as:
 
-- [**`smashed`**][25] is library of composable text and tensor processing functions. Compatible with [TorchData][26] and [HuggingFace Datasets][27]!
-- [**`springs`**][28] is a simple library to create type-safe configuration and command-line apps that use them.
+- [**`smashed`**][25] is a library of composable text and tensor processing functions. Compatible with [TorchData][26] and [HuggingFace Datasets][27]!
+- [**`springs`**][28] is a simple library to create type-safe configuration objects and the command-line apps that use them.
 - [**`trouting`**][29] is a type-based function routing library for Python. Like `typing.overload`, but for runtime.
 - [**`QuickUMLS`**][30] is a tool for fast, unsupervised biomedical concept extraction from medical text.
 
