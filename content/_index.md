@@ -20,7 +20,7 @@ I am a **lead research scientist** at [Ai2][6] in the [OLMo][35] team.
 Prior to joining Ai2, I was a senior applied scientist at [Amazon Alexa][1].
 I completed my Ph.D. in computer science at [Georgetown University][4] in 2018 in the [Information Retrieval Lab][34] working with [Nazli Goharian][33].
 
-When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], dreaming about utopian [mass transit systems][10], curating my ever-growing [laptop stickers collection][11], and hanging out with my [hansome][44] [cat][45]. Raccoons are [the best][13].
+When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], dreaming about utopian [mass transit systems][10], curating my ever-growing [laptop stickers collection][11], and hanging out with my [handsome][44] [cat][45]. Raccoons are [the best][13].
 
 </div>
 <div id='research-summary'>
