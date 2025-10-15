@@ -4,7 +4,7 @@ title = "Luca Soldaini"
 
 <div id="avatar-container">
     <div id="front-avatar">
-        <img src="personal-me/me-512.webp" alt="Luca Soldaini" title="Portrait of Luca; they have pink hair parted to one side, with undercut. They are wearing an hawaiian shirt." class="avatar">
+        <img src="personal-me/me-512.webp" alt="Luca Soldaini" title="Portrait of Luca on top of Mount Royal in Montreal, Canada on a bright, sunny day; they have brown hair styled in a mullet, and are wearing hexagonal sunglasses. They have several visible piercings, including top-right eyebrow, lower lip, septum and right nostril." class="avatar">
     </div>
     <div id="back-avatar">
         <img src="/alt.webp" loading="lazy" alt="A raccoon wearing a top hat and holding a pizza slice. Luca sometimes uses this image as their online profile picture." title="DALL•E (April 2022) generated image for the following prompt: 'oil painting of a raccoon with a tophat and monocle with a slice of fancy pizza.' Luca uses this image for theirs work account" class="avatar">
@@ -16,12 +16,11 @@ Hello, visitor! 👋
 
 <div id='about-me'>
 
-I am a **lead research scientist** at the [Allen Institute for AI][6] in the [OLMo][35] team.
+I am a **lead research scientist** at [Ai2][6] in the [OLMo][35] team.
 Prior to joining Ai2, I was a senior applied scientist at [Amazon Alexa][1].
 I completed my Ph.D. in computer science at [Georgetown University][4] in 2018 in the [Information Retrieval Lab][34] working with [Nazli Goharian][33].
 
-When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], dreaming about utopian [mass transit systems][10], and curating my ever-growing [laptop stickers collection][11].
-Raccoons are [the best][13].
+When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], dreaming about utopian [mass transit systems][10], curating my ever-growing [laptop stickers collection][11], and hanging out with my [hansome][44] [cat][45]. Raccoons are [the best][13].
 
 </div>
 <div id='research-summary'>
@@ -30,7 +29,7 @@ Raccoons are [the best][13].
 
 These days, my research focuses on maximizing transparency in all aspects of how large language models (LLMs) are created, trained, and evaluated.
 
-- 🏎️ I co-lead the **data team for [OLMo][35]**, Ai2's language model. OLMo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. In 2024, we released [dense][38] and [mixture-of-experts][37] variants, alongside data, code, recipes, and checkpoints we made to create them. The OLMo project has been recognized with [**two best paper awards**](https://2024.aclweb.org/program/best_papers) at ACL 2024. We recently published [OLMo 2 7B, 13B][36], and [32B][42]: the best fully-open models yet.
+- 🏎️ I co-lead the **data team for [OLMo][35]**, Ai2's language model with [Kyle Lo][43]. OLMo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. In 2024, we released [dense][38] and [mixture-of-experts][37] variants, alongside data, code, recipes, and checkpoints we made to create them. The OLMo project has been recognized with [**two best paper awards**](https://2024.aclweb.org/program/best_papers) at ACL 2024. We recently published [OLMo 2 7B, 13B][36], and [32B][42]: the best fully-open models yet.
 - ⚙️ With my colleagues at Ai2, I develop **recipes for adaptation** of language models. In 2024, we launched [Tülu 3][39], a state-of-the-art pipeline to post-train language models [up to 405B parameters][40]. We also launched [Molmo][41], a family of open state-of-the-art multimodal AI models.
 - 🧬 I collaborated on several projects to **analyze and improve pipelines** for language models. [AboutMe](https://arxiv.org/abs/2401.06408), [WIMBD](https://arxiv.org/abs/2310.20707), and [WebOrganizer](https://arxiv.org/abs/2502.10341) are tools to analyze large pretraining corpora. [olmOCR](https://olmocr.allenai.org) is an high-performance toolkit for PDF text extraction. We also developed [predictive techniques](https://arxiv.org/abs/2412.04403) and [benchmarks](https://arxiv.org/abs/2312.10523) to characterize the behavior of language models during pretraining.
 
@@ -128,6 +127,9 @@ Do **get in touch** if you are working in any of the areas above, or if you have
 [40]: https://allenai.org/blog/tulu-3-405B
 [41]: https://molmo.allenai.org/blog
 [42]: https://allenai.org/blog/olmo2-32B
+[43]: https://kyleclo.com/
+[44]: /mischief.webp
+[45]: /eepy.webp
 
 <!-- <li>
         <span class="list-icon icon-s2" aria-hidden="true"></span>
