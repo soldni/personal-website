@@ -88,6 +88,10 @@ This page contains a list of manuscripts that I have authored. For bibliographic
 - Subendhu Rongali, **Luca Soldaini**, Emilio Monti, and Wael Hamza. ["Don't Parse, Generate! A Sequence to Sequence Architecture for Task-Oriented Semantic Parsing"](https://doi.org/10.1145/3366423.3380064). Short paper, WWW 2020.
 - Sean MacAvaney, **Luca Soldaini**, and Nazli Goharian. ["Teaching a New Dog Old Tricks: Resurrecting Multilingual Retrieval Using Zero-shot Learning"](https://doi.org/10.1007/978-3-030-45442-5_31). Short paper, ECIR 2020.
 
+### 2019
+
+*Reviewer 2 game was too strong.*
+
 ### 2018
 
 - Sean MacAvaney, Andrew Yates, Arman Cohan, **Luca Soldaini**, Kai Hui, Nazli Goharian, and Ophir Frieder. ["Overcoming Low-Utility Facets for Complex Answer Retrieval"](https://doi.org/10.1007/s10791-018-9343-0). Information Retrieval Journal, 2018.
