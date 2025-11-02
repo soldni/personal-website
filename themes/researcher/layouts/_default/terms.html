@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="terms">
+    <header class="mb-4">
+        <h1>{{ .Title }}</h1>
+    </header>
+    <ul class="list-unstyled">
+        {{ range .Data.Terms }}
+        <li class="mb-2"><a href="{{ .Page.RelPermalink }}">{{ .LinkTitle }}</a> <span class="text-muted">({{ .Count }})</span>
+        </li>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}

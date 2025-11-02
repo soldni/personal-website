@@ -1,0 +1,23 @@
+[project]
+name = "personal-website"
+version = "0.1.0"
+description = "Personal website built with Hugo."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Site Owner" }
+]
+dependencies = []
+
+[build-system]
+requires = ["hatchling>=1.22"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+  "hugo-extended>=0.125,<0.126"
+]
+
+[tool.uv.scripts]
+preview = "hugo server --disableFastRender -D"

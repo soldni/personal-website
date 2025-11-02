@@ -1,4 +1,5 @@
 #! /usr/bin/env bash
+set -euo pipefail
 
 # get script directory
 SOURCE="${BASH_SOURCE[0]}"
@@ -13,16 +14,23 @@ SCRIPT_DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
 CURRENT=$(pwd)
 
-cd ${SCRIPT_DIR}
+cd "${SCRIPT_DIR}"
 
 # trap ctrl-c and call ctrl_c()
 trap ctrl_c INT
 
 function ctrl_c() {
-    cd ${CURRENT}
+    cd "${CURRENT}"
     exit
 }
 
+UV_BIN=${UV:-uv}
+if ! command -v "${UV_BIN}" >/dev/null 2>&1; then
+    echo "error: uv is required but was not found in PATH" >&2
+    cd "${CURRENT}"
+    exit 127
+fi
+
 while true; do
-    hugo server --disableFastRender -D
+    "${UV_BIN}" run preview "$@"
 done
