@@ -1,0 +1,12 @@
+name = "researcher"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Minimal academic profile theme originally inspired by hugo-researcher"
+homepage = "https://soldaini.net"
+tags = ["blog", "academic", "profile", "minimal"]
+features = ["blog", "archive", "bootstrap"]
+min_version = "0.110.0"
+
+[author]
+  name = "Luca Soldaini"
+  homepage = "https://soldaini.net"

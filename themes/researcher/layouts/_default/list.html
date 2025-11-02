@@ -1,0 +1,51 @@
+{{ define "main" }}
+  <section class="list">
+    <header class="mb-4">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}
+        <p class="lead">{{ . }}</p>
+      {{ end }}
+    </header>
+    {{ if .Content }}
+      <div class="mb-4">
+        {{ .Content }}
+      </div>
+    {{ end }}
+    <div class="list-group">
+      {{ range .Paginator.Pages }}
+        <a class="list-group-item list-group-item-action" href="{{ .RelPermalink }}">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{ .Title }}</h5>
+            {{ with .Date }}
+              <small class="text-muted">{{ . | time.Format (.Site.Params.date_format | default "Jan 2, 2006") }}</small>
+            {{ end }}
+          </div>
+          {{ with .Summary }}
+            <p class="mb-1">{{ . }}</p>
+          {{ end }}
+        </a>
+      {{ end }}
+    </div>
+    {{ template "pagination" . }}
+  </section>
+{{ end }}
+
+{{ define "pagination" }}
+  {{ if gt .Paginator.TotalPages 1 }}
+    <nav aria-label="Pagination" class="mt-4">
+      <ul class="pagination">
+        {{ with .Paginator.Prev }}
+          <li class="page-item"><a class="page-link" href="{{ .RelPermalink }}" rel="prev">Newer</a></li>
+        {{ else }}
+          <li class="page-item disabled"><span class="page-link">Newer</span></li>
+        {{ end }}
+        <li class="page-item disabled"><span class="page-link">Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span></li>
+        {{ with .Paginator.Next }}
+          <li class="page-item"><a class="page-link" href="{{ .RelPermalink }}" rel="next">Older</a></li>
+        {{ else }}
+          <li class="page-item disabled"><span class="page-link">Older</span></li>
+        {{ end }}
+      </ul>
+    </nav>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article class="content">
+    <header class="mb-4">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}
+        <p class="lead">{{ . }}</p>
+      {{ end }}
+      {{ with .Date }}
+        <p class="text-muted">{{ . | time.Format (.Site.Params.date_format | default "Jan 2, 2006") }}</p>
+      {{ end }}
+    </header>
+    <div class="markdown-body">
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}
