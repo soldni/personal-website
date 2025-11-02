@@ -1,0 +1,5 @@
+name = "researcher"
+description = "A custom Hugo theme for Luca Soldaini's personal website"
+author = "Luca Soldaini"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"

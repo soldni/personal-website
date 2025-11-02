@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="taxonomy">
+    <header class="mb-4">
+        <h1>{{ .Title }}</h1>
+    </header>
+    {{ with .Content }}
+    <div class="content-intro mb-4">{{ . }}</div>
+    {{ end }}
+    <ul class="list-unstyled">
+        {{ range .Pages }}
+        <li class="mb-3">
+            <h2 class="h5 mb-1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p class="text-muted mb-0">{{ .Summary }}</p>
+        </li>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}

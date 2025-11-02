@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="homepage">
+    <div class="content-body">
+        {{ .Content }}
+    </div>
+    {{ with site.RegularPages }}
+    <div class="mt-5">
+        <h2 class="h4 mb-3">Latest Posts</h2>
+        <ul class="list-unstyled">
+            {{ range first 5 (where . "Type" "post") }}
+            <li class="mb-2">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <span class="text-muted">&mdash; {{ .Date.Format "January 2, 2006" }}</span>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</section>
+{{ end }}
