@@ -18,10 +18,6 @@ math = false  # enable KaTeX (https://katex.org/) globally
   "/" = "/:filename"
 
 [menu]
-  # [[menu.main]]
-  #   name = "Research"
-  #   url = "/research"
-  #   weight = 1
 
   [[menu.main]]
     name = "Misc"
@@ -32,12 +28,6 @@ math = false  # enable KaTeX (https://katex.org/) globally
     name = "Publications"
     url = "/publications"
     weight = 2
-
-  # [[menu.main]]
-  #   name = "CV"
-  #   url = "/resume.pdf"
-  #   weight = 4
-
 
 [markup.goldmark.renderer]
   unsafe = true  # allow raw HTML in markdown files
