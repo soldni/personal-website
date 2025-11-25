@@ -8,7 +8,7 @@ title = "Luca Soldaini"
     </div>
     <div id="back-avatar">
         <img src="/alt.webp" loading="lazy" alt="A raccoon wearing a top hat and holding a pizza slice. Luca sometimes uses this image as their online profile picture." title="DALL•E (April 2022) generated image for the following prompt: 'oil painting of a raccoon with a tophat and monocle with a slice of fancy pizza.' Luca uses this image for their work account" class="avatar">
-        <p class="tiny-text center caption-avatar">DALL•E 2 generation (April 2022)</a></p>
+        <p class="tiny-text center caption-avatar">DALL•E 2 generation (April 2022)</p>
     </div>
 </div>
 
@@ -30,11 +30,11 @@ When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8]
 These days, my research focuses on maximizing transparency in all aspects of how large language models (LLMs) are created, trained, and evaluated.
 
 - 🏎️ I co-lead the **data team for [Olmo][35]**, Ai2's language model project with [Kyle Lo][43]. Olmo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. In 2024, we released [dense][38] and [mixture-of-experts][37] variants, alongside the data, code, recipes, and checkpoints we used to build them. The Olmo project has been recognized with [**two best paper awards**](https://2024.aclweb.org/program/best_papers) at ACL 2024. We recently published [Olmo 3][46]: the best fully-open 7B and 32B models, rivaling Qwen 3.
-- ⚙️ With my colleagues at Ai2, I develop **recipes for adaptation** of language models. In 2024, we launched [Tulu 3][39], a state-of-the-art pipeline to post-train language models [up to 405B parameters][40]. I also worked on [Molmo][41], a family of open multimodal AI models that are as good as close-source VLMs. We recently released [DR Tulu][47], a fully-open recipe for building deep research systems; DR Tulu is [competitive][48] with Gemini 3 Pro and GPT-5.
+- ⚙️ With my colleagues at Ai2, I develop **recipes for adaptation** of language models. In 2024, we launched [Tulu 3][39], a state-of-the-art pipeline to post-train language models [up to 405B parameters][40]. I also worked on [Molmo][41], a family of open multimodal AI models that are as good as closed-source VLMs. We recently released [DR Tulu][47], a fully-open recipe for building deep research systems; DR Tulu is [competitive][48] with Gemini 3 Pro and GPT-5.
 - 🧰 I created toolkits for pretraining data curation. [olmOCR](https://olmocr.allenai.org) is a high-performance model for PDF text extraction; [version 2](https://arxiv.org/abs/2510.19817) is even better thanks to RL on verifiable unit tests! [WebOrganizer](https://weborganizer.allen.ai) can partition large-scale web data by topic and format.
 - 🧬 I collaborated on several projects to **analyze and improve pipelines** for language models. [AboutMe](https://arxiv.org/abs/2401.06408) and [WIMBD](https://arxiv.org/abs/2310.20707) are frameworks to analyze large pretraining corpora. We also developed [predictive techniques](https://arxiv.org/abs/2412.04403) and [benchmarks](https://arxiv.org/abs/2312.10523) to characterize the behavior of language models during pretraining.
 
-Hop over the [publications page](/publications) for a complete list of my work.
+Hop over to the [publications page](/publications) for a complete list of my work.
 </div>
 
 <div id='contacts'>
