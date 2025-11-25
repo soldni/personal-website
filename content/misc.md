@@ -1,8 +1,8 @@
 +++
-title = "Facts"
+title = "Misc"
 +++
 
-# Facts
+## Facts
 
 In no particular order, here are some facts about me:
 

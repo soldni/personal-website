@@ -29,14 +29,10 @@ When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8]
 
 These days, my research focuses on maximizing transparency in all aspects of how large language models (LLMs) are created, trained, and evaluated.
 
-- 🏎️ I co-lead the **data team for [Olmo][35]**, Ai2's language model project with [Kyle Lo][43]. Olmo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. In 2024, we released [dense][38] and [mixture-of-experts][37] variants, alongside the data, code, recipes, and checkpoints we used to build them. The Olmo project has been recognized with [**two best paper awards**](https://2024.aclweb.org/program/best_papers) at ACL 2024. We recently published [Olmo 2 7B, 13B][36], and [32B][42]: the best fully-open models yet.
-- ⚙️ With my colleagues at Ai2, I develop **recipes for adaptation** of language models. In 2024, we launched [Tülu 3][39], a state-of-the-art pipeline to post-train language models [up to 405B parameters][40]. I also worked on [Molmo][41], a family of open state-of-the-art multimodal AI models.
-- 🧬 I collaborated on several projects to **analyze and improve pipelines** for language models. [AboutMe](https://arxiv.org/abs/2401.06408), [WIMBD](https://arxiv.org/abs/2310.20707), and [WebOrganizer](https://arxiv.org/abs/2502.10341) are tools to analyze large pretraining corpora. [olmOCR](https://olmocr.allenai.org) is a high-performance toolkit for PDF text extraction; [version 2](https://arxiv.org/abs/2510.19817) is even better thanks to RL on verifiable unit tests! We also developed [predictive techniques](https://arxiv.org/abs/2412.04403) and [benchmarks](https://arxiv.org/abs/2312.10523) to characterize the behavior of language models during pretraining.
-
-Besides core language modeling research, I am interested in adapting language models to information retrieval and document understanding tasks.
-
-- 🔎 I have been investigating how to improve **the interface between language models and retrieval systems**. With [Orion Weller](https://orionweller.github.io), we [studied](https://arxiv.org/abs/2309.08541) when generative models can be used to augment queries and documents in IR systems, and proposed [FollowIR](https://arxiv.org/abs/2403.15246), a technique to adapt neural IR models to work with instructions. FollowIR was [extended](https://arxiv.org/abs/2501.19264) to multilingual systems.
-- 📚 Adapting LLMs to **literature-grounded scientific tasks** remains challenging, from [document parsing](https://aclanthology.org/2023.emnlp-demo.45/), to [instruction](https://arxiv.org/abs/2403.03866) [following](https://arxiv.org/abs/2406.07835), and [interface design](https://dl.acm.org/doi/10.1145/3665648). In late 2024, I collaborated on [OpenSciLLM](https://openscilm.allen.ai), an end-to-end demo showing how language models can be used for literature synthesis.
+- 🏎️ I co-lead the **data team for [Olmo][35]**, Ai2's language model project with [Kyle Lo][43]. Olmo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. In 2024, we released [dense][38] and [mixture-of-experts][37] variants, alongside the data, code, recipes, and checkpoints we used to build them. The Olmo project has been recognized with [**two best paper awards**](https://2024.aclweb.org/program/best_papers) at ACL 2024. We recently published [Olmo 3][46]: the best fully-open 7B and 32B models, rivaling Qwen 3.
+- ⚙️ With my colleagues at Ai2, I develop **recipes for adaptation** of language models. In 2024, we launched [Tulu 3][39], a state-of-the-art pipeline to post-train language models [up to 405B parameters][40]. I also worked on [Molmo][41], a family of open multimodal AI models that are as good as close-source VLMs. We recently released [DR Tulu][47], a fully-open recipe for building deep research systems; DR Tulu is [competitive][48] with Gemini 3 Pro and GPT-5.
+- 🧰 I created toolkits for pretraining data curation. [olmOCR](https://olmocr.allenai.org) is a high-performance model for PDF text extraction; [version 2](https://arxiv.org/abs/2510.19817) is even better thanks to RL on verifiable unit tests! [WebOrganizer](https://weborganizer.allen.ai) can partition large-scale web data by topic and format.
+- 🧬 I collaborated on several projects to **analyze and improve pipelines** for language models. [AboutMe](https://arxiv.org/abs/2401.06408) and [WIMBD](https://arxiv.org/abs/2310.20707) are frameworks to analyze large pretraining corpora. We also developed [predictive techniques](https://arxiv.org/abs/2412.04403) and [benchmarks](https://arxiv.org/abs/2312.10523) to characterize the behavior of language models during pretraining.
 
 Hop over the [publications page](/publications) for a complete list of my work.
 </div>
@@ -130,6 +126,10 @@ Do **get in touch** if you are working in any of the areas above, or if you have
 [43]: https://kyleclo.com/
 [44]: /mischief.webp
 [45]: /eepy.webp
+[46]: https://allenai.org/blog/olmo3
+[47]: https://allenai.org/blog/dr-tulu
+[48]: https://x.com/AkariAsai/status/1993336112237117819
+
 
 <!-- <li>
         <span class="list-icon icon-s2" aria-hidden="true"></span>

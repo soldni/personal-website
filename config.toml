@@ -8,7 +8,7 @@ math = false  # enable KaTeX (https://katex.org/) globally
 [params]
   author = "Luca Soldaini"
   lang = "en"
-  description = "Personal website of Luca Soldaini. Applied research scientist at the Allen Institute for AI and organizer at Queer in AI."
+  description = "Personal website of Luca Soldaini; lead research scientist at the Allen Institute for AI (Ai2)."
   favicon = "2nd-gen-favicon/composed/light/favicon.ico"  # path to a .ico to use as favicon
   keywords = "luca, soldaini, personal, homepage, question answering, natural language processing, information retrieval, georgetown, university, amazon, alexa, search, ai, machine learning, natural language processing, Ai2, allen institute for ai, allen ai, semantic scholar, queer in ai"
   google_site_validation = "0w6io-9zaQ-219xst17NcKH0e3I5FzbrkNcr8R7vL4U"
@@ -24,14 +24,14 @@ math = false  # enable KaTeX (https://katex.org/) globally
   #   weight = 1
 
   [[menu.main]]
-    name = "Facts"
-    url = "/facts"
-    weight = 2
+    name = "Misc"
+    url = "/misc"
+    weight = 1
 
   [[menu.main]]
     name = "Publications"
     url = "/publications"
-    weight = 1
+    weight = 2
 
   # [[menu.main]]
   #   name = "CV"
