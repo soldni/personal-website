@@ -8,11 +8,14 @@
 - `static/` stores files served as-is (images, icons). `static/logos/` holds SVG masks used for icon styling.
 - `assets/` is for Hugo Pipes assets at the site root; theme-specific Sass lives in `themes/soldaini/assets/`.
 - `resources/` is Hugo’s generated cache; `archetypes/` defines templates for `hugo new`.
+- `pyproject.toml` defines the `uv`-managed Python project and CLI entrypoints for Hugo commands.
+- `src/personal_website/__init__.py` contains the command wrappers used by `uv run hugo-cli` and `uv run hugo-preview`.
 
 ## Build, Test, and Development Commands
-- `./preview.sh` runs `hugo server --disableFastRender -D` in a loop for local preview, including drafts.
-- `hugo server -D` runs the dev server once without the script.
-- `hugo` builds the production site into `public/` (Hugo default output directory).
+- `uv sync` installs project dependencies (including pinned Hugo).
+- `uv run hugo-preview` runs `hugo server --disableFastRender -D` for local preview, including drafts.
+- `uv run hugo-cli` runs Hugo directly (e.g., production build to `public/` by default).
+- Pass-through flags are supported, e.g., `uv run hugo-cli --minify`.
 
 ## Coding Style & Naming Conventions
 - Keep Markdown concise and consistent with existing pages; prefer short sections and clear headings.
@@ -22,7 +25,7 @@
 - The author list expand/collapse logic is defined in `themes/soldaini/layouts/partials/footer.html`; adjust animation behavior there.
 
 ## Testing Guidelines
-- No automated tests are present. Validate changes by running `hugo` and checking output in the browser.
+- No automated tests are present. Validate changes by running `uv run hugo-cli` and checking output in the browser.
 - For content edits, spot-check links, images, and layout on the relevant page.
 
 ## Commit & Pull Request Guidelines

@@ -31,3 +31,5 @@ Temporary Items
 /public
 /resources/_gen
 .hugo_build.lock
+uv.lock
+.python-version
