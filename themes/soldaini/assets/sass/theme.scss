@@ -10,6 +10,12 @@
     font-style: normal italic;
 }
 
+@property --avatar-glow {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+
 :root {
     color-scheme: light dark;
     --paper: #{$paper};
@@ -20,6 +26,12 @@
     --accent: #{$accent};
     --accent-strong: #{$accent-strong};
     --accent-soft: #{$accent-soft};
+    --accent-rgb: #{red($accent)}, #{green($accent)}, #{blue($accent)};
+    --accent-strong-rgb: #{red($accent-strong)}, #{green($accent-strong)}, #{blue($accent-strong)};
+    --accent-glow-1-rgb: #{red($accent-glow-1)}, #{green($accent-glow-1)}, #{blue($accent-glow-1)};
+    --accent-glow-2-rgb: #{red($accent-glow-2)}, #{green($accent-glow-2)}, #{blue($accent-glow-2)};
+    --accent-glow-3-rgb: #{red($accent-glow-3)}, #{green($accent-glow-3)}, #{blue($accent-glow-3)};
+    --accent-glow-4-rgb: #{red($accent-glow-4)}, #{green($accent-glow-4)}, #{blue($accent-glow-4)};
     --code: #{$code};
     --shadow: #{$shadow};
 }
@@ -34,6 +46,17 @@
         --accent: #{$accent-dark};
         --accent-strong: #{$accent-strong-dark};
         --accent-soft: #{$accent-soft-dark};
+        --accent-rgb: #{red($accent-dark)}, #{green($accent-dark)}, #{blue($accent-dark)};
+        --accent-strong-rgb:
+            #{red($accent-strong-dark)}, #{green($accent-strong-dark)}, #{blue($accent-strong-dark)};
+        --accent-glow-1-rgb:
+            #{red($accent-glow-1-dark)}, #{green($accent-glow-1-dark)}, #{blue($accent-glow-1-dark)};
+        --accent-glow-2-rgb:
+            #{red($accent-glow-2-dark)}, #{green($accent-glow-2-dark)}, #{blue($accent-glow-2-dark)};
+        --accent-glow-3-rgb:
+            #{red($accent-glow-3-dark)}, #{green($accent-glow-3-dark)}, #{blue($accent-glow-3-dark)};
+        --accent-glow-4-rgb:
+            #{red($accent-glow-4-dark)}, #{green($accent-glow-4-dark)}, #{blue($accent-glow-4-dark)};
         --code: #{$code-dark};
         --shadow: #{$shadow-dark};
     }
@@ -86,6 +109,8 @@ hr {
 }
 
 #content {
+    position: relative;
+    z-index: 0;
     padding-bottom: 2.5rem;
 
     p {
@@ -156,7 +181,7 @@ hr {
             ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
         font-size: 0.95em;
         color: var(--code);
-        background: var(--accent-soft);
+        background: var(--code-background);
         padding: 0.1em 0.3em;
         border-radius: 0.2em;
     }
@@ -171,7 +196,7 @@ hr {
     }
 
     pre code {
-        background: transparent;
+        background: 100%;
         padding: 0;
         color: inherit;
     }
@@ -297,6 +322,10 @@ h1.navbar-h1 {
     height: $avatar-size;
     width: $avatar-size;
     cursor: pointer;
+    position: relative;
+    overflow: visible;
+    --avatar-glow: 0;
+    transition: --avatar-glow 0.15s ease;
 
     @media (max-width: $mobile-width) {
         margin: 0 auto 2rem;
@@ -305,6 +334,219 @@ h1.navbar-h1 {
     @media (min-width: $mobile-width) {
         margin: 0 0 1.5rem 1.5rem;
         float: right;
+    }
+}
+
+#avatar-container:hover {
+    --avatar-glow: 1;
+}
+
+#front-avatar,
+#back-avatar {
+    position: relative;
+    z-index: 2;
+}
+
+.avatar-glow {
+    position: absolute;
+    inset: -12%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.avatar-blob {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(16px);
+    opacity: calc(var(--avatar-glow) * var(--blob-opacity, 1));
+    transform: scale(calc(0.7 + var(--avatar-glow) * 0.3));
+    transition:
+        opacity 0.15s ease,
+        transform 0.2s ease;
+}
+
+.avatar-blob-1 {
+    --blob-opacity: 0.75;
+    top: -12%;
+    left: -12%;
+    width: 125%;
+    height: 125%;
+    border-radius: 30% 70% 55% 45% / 65% 35% 70% 30%;
+    background: radial-gradient(
+        ellipse at 30% 45%,
+        rgba(var(--accent-glow-1-rgb), 0.75),
+        rgba(var(--accent-glow-1-rgb), 0.22) 50%,
+        transparent 70%
+    );
+    animation: avatar-swirl-1 4.5s ease-in-out infinite;
+}
+
+.avatar-blob-2 {
+    --blob-opacity: 0.7;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    border-radius: 65% 35% 40% 60% / 35% 60% 40% 65%;
+    background: radial-gradient(
+        ellipse at 65% 50%,
+        rgba(var(--accent-glow-2-rgb), 0.7),
+        rgba(var(--accent-glow-2-rgb), 0.2) 50%,
+        transparent 68%
+    );
+    animation: avatar-swirl-2 5.5s ease-in-out infinite;
+}
+
+.avatar-blob-3 {
+    --blob-opacity: 0.85;
+    top: -8%;
+    left: -8%;
+    width: 118%;
+    height: 118%;
+    border-radius: 45% 55% 70% 30% / 55% 40% 60% 45%;
+    background: radial-gradient(
+        ellipse at 40% 40%,
+        rgba(var(--accent-glow-3-rgb), 0.8),
+        rgba(var(--accent-glow-3-rgb), 0.25) 45%,
+        transparent 65%
+    );
+    filter: blur(14px);
+    animation: avatar-swirl-3 4s ease-in-out infinite;
+}
+
+.avatar-blob-4 {
+    --blob-opacity: 0.6;
+    top: -14%;
+    left: -14%;
+    width: 128%;
+    height: 128%;
+    border-radius: 55% 45% 35% 65% / 40% 65% 35% 60%;
+    background: radial-gradient(
+        ellipse at 55% 60%,
+        rgba(var(--accent-glow-4-rgb), 0.65),
+        rgba(var(--accent-glow-4-rgb), 0.18) 55%,
+        transparent 72%
+    );
+    filter: blur(22px);
+    animation: avatar-swirl-4 6.5s ease-in-out infinite;
+}
+
+.avatar-blob-5 {
+    --blob-opacity: 0.65;
+    top: -9%;
+    left: -9%;
+    width: 120%;
+    height: 120%;
+    border-radius: 40% 60% 65% 35% / 60% 30% 70% 40%;
+    background: radial-gradient(
+        ellipse at 50% 55%,
+        rgba(var(--accent-glow-2-rgb), 0.62),
+        rgba(var(--accent-glow-2-rgb), 0.18) 45%,
+        transparent 65%
+    );
+    filter: blur(16px);
+    animation: avatar-swirl-5 5s ease-in-out infinite;
+}
+
+@keyframes avatar-swirl-1 {
+    0% {
+        transform: translate(0%, 0%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(0deg);
+        border-radius: 30% 70% 55% 45% / 65% 35% 70% 30%;
+    }
+    33% {
+        transform: translate(4%, -3%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(120deg);
+        border-radius: 55% 45% 35% 65% / 40% 60% 45% 55%;
+    }
+    66% {
+        transform: translate(-3%, 4%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(240deg);
+        border-radius: 70% 30% 60% 40% / 55% 45% 35% 65%;
+    }
+    100% {
+        transform: translate(0%, 0%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(360deg);
+        border-radius: 30% 70% 55% 45% / 65% 35% 70% 30%;
+    }
+}
+
+@keyframes avatar-swirl-2 {
+    0% {
+        transform: translate(0%, 0%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(0deg);
+        border-radius: 65% 35% 40% 60% / 35% 60% 40% 65%;
+    }
+    33% {
+        transform: translate(-4%, 2%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(-120deg);
+        border-radius: 40% 60% 55% 45% / 60% 35% 65% 40%;
+    }
+    66% {
+        transform: translate(3%, -3%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(-240deg);
+        border-radius: 50% 50% 35% 65% / 45% 55% 50% 50%;
+    }
+    100% {
+        transform: translate(0%, 0%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(-360deg);
+        border-radius: 65% 35% 40% 60% / 35% 60% 40% 65%;
+    }
+}
+
+@keyframes avatar-swirl-3 {
+    0% {
+        transform: translate(0%, 0%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(0deg);
+        border-radius: 45% 55% 70% 30% / 55% 40% 60% 45%;
+    }
+    33% {
+        transform: translate(3%, 2%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(140deg);
+        border-radius: 60% 40% 45% 55% / 35% 65% 50% 50%;
+    }
+    66% {
+        transform: translate(-2%, -2%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(280deg);
+        border-radius: 35% 65% 55% 45% / 60% 40% 40% 60%;
+    }
+    100% {
+        transform: translate(0%, 0%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(360deg);
+        border-radius: 45% 55% 70% 30% / 55% 40% 60% 45%;
+    }
+}
+
+@keyframes avatar-swirl-4 {
+    0% {
+        transform: translate(0%, 0%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(0deg);
+        border-radius: 55% 45% 35% 65% / 40% 65% 35% 60%;
+    }
+    33% {
+        transform: translate(-3%, 3%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(-140deg);
+        border-radius: 35% 65% 50% 50% / 55% 45% 60% 40%;
+    }
+    66% {
+        transform: translate(2%, 1%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(-260deg);
+        border-radius: 60% 40% 65% 35% / 45% 55% 40% 60%;
+    }
+    100% {
+        transform: translate(0%, 0%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(-360deg);
+        border-radius: 55% 45% 35% 65% / 40% 65% 35% 60%;
+    }
+}
+
+@keyframes avatar-swirl-5 {
+    0% {
+        transform: translate(0%, 0%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(0deg);
+        border-radius: 40% 60% 65% 35% / 60% 30% 70% 40%;
+    }
+    33% {
+        transform: translate(2%, -3%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(120deg);
+        border-radius: 65% 35% 40% 60% / 30% 70% 45% 55%;
+    }
+    66% {
+        transform: translate(-3%, 2%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(240deg);
+        border-radius: 50% 50% 55% 45% / 65% 35% 55% 45%;
+    }
+    100% {
+        transform: translate(0%, 0%) scale(calc(0.7 + var(--avatar-glow) * 0.3)) rotate(360deg);
+        border-radius: 40% 60% 65% 35% / 60% 30% 70% 40%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .avatar-blob {
+        animation: none;
     }
 }
 

@@ -18,7 +18,12 @@ $line: #ded8ce;
 $accent: #c24d3a;
 $accent-strong: #9b3a2d;
 $accent-soft: #f4d7d1;
+$accent-glow-1: adjust-hue(saturate(lighten($accent, 18%), 35%), 20deg);
+$accent-glow-2: adjust-hue(saturate(lighten($accent, 14%), 30%), 6deg);
+$accent-glow-3: adjust-hue(saturate(lighten($accent, 20%), 25%), 34deg);
+$accent-glow-4: adjust-hue(saturate(lighten($accent, 10%), 30%), -8deg);
 $code: #207680;
+$code-background: #bfe9ec;
 $shadow: rgba(25, 25, 28, 0.08);
 
 // Colors (dark)
@@ -30,5 +35,10 @@ $line-dark: #3a4049;
 $accent-dark: #ff8b6a;
 $accent-strong-dark: #ff6e4d;
 $accent-soft-dark: rgba(255, 139, 106, 0.18);
-$code-dark: #77b7be;
+$accent-glow-1-dark: adjust-hue(saturate(darken($accent-dark, 35%), 6%), 20deg);
+$accent-glow-2-dark: adjust-hue(saturate(darken($accent-dark, 38%), 6%), 6deg);
+$accent-glow-3-dark: adjust-hue(saturate(darken($accent-dark, 32%), 6%), 34deg);
+$accent-glow-4-dark: adjust-hue(saturate(darken($accent-dark, 40%), 6%), -8deg);
+$code-dark: #6ed5e0;
+$code-background-dark: #3f7075;
 $shadow-dark: rgba(0, 0, 0, 0.35);
