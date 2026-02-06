@@ -20,7 +20,7 @@ title = "Luca Soldaini"
 </div>
 
 <p>
-Hello, visitor!<span class="icon-wave" aria-hidden="true"></span>
+Hello, visitor from <span id="greeting"> planet Earth! 🌎</span>
 </p>
 
 <div id='about-me'>
