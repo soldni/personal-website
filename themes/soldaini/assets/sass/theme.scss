@@ -113,6 +113,13 @@ hr {
         background-size: 150% 1.8em;
     }
 
+    a.icon-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25em;
+        white-space: nowrap;
+    }
+
     h1,
     h2,
     h3,
@@ -328,17 +335,7 @@ p.center {
 }
 
 #contact-list {
-    display: grid;
-    gap: 0.5rem 2rem;
-    margin-top: -0.5rem;
-
-    @media (min-width: $mobile-width) {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    @media (max-width: $mobile-width) {
-        grid-template-columns: 1fr;
-    }
+    margin-top: 0.5rem;
 }
 
 ul.fa-ul {
@@ -348,10 +345,18 @@ ul.fa-ul {
 }
 
 .contact-item {
-    margin: 0.5rem 0;
+    margin: 0;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.6rem;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact-list a {
@@ -447,6 +452,7 @@ span.short-authors {
     line-height: 1;
     vertical-align: middle;
     margin: 0 0.2rem;
+    transform-origin: left center;
 }
 
 span.long-authors {
@@ -457,9 +463,102 @@ span.long-authors {
     cursor: pointer;
 }
 
+.long-authors {
+    background-color: rgba(128, 128, 128, 0.12);
+    padding: 0.05em 0.12em;
+    border-radius: 0.2em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    transform-origin: left center;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.hide-authors:hover .long-authors {
+    background-color: rgba(128, 128, 128, 0.18);
+}
+
+.long-authors.author-reveal-in,
+.long-authors.author-reveal-out,
+.long-authors.author-reveal-static {
+    will-change: clip-path, opacity;
+}
+
+@supports (clip-path: inset(0 0 0 0)) or (-webkit-clip-path: inset(0 0 0 0)) {
+    .long-authors {
+        -webkit-clip-path: inset(0 100% 0 0);
+        clip-path: inset(0 100% 0 0);
+    }
+
+    .long-authors.author-reveal-static {
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+
+    .long-authors.author-reveal-in {
+        animation: reveal-authors 160ms ease-out forwards;
+    }
+
+    .long-authors.author-reveal-out {
+        animation: hide-authors 160ms ease-in forwards;
+    }
+
+    @keyframes reveal-authors {
+        from {
+            -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+            opacity: 0;
+        }
+        to {
+            -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes hide-authors {
+        from {
+            -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+            opacity: 1;
+        }
+        to {
+            -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+            opacity: 0;
+        }
+    }
+}
+
+@supports not ((clip-path: inset(0 0 0 0)) or (-webkit-clip-path: inset(0 0 0 0))) {
+    .long-authors.author-reveal-static {
+        opacity: 1;
+    }
+
+    .long-authors.author-reveal-in {
+        animation: fade-authors-in 160ms ease-out forwards;
+    }
+
+    .long-authors.author-reveal-out {
+        animation: fade-authors-out 160ms ease-in forwards;
+    }
+
+    @keyframes fade-authors-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes fade-authors-out {
+        from { opacity: 1; }
+        to { opacity: 0; }
+    }
+}
+
 .note {
     font-size: 0.9em;
-    font-style: italic;
     color: var(--muted);
 }
 
@@ -531,6 +630,23 @@ span.long-authors {
 .icon-by {
     mask-image: url(/logos/by.svg);
     -webkit-mask-image: url(/logos/by.svg);
+}
+
+.icon-wave {
+    mask-image: url(/logos/wave.svg);
+    -webkit-mask-image: url(/logos/wave.svg);
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    background-color: var(--accent);
+    vertical-align: -0.1em;
+    margin-left: 0.3em;
 }
 
 @media (max-width: $tiny-width) {

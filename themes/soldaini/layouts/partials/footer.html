@@ -44,17 +44,72 @@
     function toggleAuthors(span) {
         var shortAuthors = span.getElementsByClassName('short-authors')[0];
         var longAuthors = span.getElementsByClassName('long-authors')[0];
+        var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        function showLong(el) {
+            el.style.display = 'inline';
+            el.classList.remove('author-reveal-out');
+            el.classList.remove('author-reveal-static');
+            if (prefersReduced) {
+                el.classList.add('author-reveal-static');
+                return;
+            }
+            el.classList.add('author-reveal-in');
+            el.addEventListener(
+                'animationend',
+                function () {
+                    el.classList.remove('author-reveal-in');
+                    el.classList.add('author-reveal-static');
+                },
+                { once: true }
+            );
+        }
+
+        function hideLong(el, onDone) {
+            if (prefersReduced) {
+                el.style.display = 'none';
+                el.classList.remove('author-reveal-static');
+                if (onDone) {
+                    onDone();
+                }
+                return;
+            }
+            el.classList.remove('author-reveal-in');
+            el.classList.remove('author-reveal-static');
+            el.classList.add('author-reveal-out');
+            el.addEventListener(
+                'animationend',
+                function () {
+                    el.style.display = 'none';
+                    el.classList.remove('author-reveal-out');
+                    el.classList.remove('author-reveal-static');
+                    if (onDone) {
+                        onDone();
+                    }
+                },
+                { once: true }
+            );
+        }
+
+        function showShort(el) {
+            el.style.display = 'inline';
+        }
+
+        function hideShort(el) {
+            el.style.display = 'none';
+        }
+
         if (shortAuthors.style.display == 'none') {
-            shortAuthors.style.display = 'inline';
-            longAuthors.style.display = 'none';
-            // toggle aria visibility
+            hideLong(longAuthors, function () {
+                showShort(shortAuthors);
+            });
+
             shortAuthors.setAttribute('aria-hidden', 'false');
             longAuthors.setAttribute('aria-hidden', 'true');
         } else {
-            shortAuthors.style.display = 'none';
-            longAuthors.style.display = 'inline';
+            hideShort(shortAuthors);
+            showLong(longAuthors);
 
-            // toggle aria visibility
             shortAuthors.setAttribute('aria-hidden', 'true');
             longAuthors.setAttribute('aria-hidden', 'false');
         }

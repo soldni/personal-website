@@ -12,7 +12,9 @@ title = "Luca Soldaini"
     </div>
 </div>
 
-Hello, visitor! 👋
+<p>
+Hello, visitor!<span class="icon-wave" aria-hidden="true"></span>
+</p>
 
 <div id='about-me'>
 
@@ -20,7 +22,7 @@ I am a **lead research scientist** at [Ai2][6] in the [Olmo][35] team.
 Prior to joining Ai2, I was a senior applied scientist at [Amazon Alexa][1].
 I completed my Ph.D. in computer science at [Georgetown University][4] in 2018 in the [Information Retrieval Lab][34] working with [Nazli Goharian][33].
 
-When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], dreaming about utopian [mass transit systems][10], curating my ever-growing [laptop stickers collection][11], and hanging out with my [handsome][44] [cat][45]. Raccoons are [the best][13].
+When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], dreaming about utopian [mass transit systems][10], curating my ever-growing [laptop stickers collection][11], and hanging out with my [handsome][44] [cats][45]. Raccoons are [the best][13].
 
 </div>
 <div id='research-summary'>
@@ -40,44 +42,31 @@ Hop over to the [publications page](/publications) for a complete list of my wor
 
 ## Contacts
 
-I <span aria-label="love">❤</span> collaborating and connecting with other researchers!
-Do **get in touch** if you are working in any of the areas above, or if you have ideas that you think I might be interested in.
+I am mostly active on Twitter/X, and host most of my code on GitHub. The best way to reach out is via email; my Signal contact is available upon request.
+
 <div id="contact-list">
-<ul class="fa-ul">
+<ul class="fa-ul contact-list">
     <li class="contact-item">
         <span class="list-icon icon-twitter" aria-hidden="true"></span>
-        <a href="https://twitter.com/soldni">Twitter</a>
-        <span class="username-link" aria-hidden="true">@soldni</span>
-    </li>
-    <li class="contact-item">
-        <span class="list-icon icon-bluesky" aria-hidden="true"></span>
-        <a href="https://bsky.app/profile/soldaini.net">Bluesky</a>
-        <span class="username-link" aria-hidden="true">@soldaini.net</span>
-    </li>
-    <li class="contact-item">
-        <span class="list-icon icon-github" aria-hidden="true"></span>
-        <a href="https://github.com/soldni" target="_blank">GitHub</a>
-        <span class="username-link" aria-hidden="true">@soldni</span>
-    </li>
-</ul>
-<ul class="fa-ul">
-    <li class="contact-item">
-        <span class="list-icon icon-gs" aria-hidden="true"></span>
-        <a href="https://scholar.google.com/citations?user=3KPvwcgAAAAJ" target="_blank">Google Scholar</a>
-        <span class="username-link" aria-hidden="true"></span>
+        <a href="https://twitter.com/soldni">Twitter / X</a>
     </li>
     <li class="contact-item">
         <span class="list-icon icon-linkedin" aria-hidden="true"></span>
         <a href="https://www.linkedin.com/in/soldni" target="_blank">LinkedIn</a>
-        <span class="username-link" aria-hidden="true"></span>
+    </li>
+    <li class="contact-item">
+        <span class="list-icon icon-github" aria-hidden="true"></span>
+        <a href="https://github.com/soldni" target="_blank">GitHub</a>
+    </li>
+    <li class="contact-item">
+        <span class="list-icon icon-gs" aria-hidden="true"></span>
+        <a href="https://scholar.google.com/citations?user=3KPvwcgAAAAJ" target="_blank">Google Scholar</a>
     </li>
     <li class="contact-item">
         <span class="list-icon icon-email" aria-hidden="true"></span>
         <a href="mailto:luca@soldaini.net">Email</a>
-        <span class="username-link" aria-hidden="true"></span>
     </li>
 </ul>
-</div>
 </div>
 
 [1]: https://www.amazon.science/search?q=Luca+Soldaini&type=91d74bfc-4a20-30f0-8926-e52f02f15c04&type=5be10472-b2e0-37b5-b6f8-8f381832e94f&type=4f8e492c-6f2f-390e-bc61-f176d3a37ab9&s=0&expandedFilters=Type%2CResearch%2520area%2CTag%2CConference%2CJournal%2CAuthor%2CDate%2C
@@ -87,12 +76,12 @@ Do **get in touch** if you are working in any of the areas above, or if you have
 [5]: http://queerinai.org/
 [6]: https://allenai.org
 [7]: https://research.semanticscholar.org
-[8]: https://twitter.com/soldni/status/708678097483276289
-[9]: https://twitter.com/soldni/status/1541146251537698816
+[8]: /marathon.webp
+[9]: /espresso.webp
 [10]: /transit.webp
 [11]: /laptop.webp
 [12]: https://twitter.com/soldni/status/1444411540480749569
-[13]: https://twitter.com/soldni/status/1437451814249517056
+[13]: https://www.youtube.com/watch?v=Ofp26_oc4CA
 [14]: http://hdl.handle.net/10822/1050758
 [15]: https://web.archive.org/web/20220922170031/https://www.nytimes.com/2012/03/01/technology/impatient-web-users-flee-slow-loading-sites.html
 [16]: https://www.semanticscholar.org/paper/Tracking-Knowledge-Propagation-Across-Wikipedia-Valentim-Comarela/a3907f55ab5e5853351529db8e03e5784a93a368
@@ -134,3 +123,9 @@ Do **get in touch** if you are working in any of the areas above, or if you have
         <span class="list-icon icon-s2" aria-hidden="true"></span>
         <a href="https://www.semanticscholar.org/author/Luca-Soldaini/3328733" target="_blank">Semantic Scholar</a>
 </li> -->
+
+<!--<li class="contact-item">
+    <span class="list-icon icon-bluesky" aria-hidden="true"></span>
+    <a href="https://bsky.app/profile/soldaini.net">Bluesky</a>
+    <span class="username-link" aria-hidden="true">@soldaini.net</span>
+</li>-->
