@@ -23,7 +23,7 @@ $accent-glow-2: adjust-hue(saturate(lighten($accent, 14%), 30%), 6deg);
 $accent-glow-3: adjust-hue(saturate(lighten($accent, 20%), 25%), 34deg);
 $accent-glow-4: adjust-hue(saturate(lighten($accent, 10%), 30%), -8deg);
 $code: #207680;
-$code-background: #bfe9ec;
+$code-background: #d7ebec;
 $shadow: rgba(25, 25, 28, 0.08);
 
 // Colors (dark)
@@ -40,5 +40,5 @@ $accent-glow-2-dark: adjust-hue(saturate(darken($accent-dark, 38%), 6%), 6deg);
 $accent-glow-3-dark: adjust-hue(saturate(darken($accent-dark, 32%), 6%), 34deg);
 $accent-glow-4-dark: adjust-hue(saturate(darken($accent-dark, 40%), 6%), -8deg);
 $code-dark: #6ed5e0;
-$code-background-dark: #3f7075;
+$code-background-dark: #283c3e;
 $shadow-dark: rgba(0, 0, 0, 0.35);

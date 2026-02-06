@@ -33,6 +33,7 @@
     --accent-glow-3-rgb: #{red($accent-glow-3)}, #{green($accent-glow-3)}, #{blue($accent-glow-3)};
     --accent-glow-4-rgb: #{red($accent-glow-4)}, #{green($accent-glow-4)}, #{blue($accent-glow-4)};
     --code: #{$code};
+    --code-background: #{$code-background};
     --shadow: #{$shadow};
 }
 
@@ -58,6 +59,7 @@
         --accent-glow-4-rgb:
             #{red($accent-glow-4-dark)}, #{green($accent-glow-4-dark)}, #{blue($accent-glow-4-dark)};
         --code: #{$code-dark};
+        --code-background: #{$code-background-dark};
         --shadow: #{$shadow-dark};
     }
 }
