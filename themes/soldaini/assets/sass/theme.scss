@@ -254,11 +254,16 @@ hr {
     text-decoration: none;
 }
 
+.navbar-brand:hover .navbar-h1 {
+    color: var(--accent);
+}
+
 h1.navbar-h1 {
     margin: 0;
     font-size: 2.2rem;
     letter-spacing: -0.02em;
     font-weight: 600;
+    transition: color 180ms ease;
 }
 
 .navbar-nav {
@@ -270,18 +275,24 @@ h1.navbar-h1 {
     color: var(--accent);
     text-decoration: none;
     font-weight: 600;
-    padding: 0;
-    border-bottom: 2px solid transparent;
+    display: inline-block;
+    line-height: 1.2;
+    padding: 0 0.08em;
+    border-bottom: 0;
+    background-image: linear-gradient(var(--accent-soft), var(--accent-soft));
+    background-repeat: no-repeat;
+    background-size: 100% 0.45em;
+    background-position: 0 100%;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     transition:
         color 160ms ease,
-        border-color 160ms ease;
-    background: none;
-    background-image: none;
+        background-size 200ms ease;
 }
 
 .nav-link:hover {
-    color: var(--accent-strong);
-    border-color: var(--accent-strong);
+    color: var(--accent);
+    background-size: 100% 1.2em;
 }
 
 .navbar-text {
@@ -362,11 +373,11 @@ ul.fa-ul {
 #contact-list a {
     line-height: 1.2;
     background-position: 0 88%;
-    background-size: 100% 0.26em;
+    background-size: 100% 0.4em;
 }
 
 #contact-list a:hover {
-    background-size: 100% 1.2em;
+    background-size: 100% 1.4em;
 }
 
 .list-icon {
@@ -470,10 +481,6 @@ span.long-authors {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     transform-origin: left center;
-    display: inline-block;
-    max-width: 100%;
-    overflow: hidden;
-    vertical-align: bottom;
 }
 
 .hide-authors:hover .long-authors {
@@ -483,18 +490,24 @@ span.long-authors {
 .long-authors.author-reveal-in,
 .long-authors.author-reveal-out,
 .long-authors.author-reveal-static {
-    will-change: clip-path, opacity;
+    will-change: mask-size, opacity;
 }
 
-@supports (clip-path: inset(0 0 0 0)) or (-webkit-clip-path: inset(0 0 0 0)) {
+@supports (mask-image: linear-gradient(#000, #000)) or (-webkit-mask-image: linear-gradient(#000, #000)) {
     .long-authors {
-        -webkit-clip-path: inset(0 100% 0 0);
-        clip-path: inset(0 100% 0 0);
+        -webkit-mask-image: linear-gradient(#000, #000);
+        mask-image: linear-gradient(#000, #000);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: left center;
+        mask-position: left center;
+        -webkit-mask-size: 0% 100%;
+        mask-size: 0% 100%;
     }
 
     .long-authors.author-reveal-static {
-        -webkit-clip-path: inset(0 0 0 0);
-        clip-path: inset(0 0 0 0);
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
         opacity: 1;
     }
 
@@ -508,32 +521,32 @@ span.long-authors {
 
     @keyframes reveal-authors {
         from {
-            -webkit-clip-path: inset(0 100% 0 0);
-            clip-path: inset(0 100% 0 0);
+            -webkit-mask-size: 0% 100%;
+            mask-size: 0% 100%;
             opacity: 0;
         }
         to {
-            -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
+            -webkit-mask-size: 100% 100%;
+            mask-size: 100% 100%;
             opacity: 1;
         }
     }
 
     @keyframes hide-authors {
         from {
-            -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
+            -webkit-mask-size: 100% 100%;
+            mask-size: 100% 100%;
             opacity: 1;
         }
         to {
-            -webkit-clip-path: inset(0 100% 0 0);
-            clip-path: inset(0 100% 0 0);
+            -webkit-mask-size: 0% 100%;
+            mask-size: 0% 100%;
             opacity: 0;
         }
     }
 }
 
-@supports not ((clip-path: inset(0 0 0 0)) or (-webkit-clip-path: inset(0 0 0 0))) {
+@supports not ((mask-image: linear-gradient(#000, #000)) or (-webkit-mask-image: linear-gradient(#000, #000))) {
     .long-authors.author-reveal-static {
         opacity: 1;
     }
@@ -547,13 +560,21 @@ span.long-authors {
     }
 
     @keyframes fade-authors-in {
-        from { opacity: 0; }
-        to { opacity: 1; }
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
     @keyframes fade-authors-out {
-        from { opacity: 1; }
-        to { opacity: 0; }
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
     }
 }
 
@@ -636,8 +657,8 @@ span.long-authors {
     mask-image: url(/logos/wave.svg);
     -webkit-mask-image: url(/logos/wave.svg);
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.4em;
+    height: 1.4em;
     mask-size: 100%;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -645,7 +666,8 @@ span.long-authors {
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
     background-color: var(--accent);
-    vertical-align: -0.1em;
+    vertical-align: middle;
+    transform: translateY(-0.05em);
     margin-left: 0.3em;
 }
 
