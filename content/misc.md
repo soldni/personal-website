@@ -6,7 +6,7 @@ title = "Misc"
 
 In no particular order, here are some facts about me:
 
-- My last name is pronounced *sol-dah-ee-nee*; stress is on the first *i* (`/solda'ini/` in [IPA][22]).
+- My last name is pronounced `sol-dah-ee-nee`; stress is on the first **i** (`/solda'ini/` in [IPA][22]).
 - My [Erdős number][23] is 3: I coauthored [at least one paper][24] with Ophir Frieder, Ophir Frieder [wrote a manuscript][25] with Frank Harary, Frank Harary was [a collaborator][26] of Paul Erdős.
 - My [Bacon number][27] is 5 if you agree with [Saumya][28] that podcasts should count. [Nathan][29] invited Olmo leads on [his podcast][30], Nathan [podded][31] with [Lex Fridman][32], Lex interviewed [Kevin Spacey][33] [in 2024][34], Kevin co-starred with [Brad Pitt][35] in [Se7en (1995)][36], and Brad was in [Sleepers (1996)][37].
 - Adding the two, my [Erdős-Bacon number][38] is 8. I would like a less cursed Bacon path 😢 Do you have a spot for me in your next production?
