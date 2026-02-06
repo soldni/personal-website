@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="container">
+    <header class="page-header">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.description }}
+            <p class="page-description">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    {{ .Content }}
+
+    {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+    <div class="post-list">
+        {{ range $paginator.Pages }}
+            <article class="post-card">
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <p class="post-meta">{{ .Date.Format "January 2, 2006" }}</p>
+                {{ $summary := .Params.description | default .Summary }}
+                {{ with $summary }}
+                    <p>{{ . | plainify }}</p>
+                {{ end }}
+                <a class="post-read-more" href="{{ .RelPermalink }}">Read more</a>
+            </article>
+        {{ end }}
+    </div>
+
+    {{ if gt $paginator.TotalPages 1 }}
+        <nav class="pagination" role="navigation" aria-label="Pagination">
+            {{ if $paginator.HasPrev }}
+                <a class="pagination-prev" href="{{ $paginator.Prev.URL }}">Newer</a>
+            {{ end }}
+            <span class="pagination-status">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+            {{ if $paginator.HasNext }}
+                <a class="pagination-next" href="{{ $paginator.Next.URL }}">Older</a>
+            {{ end }}
+        </nav>
+    {{ end }}
+</div>
+{{ end }}

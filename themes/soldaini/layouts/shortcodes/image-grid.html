@@ -1,0 +1,4 @@
+{{ $columns := .Get "columns" | default "3" }}
+<div class="image-grid" style="--grid-columns: {{ $columns }};">
+    {{ .Inner | markdownify }}
+</div>
