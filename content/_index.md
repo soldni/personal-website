@@ -20,7 +20,7 @@ title = "Luca Soldaini"
 </div>
 
 <p>
-Hello, visitor from <span id="greeting"> planet Earth! 🌎</span>
+Hello, visitor from <span id="greeting"> an unknown location?! 🤔</span>
 </p>
 
 <div id='about-me'>
