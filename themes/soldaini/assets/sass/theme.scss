@@ -327,7 +327,7 @@ h1.navbar-h1 {
     position: relative;
     overflow: visible;
     --avatar-glow: 0;
-    transition: --avatar-glow 0.15s ease;
+    transition: --avatar-glow 1.5s cubic-bezier(0.16, 1, 0.3, 1);
 
     @media (max-width: $mobile-width) {
         margin: 0 auto 2rem;
@@ -360,95 +360,192 @@ h1.navbar-h1 {
     position: absolute;
     z-index: 0;
     pointer-events: none;
-    filter: blur(16px);
+    filter: blur(28px);
     opacity: calc(var(--avatar-glow) * var(--blob-opacity, 1));
-    transform: scale(calc(0.7 + var(--avatar-glow) * 0.3));
+    transform: scale(calc(0.65 + var(--avatar-glow) * 0.25));
     transition:
-        opacity 0.15s ease,
-        transform 0.2s ease;
+        opacity 1.5s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .avatar-blob-1 {
     --blob-opacity: 0.75;
-    top: -12%;
-    left: -12%;
-    width: 125%;
-    height: 125%;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
     border-radius: 30% 70% 55% 45% / 65% 35% 70% 30%;
+    clip-path: polygon(
+        50% 0%,
+        64% 7%,
+        80% 4%,
+        94% 18%,
+        100% 36%,
+        92% 52%,
+        100% 68%,
+        84% 84%,
+        66% 92%,
+        50% 100%,
+        32% 92%,
+        18% 96%,
+        6% 82%,
+        0% 62%,
+        6% 42%,
+        0% 22%,
+        18% 10%,
+        34% 6%
+    );
     background: radial-gradient(
         ellipse at 30% 45%,
         rgba(var(--accent-glow-1-rgb), 0.75),
         rgba(var(--accent-glow-1-rgb), 0.22) 50%,
         transparent 70%
     );
-    animation: avatar-swirl-1 4.5s ease-in-out infinite;
+    animation: avatar-swirl-1 3s ease-in-out infinite;
 }
 
 .avatar-blob-2 {
     --blob-opacity: 0.7;
-    top: -10%;
-    left: -10%;
-    width: 120%;
-    height: 120%;
+    top: -8%;
+    left: -8%;
+    width: 116%;
+    height: 116%;
     border-radius: 65% 35% 40% 60% / 35% 60% 40% 65%;
+    clip-path: polygon(
+        52% 0%,
+        70% 8%,
+        84% 2%,
+        98% 18%,
+        100% 40%,
+        92% 54%,
+        100% 74%,
+        80% 90%,
+        60% 96%,
+        42% 100%,
+        26% 90%,
+        12% 96%,
+        2% 78%,
+        0% 58%,
+        8% 38%,
+        0% 20%,
+        16% 8%,
+        34% 6%
+    );
     background: radial-gradient(
         ellipse at 65% 50%,
         rgba(var(--accent-glow-2-rgb), 0.7),
         rgba(var(--accent-glow-2-rgb), 0.2) 50%,
         transparent 68%
     );
-    animation: avatar-swirl-2 5.5s ease-in-out infinite;
+    animation: avatar-swirl-2 3.8s ease-in-out infinite;
 }
 
 .avatar-blob-3 {
     --blob-opacity: 0.85;
-    top: -8%;
-    left: -8%;
-    width: 118%;
-    height: 118%;
+    top: -6%;
+    left: -6%;
+    width: 114%;
+    height: 114%;
     border-radius: 45% 55% 70% 30% / 55% 40% 60% 45%;
+    clip-path: polygon(
+        48% 0%,
+        62% 6%,
+        78% 12%,
+        92% 8%,
+        100% 28%,
+        88% 48%,
+        100% 66%,
+        86% 82%,
+        68% 92%,
+        50% 100%,
+        30% 94%,
+        14% 88%,
+        0% 70%,
+        10% 52%,
+        0% 30%,
+        12% 14%,
+        30% 8%
+    );
     background: radial-gradient(
         ellipse at 40% 40%,
         rgba(var(--accent-glow-3-rgb), 0.8),
         rgba(var(--accent-glow-3-rgb), 0.25) 45%,
         transparent 65%
     );
-    filter: blur(14px);
-    animation: avatar-swirl-3 4s ease-in-out infinite;
+    filter: blur(24px);
+    animation: avatar-swirl-3 2.8s ease-in-out infinite;
 }
 
 .avatar-blob-4 {
     --blob-opacity: 0.6;
-    top: -14%;
-    left: -14%;
-    width: 128%;
-    height: 128%;
+    top: -12%;
+    left: -12%;
+    width: 122%;
+    height: 122%;
     border-radius: 55% 45% 35% 65% / 40% 65% 35% 60%;
+    clip-path: polygon(
+        50% 0%,
+        66% 4%,
+        82% 10%,
+        98% 22%,
+        100% 42%,
+        90% 56%,
+        98% 74%,
+        82% 88%,
+        62% 96%,
+        44% 100%,
+        28% 92%,
+        12% 98%,
+        0% 80%,
+        6% 62%,
+        0% 40%,
+        10% 20%,
+        26% 8%
+    );
     background: radial-gradient(
         ellipse at 55% 60%,
         rgba(var(--accent-glow-4-rgb), 0.65),
         rgba(var(--accent-glow-4-rgb), 0.18) 55%,
         transparent 72%
     );
-    filter: blur(22px);
-    animation: avatar-swirl-4 6.5s ease-in-out infinite;
+    filter: blur(32px);
+    animation: avatar-swirl-4 4.4s ease-in-out infinite;
 }
 
 .avatar-blob-5 {
     --blob-opacity: 0.65;
-    top: -9%;
-    left: -9%;
-    width: 120%;
-    height: 120%;
+    top: -7%;
+    left: -7%;
+    width: 116%;
+    height: 116%;
     border-radius: 40% 60% 65% 35% / 60% 30% 70% 40%;
+    clip-path: polygon(
+        50% 0%,
+        70% 6%,
+        86% 2%,
+        100% 20%,
+        96% 40%,
+        100% 58%,
+        90% 76%,
+        72% 90%,
+        52% 98%,
+        36% 100%,
+        22% 92%,
+        8% 86%,
+        0% 68%,
+        6% 50%,
+        0% 30%,
+        12% 14%,
+        30% 6%
+    );
     background: radial-gradient(
         ellipse at 50% 55%,
         rgba(var(--accent-glow-2-rgb), 0.62),
         rgba(var(--accent-glow-2-rgb), 0.18) 45%,
         transparent 65%
     );
-    filter: blur(16px);
-    animation: avatar-swirl-5 5s ease-in-out infinite;
+    filter: blur(26px);
+    animation: avatar-swirl-5 3.3s ease-in-out infinite;
 }
 
 @keyframes avatar-swirl-1 {
@@ -578,7 +675,17 @@ p.center {
 }
 
 .caption-avatar {
-    margin-top: 0.4rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0.3rem;
+    width: fit-content;
+    border-radius: 0.25em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-top: 0.15em;
+    padding-bottom: 0em;
+    text-align: center;
+    background-color: var(--paper);
 }
 
 #contact-list {

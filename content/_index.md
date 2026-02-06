@@ -3,19 +3,19 @@ title = "Luca Soldaini"
 +++
 
 <div id="avatar-container">
+    <div id="front-avatar">
+        <img src="personal-me/me-512.webp" alt="Luca Soldaini" class="avatar">
+    </div>
+    <div id="back-avatar">
+        <img src="/alt.webp" loading="lazy" alt="A raccoon wearing a top hat and holding a pizza slice. Luca sometimes uses this image as their online profile picture." class="avatar">
+        <div class="tiny-text center caption-avatar">DALL•E 2 generation (April 2022)</div>
+    </div>
     <div class="avatar-glow" aria-hidden="true">
         <div class="avatar-blob avatar-blob-1"></div>
         <div class="avatar-blob avatar-blob-2"></div>
         <div class="avatar-blob avatar-blob-3"></div>
         <div class="avatar-blob avatar-blob-4"></div>
         <div class="avatar-blob avatar-blob-5"></div>
-    </div>
-    <div id="front-avatar">
-        <img src="personal-me/me-512.webp" alt="Luca Soldaini" class="avatar">
-    </div>
-    <div id="back-avatar">
-        <img src="/alt.webp" loading="lazy" alt="A raccoon wearing a top hat and holding a pizza slice. Luca sometimes uses this image as their online profile picture." class="avatar">
-        <p class="tiny-text center caption-avatar">DALL•E 2 generation (April 2022)</p>
     </div>
 </div>
 
