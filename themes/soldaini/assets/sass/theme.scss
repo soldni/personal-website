@@ -113,13 +113,6 @@ hr {
         background-size: 150% 1.8em;
     }
 
-    a.icon-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.25em;
-        white-space: nowrap;
-    }
-
     h1,
     h2,
     h3,
@@ -328,7 +321,6 @@ h1.navbar-h1 {
 }
 
 #avatar-container:hover .avatar {
-    transform: translateY(-4px);
     box-shadow: 0 18px 34px var(--shadow);
 }
 
