@@ -1,0 +1,11 @@
+name = "soldaini"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Custom personal site theme for Luca Soldaini"
+author = "Luca Soldaini"
+min_version = "0.120.0"
+
+[original]
+  name = "soldaini"
+  homepage = "https://soldaini.net"
+  repo = ""

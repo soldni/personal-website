@@ -3,9 +3,10 @@
 ## Project Structure & Module Organization
 - `config.toml` holds site-wide settings (base URL, menus, theme, params).
 - `content/` contains Markdown pages with TOML front matter (`+++`), e.g., `_index.md`, `publications.md`.
-- `layouts/partials/` overrides theme partials when site-specific tweaks are needed.
-- `themes/researcher/` is the vendored Hugo theme; avoid edits unless updating the theme.
-- `static/` stores files served as-is (images, icons); `assets/` is for Hugo Pipes assets.
+- `themes/soldaini/` is the custom Hugo theme (layouts, partials, and Sass live here).
+- `layouts/partials/` is currently unused; prefer theme partials unless a one-off override is needed.
+- `static/` stores files served as-is (images, icons). `static/logos/` holds SVG masks used for icon styling.
+- `assets/` is for Hugo Pipes assets at the site root; theme-specific Sass lives in `themes/soldaini/assets/`.
 - `resources/` is Hugo’s generated cache; `archetypes/` defines templates for `hugo new`.
 
 ## Build, Test, and Development Commands
@@ -18,6 +19,7 @@
 - Use TOML front matter (`+++`) and match the indentation/style already present in the file.
 - Name new assets with lowercase, hyphen-separated filenames (e.g., `new-hero.webp`).
 - No repo-wide formatter or linter is configured; format by hand and keep diffs minimal.
+- The author list expand/collapse logic is defined in `themes/soldaini/layouts/partials/footer.html`; adjust animation behavior there.
 
 ## Testing Guidelines
 - No automated tests are present. Validate changes by running `hugo` and checking output in the browser.

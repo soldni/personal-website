@@ -1,7 +1,7 @@
 baseURL = "https://soldaini.net/"
 languageCode = "en-us"
 title = "Luca Soldaini"
-theme = "researcher"
+theme = "soldaini"
 enableEmoji = true
 math = false  # enable KaTeX (https://katex.org/) globally
 

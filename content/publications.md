@@ -1,15 +1,13 @@
 +++
-title = "Research"
+title = "Publications"
 +++
+<!--
+# Publications-->
 
-# Publications
-
-This page contains a list of manuscripts that I have authored. For bibliographic information, please refer to my <a href="https://www.semanticscholar.org/author/Luca-Soldaini/3328733"><span class="href-icon icon-s2" aria-hidden="true"></span>Semantic Scholar</a> or <a href="https://scholar.google.com/citations?user=3KPvwcgAAAAJ"><span class="href-icon icon-gs" aria-hidden="true"></span>Google Scholar</a> profiles.
-
-
+Here is a list of papers that I have authored, also available on my <a class="icon-link" href="https://www.semanticscholar.org/author/Luca-Soldaini/3328733"><span class="href-icon icon-s2" aria-hidden="true"></span>Semantic Scholar</a> or <a class="icon-link" href="https://scholar.google.com/citations?user=3KPvwcgAAAAJ"><span class="href-icon icon-gs" aria-hidden="true"></span>Google Scholar</a> profiles.
 <p class="note">* indicates equal contribution; † indicates core contributors.</p>
 
-### 2025
+## 2025
 
 
 - Benjamin Minixhofer<sup>†</sup>, Tyler Murray, Tomasz Limisiewicz, Anna Korhonen, Luke Zettlemoyer, Noah A. Smith, Edoardo M. Ponti, **Luca Soldaini**<sup>†</sup>, and Valentin Hofmann<sup>†</sup>. ["Bolmo: Byteifying the Next Generation of Language Models"](https://arxiv.org/abs/2512.15586). ArXiv 2512.15586. <span class="call-in">preprint</span>
@@ -18,7 +16,7 @@ This page contains a list of manuscripts that I have authored. For bibliographic
 - Jake Poznanski\*, **Luca Soldaini**\*, and Kyle Lo\*. ["olmOCR 2: Unit Test Rewards for Document OCR"](https://arxiv.org/abs/2510.19817). ArXiv 2510.19817. <span class="call-in">preprint</span>
 - Weijia Shi<sup>†</sup>, Akshita Bhagia<sup>†</sup>, Kevin Farhat<sup>†</sup><span class="hide-authors">, Niklas Muennighoff, Pete Walsh, Jacob Morrison, Dustin Schwenk, Shayne Longpre, Jake Poznanski, Allyson Ettinger, Daogao Liu, Margaret Li, Dirk Groeneveld, Mike Lewis, Wen-tau Yih, **Luca Soldaini**, Kyle Lo, Noah A. Smith, Luke Zettlemoyer, Pang Wei Koh, Hannaneh Hajishirzi, Ali Farhadi,</span> and Sewon Min. ["FlexOlmo: Open Language Models for Flexible Data Use"](https://arxiv.org/abs/2507.07024). NeurIPS 2025. <span class="call-out">spotlight</span>
 - Nikhil Kandpal, Brian Lester, Colin Raffel, Sebastian Majstorovic, Stella Biderman, Baber Abbasi, **Luca Soldaini**, Enrico Shippole, A. Feder Cooper, Aviya Skowron, John Kirchenbauer, Shayne Longpre, Lintang Sutawika, Alon Albalak, Zhenlin Xu, Guilherme Penedo, Loubna Ben Allal, Elie Bakouch, John David Pressman, Honglu Fan, Dashiell Stander, Guangyu Song, Aaron Gokaslan, Tom Goldstein, Brian R. Bartoldson, Bhavya Kailkhura, and Tyler Murray. ["The Common Pile v0.1: An 8TB Dataset of Public Domain and Openly Licensed Text"](https://arxiv.org/abs/2506.05209). NeurIPS 2025.
-- Olmo Team: Pete Walsh<sup>†</sup>, **Luca Soldaini**<sup>†</sup>, Dirk Groeneveld<sup>†</sup>, Kyle Lo<sup>†</sup>, Shane Arora<sup>†</sup>, Akshita Bhagia<sup>†</sup>, Yuling Gu<sup>†</sup>, Shengyi Huang<sup>†</sup>, Matt Jordan<sup>†</sup>, Nathan Lambert<sup>†</sup>, Dustin Schwenk<sup>†</sup>, Oyvind Tafjord<sup>†</sup><span class="hide-authors">, Taira Anderson, David Atkinson, Faeze Brahman, Christopher Clark, Pradeep Dasigi, Nouha Dziri, Michal Guerquin, Hamish Ivison, Pang Wei Koh, Jiacheng Liu, Saumya Malik, William Merrill, Lester James V. Miranda, Jacob Morrison, Tyler Murray, Crystal Nam, Valentina Pyatkin, Aman Rangapur, Michael Schmitz, Sam Skjonsberg, David Wadden, Christopher Wilhelm, Michael Wilson, Luke Zettlemoyer, Ali Farhadi,</span> Noah A. Smith<sup>†</sup>, and Hannaneh Hajishirzi<sup>†</sup>. ["2 OLMo 2 Furious"](https://arxiv.org/abs/2501.00656) COLM 2025.
+- Olmo Team: Pete Walsh<sup>†</sup>, **Luca Soldaini**<sup>†</sup>, Dirk Groeneveld<sup>†</sup>, Kyle Lo<sup>†</sup>, Shane Arora<sup>†</sup>, Akshita Bhagia<sup>†</sup>, Yuling Gu<sup>†</sup>, Shengyi Huang<sup>†</sup>, Matt Jordan<sup>†</sup>, Nathan Lambert<sup>†</sup>, Dustin Schwenk<sup>†</sup>, Oyvind Tafjord<sup>†</sup><span class="hide-authors">, Taira Anderson, David Atkinson, Faeze Brahman, Christopher Clark, Pradeep Dasigi, Nouha Dziri, Michal Guerquin, Hamish Ivison, Pang Wei Koh, Jiacheng Liu, Saumya Malik, William Merrill, Lester James V. Miranda, Jacob Morrison, Tyler Murray, Crystal Nam, Valentina Pyatkin, Aman Rangapur, Michael Schmitz, Sam Skjonsberg, David Wadden, Christopher Wilhelm, Michael Wilson, Luke Zettlemoyer, Ali Farhadi,</span> Noah A. Smith<sup>†</sup>, and Hannaneh Hajishirzi<sup>†</sup>. ["2 OLMo 2 Furious"](https://arxiv.org/abs/2501.00656). COLM 2025.
 - Nathan Lambert, Jacob Morrison, Valentina Pyatkin, Shengyi Huang, Hamish Ivison, Faeze Brahman, Lester James V. Miranda<span class="hide-authors">, Alisa Liu, Nouha Dziri, Xinxi Lyu, Yuling Gu, Saumya Malik, Victoria Graf, Jena D. Hwang, Jiangjiang Yang, Ronan Le Bras, Oyvind Tafjord, Chris Wilhelm, **Luca Soldaini**, Noah A. Smith,</span> Yizhong Wang, Pradeep Dasigi, and Hannaneh Hajishirzi. ["Tülu 3: Pushing Frontiers in Open Language Model Post-Training"](https://arxiv.org/abs/2411.15124). COLM 2025.
 - Akshita Bhagia\*, Jiacheng Liu\*, Alexander Wettig, David Heineman, Oyvind Tafjord, Ananya Harsh Jha, **Luca Soldaini**, Noah A. Smith, Dirk Groeneveld, Pang Wei Koh, Jesse Dodge, and Hannaneh Hajishirzi. ["Establishing Task Scaling Laws via Compute-Efficient Model Ladders"](https://arxiv.org/abs/2412.04403). COLM 2025.
 - Ryan Wang, Matthew Finlayson, **Luca Soldaini**, Swabha Swayamdipta, and Robin Jia. ["Teaching Models to Understand (but not Generate) High-risk Data"](https://arxiv.org/abs/2505.03052). COLM 2025.
@@ -36,7 +34,7 @@ This page contains a list of manuscripts that I have authored. For bibliographic
 - Hyunji Lee, **Luca Soldaini**, Arman Cohan, Minjoon Seo, and Kyle Lo. ["RouterRetriever: Exploring the Benefits of Routing over Multiple Expert Embedding Models"](https://arxiv.org/abs/2409.02685). AAAI 2025.
 
 
-### 2024
+## 2024
 
 - Shayne Longpre\*, Stella Biderman\*<span class="hide-authors">, Alon Albalak, Hailey Schoelkopf, Daniel McDuff, Sayash Kapoor, Kevin Klyman, Kyle Lo, Gabriel Ilharco, Nay San, Maribeth Rauh, Aviya Skowron, Bertie Vidgen, Laura Weidinger, Arvind Narayanan, Victor Sanh, David Adelani, Percy Liang, Rishi Bommasani, Peter Henderson, Sasha Luccioni, </span>Yacine Jernite\*, and **Luca Soldaini**\*. ["The Responsible Foundation Model Development Cheatsheet: A Review of Tools & Resources"](https://openreview.net/pdf?id=tH1dQH20eZ). TMLR 12/2024.
 - Akari Asai, Jacqueline He, Rulin Shao, Weijia Shi, Amanpreet Singh, Joseph Chee Chang, Kyle Lo, **Luca Soldaini**, Sergey Feldman, Mike D'Arcy, David Wadden<span class="hide-authors">, Matt Latzke, Minyang Tian, Pan Ji, Shengyan Liu, Hao Tong, Bohao Wu, Yanyu Xiong, Luke Zettlemoyer, Graham Neubig, Dan Weld, Doug Downey, Wen-tau Yih,</span> Pang Wei Koh, and Hannaneh Hajishirzi. ["OpenScholar: Synthesizing Scientific Literature with Retrieval-augmented LMs"](https://arxiv.org/abs/2411.14199). ArXiv 2411.14199. <span class="call-in">preprint</span>
@@ -55,7 +53,7 @@ This page contains a list of manuscripts that I have authored. For bibliographic
 - Orion Weller, Kyle Lo, David Wadden, Dawn Lawrie, Benjamin Van Durme, Arman Cohan, and **Luca Soldaini**. ["When do Generative Query and Document Expansions Fail? A Comprehensive Study Across Methods, Retrievers, and Datasets"](https://arxiv.org/abs/2309.08541). Findings of EACL 2024.
 - Yanai Elazar, Akshita Bhagia, Ian Magnusson, Abhilasha Ravichander, Dustin Schwenk, Alane Suhr, Pete Walsh, Dirk Groeneveld, **Luca Soldaini**, Sameer Singh, Hannaneh Hajishirzi, Noah A. Smith, and Jesse Dodge. ["What's In My Big Data?"](https://arxiv.org/abs/2310.20707). ICLR 2024. <span class="call-out">spotlight</span>
 
-### 2023
+## 2023
 
 - Hyunji Lee, **Luca Soldaini**, Arman Cohan, Minjoon Seo, and Kyle Lo. ["Back to Basics: A Simple Recipe for Improving Out-of-Domain Retrieval in Dense Encoders"](https://arxiv.org/abs/2311.09765). ArXiv 2311.09765. <span class="call-in">preprint</span>
 - Kyle Lo<sup>†</sup>, Zejiang Shen<sup>†</sup>, Benjamin Newman<sup>†</sup>, Joseph Chee Chang<sup>†</sup><span class="hide-authors">, Russell Authur, Erin Bransom, Stefan Candra, Yoganand Chandrasekhar, Regan Huff, Bailey Kuehl, Amanpreet Singh, Chris Wilhelm, Angele Zamarron, Marti A. Hearst, Daniel S. Weld, Doug Downey, </span>and **Luca Soldaini**<sup>†</sup>. ["PaperMage: A Unified Toolkit for Processing, Representing, and Manipulating Visually-Rich Scientific Documents"](https://aclanthology.org/2023.emnlp-demo.45/). System Demonstration, EMNLP 2023. <span class="call-out">best paper award</span>
@@ -71,7 +69,7 @@ This page contains a list of manuscripts that I have authored. For bibliographic
 - Jon Saad-Falcon, Amanpreet Singh, **Luca Soldaini**, Mike D'Arcy, Arman Cohan, and Doug Downey. ["Embedding Recycling for Language Models"](https://arxiv.org/abs/2207.04993). Findings of EACL 2023.
 
 
-### 2022
+## 2022
 
 - Matteo Gabburo, Rik Koncel-Kedziorski, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. ["Knowledge Transfer from Answer Ranking to Answer Generation"](https://arxiv.org/abs/2210.12865). EMNLP 2022.
 - Luca Di Liello, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. ["Pre-training Transformer Models with Sentence-Level Objectives for Answer Sentence Selection"](https://arxiv.org/abs/2205.10455). Short paper, EMNLP 2022.
@@ -80,23 +78,23 @@ This page contains a list of manuscripts that I have authored. For bibliographic
 - Benjamin Muller, **Luca Soldaini**, Rik Koncel-Kedziorski, Eric Lind, and Alessandro Moschitti. ["Cross-Lingual GenQA: A Language-Agnostic Generative Question Answering Approach for Open-Domain Question Answering"](https://arxiv.org/abs/2110.07150). AACL 2022.
 - Luca Di Liello, Siddhant Garg, **Luca Soldaini**, and Alessandro Moschitti. ["Paragraph-based Transformer Pre-training for Multi-Sentence Inference"](https://aclanthology.org/2022.naacl-main.181/). Short paper, NAACL-HLT 2022.
 
-### 2021
+## 2021
 
 - Chao-Chun Hsu, Eric Lind, **Luca Soldaini**, and Alessandro Moschitti. ["Answer Generation for Retrieval-based Question Answering Systems"](http://dx.doi.org/10.18653/v1/2021.findings-acl.374). Findings of ACL 2021.
 - Rujun Han, **Luca Soldaini**, and Alessandro Moschitti. ["Modeling Context in Answer Sentence Selection Systems on a Latency Budget"](https://aclanthology.org/2021.eacl-main.261). EACL 2021.
 
-### 2020
+## 2020
 
 - Mingda Li, Xinyue Liu, Weitong Ruan, **Luca Soldaini**, Wael Hamza, and Chengwei Su. ["Multi-task Learning of Spoken Language Understanding by Integrating N-Best Hypotheses with Hierarchical Attention"](https://doi.org/10.18653/v1/2020.coling-industry.11). COLING 2020.
 - **Luca Soldaini** and Alessandro Moschitti. ["The Cascade Transformer: Efficient Answer Sentence Selection"](https://doi.org/10.18653/v1/2020.acl-main.504). ACL 2020.
 - Subendhu Rongali, **Luca Soldaini**, Emilio Monti, and Wael Hamza. ["Don't Parse, Generate! A Sequence to Sequence Architecture for Task-Oriented Semantic Parsing"](https://doi.org/10.1145/3366423.3380064). Short paper, WWW 2020.
 - Sean MacAvaney, **Luca Soldaini**, and Nazli Goharian. ["Teaching a New Dog Old Tricks: Resurrecting Multilingual Retrieval Using Zero-shot Learning"](https://doi.org/10.1007/978-3-030-45442-5_31). Short paper, ECIR 2020.
 
-### 2019
+## 2019
 
 *Reviewer 2 game was too strong.*
 
-### 2018
+## 2018
 
 - Sean MacAvaney, Andrew Yates, Arman Cohan, **Luca Soldaini**, Kai Hui, Nazli Goharian, and Ophir Frieder. ["Overcoming Low-Utility Facets for Complex Answer Retrieval"](https://doi.org/10.1007/s10791-018-9343-0). Information Retrieval Journal, 2018.
 - Ziling Fan, **Luca Soldaini**, Arman Cohan, and Nazli Goharian. ["Relation Extraction for Protein-Protein Interactions Affected by Mutation"](https://doi.org/10.1145/3233547.3233617). Short paper, ACM-BCB 2018.
@@ -107,24 +105,24 @@ This page contains a list of manuscripts that I have authored. For bibliographic
 - Sean MacAvaney, Andrew Yates, Arman Cohan, **Luca Soldaini**, Kai Hui, Nazli Goharian, and Ophir Frieder. ["Characterizing Question Facets for Complex Answer Retrieval"](https://doi.org/10.1145/3209978.3210135). SIGIR 2018.
 - Sean MacAvaney, **Luca Soldaini**, Arman Cohan, and Nazli Goharian. ["Tree-LSTMs for Scientific Relation Classification"](http://dx.doi.org/10.18653/v1/S18-1133). SemEval Workshop, NAACL-HLT 2018.
 
-### 2017
+## 2017
 
 - **Luca Soldaini**, Andrew Yates, and Nazli Goharian. ["Denoising Clinical Notes for Medical Literature Retrieval with a Convolutional Neural Model"](https://doi.org/10.1145/3132847.3133149). Short paper, CIKM 2017.
 - **Luca Soldaini**, Andrew Yates, and Nazli Goharian. ["Learning to Reformulate Long Queries for Clinical Decision Support"](https://doi.org/10.1002/asi.23924). JASIST 2017.
 - **Luca Soldaini** and Elad Yom-Tov. ["Inferring Individual Attributes from Search Engine Queries and Auxiliary Information"](https://doi.org/10.1145/3038912.3052629). WWW 2017.
 - **Luca Soldaini** and Nazli Goharian. ["Learning to Rank for Consumer Health Search: A Semantic Approach"](https://doi.org/10.1007/978-3-319-56608-5_60). Short paper, ECIR 2017.
 
-### 2016
+## 2016
 
 - **Luca Soldaini** and Nazli Goharian. ["QuickUMLS: A Fast, Unsupervised Approach for Medical Concept Extraction"](https://github.com/Georgetown-IR-Lab/QuickUMLS). MedIR workshop, SIGIR 2016.
 - Arman Cohan, **Luca Soldaini**, and Nazli Goharian. ["Identifying Significance of Discrepancies in Radiology Reports"](https://www.semanticscholar.org/paper/Identifying-Significance-of-Discrepancies-in-Cohan-Soldaini/727981ba776eb78248b05f7a164c5e0a6f505d9c). DMMH Workshop, SDM 2016.
 - **Luca Soldaini**, Andrew Yates, Elad Yom-Tov, Ophir Frieder, and Nazli Goharian. ["Enhancing Web Search in the Medical Domain via Query Clarification"](https://doi.org/10.1007/s10791-015-9258-y). Information Retrieval Journal,  2016.
 
-### 2015
+## 2015
 
 - Arman Cohan, **Luca Soldaini**, and Nazli Goharian. ["Matching Citation Text and Cited Spans in Biomedical Literature: A Search–Oriented Approach"](http://dx.doi.org/10.3115/v1/N15-1110). Short paper, NAACL-HLT 2015.
 - **Luca Soldaini**, Arman Cohan, Andrew Yates, Nazli Goharian, and Ophir Frieder. ["Retrieving Medical Literature for Clinical Decision Support"](https://doi.org/10.1007/978-3-319-16354-3_59). ECIR 2015.
 
-### 2014
+## 2014
 
 - Arman Cohan, **Luca Soldaini**, Andrew Yates, Nazli Goharian, and Ophir Frieder. ["On Clinical Decision Support"](https://doi.org/10.1145/2649387.2660820). Short paper, ACM-BCB 2014.
