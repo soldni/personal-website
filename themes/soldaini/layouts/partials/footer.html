@@ -221,27 +221,18 @@
         "VG", // the British Virgin Islands
     ]);
 
-    const countryName = (code) => {
-        try {
-            return new Intl.DisplayNames(["en"], { type: "region" }).of(code);
-        } catch {
-            return null;
-        }
-    };
-
     const flag = (code) =>
         String.fromCodePoint(...[...code.toUpperCase()].map((c) => 0x1f1e6 + c.charCodeAt(0) - 65));
 
     const el = document.getElementById("greeting");
     el.textContent = fallbacks[Math.floor(Math.random() * fallbacks.length)];
 
-    fetch("https://api.country.is")
+    fetch("https://ipwho.is/")
         .then((r) => r.json())
-        .then(({ country }) => {
-            const name = countryName(country);
-            if (!name) return;
-            const the = theCountries.has(country) ? "the " : "";
-            el.textContent = `${the}${name}! ${flag(country)}`;
+        .then(({ country, country_code }) => {
+            if (!country || !country_code) return;
+            const the = theCountries.has(country_code) ? "the " : "";
+            el.textContent = `${the}${country}! ${flag(country_code)}`;
         })
         .catch(() => {});
 </script>
