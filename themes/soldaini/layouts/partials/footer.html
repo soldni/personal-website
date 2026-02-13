@@ -1,16 +1,20 @@
 {{ with .Site.Params.footer }}
-    <div id="footer">
-        <div class="container text-center mb-2">
-            <a href="{{ .url | absURL }}"><small>{{ .text }}</small></a>
-        </div>
+<div id="footer">
+    <div class="container text-center mb-2">
+        <a href="{{ .url | absURL }}"><small>{{ .text }}</small></a>
     </div>
+</div>
 {{ end }}
 
 <div id="license">
     <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
         The content of this website is licensed under
-        <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank"
-            rel="license noopener noreferrer" style="display:inline-block;">
+        <a
+            href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
+            target="_blank"
+            rel="license noopener noreferrer"
+            style="display: inline-block"
+        >
             CC BY 4.0
         </a>
         <span class="license-icon icon-cc" aria-hidden="true"></span>
@@ -19,107 +23,107 @@
 </div>
 
 <script type="text/javascript">
-    var front = document.getElementById('front-avatar');
-    var back = document.getElementById('back-avatar');
+    var front = document.getElementById("front-avatar");
+    var back = document.getElementById("back-avatar");
 
     if (front != null && back != null) {
-        front.style.display = 'block';
-        back.style.display = 'none';
+        front.style.display = "block";
+        back.style.display = "none";
 
-        document.getElementById('avatar-container').onclick = function () {
-            if (front.style.display == 'none') {
-                front.style.display = 'block';
-                back.style.display = 'none';
-            } else if (back.style.display == 'none') {
-                back.style.display = 'block';
-                front.style.display = 'none';
+        document.getElementById("avatar-container").onclick = function () {
+            if (front.style.display == "none") {
+                front.style.display = "block";
+                back.style.display = "none";
+            } else if (back.style.display == "none") {
+                back.style.display = "block";
+                front.style.display = "none";
             }
-        }
+        };
     }
 
     // function that toggles the visibility of the `long-authors` and `short-authors` spans
     // within a span with class `hide-authors`. meant to be attached to an onclick event
     // for a given span of class `hide-authors`
     function toggleAuthors(span) {
-        var shortAuthors = span.getElementsByClassName('short-authors')[0];
-        var longAuthors = span.getElementsByClassName('long-authors')[0];
-        var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var shortAuthors = span.getElementsByClassName("short-authors")[0];
+        var longAuthors = span.getElementsByClassName("long-authors")[0];
+        var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
         function showLong(el) {
-            el.style.display = 'inline';
-            el.classList.remove('author-reveal-out');
-            el.classList.remove('author-reveal-static');
+            el.style.display = "inline";
+            el.classList.remove("author-reveal-out");
+            el.classList.remove("author-reveal-static");
             if (prefersReduced) {
-                el.classList.add('author-reveal-static');
+                el.classList.add("author-reveal-static");
                 return;
             }
-            el.classList.add('author-reveal-in');
+            el.classList.add("author-reveal-in");
             el.addEventListener(
-                'animationend',
+                "animationend",
                 function () {
-                    el.classList.remove('author-reveal-in');
-                    el.classList.add('author-reveal-static');
+                    el.classList.remove("author-reveal-in");
+                    el.classList.add("author-reveal-static");
                 },
-                { once: true }
+                { once: true },
             );
         }
 
         function hideLong(el, onDone) {
             if (prefersReduced) {
-                el.style.display = 'none';
-                el.classList.remove('author-reveal-static');
+                el.style.display = "none";
+                el.classList.remove("author-reveal-static");
                 if (onDone) {
                     onDone();
                 }
                 return;
             }
-            el.classList.remove('author-reveal-in');
-            el.classList.remove('author-reveal-static');
-            el.classList.add('author-reveal-out');
+            el.classList.remove("author-reveal-in");
+            el.classList.remove("author-reveal-static");
+            el.classList.add("author-reveal-out");
             el.addEventListener(
-                'animationend',
+                "animationend",
                 function () {
-                    el.style.display = 'none';
-                    el.classList.remove('author-reveal-out');
-                    el.classList.remove('author-reveal-static');
+                    el.style.display = "none";
+                    el.classList.remove("author-reveal-out");
+                    el.classList.remove("author-reveal-static");
                     if (onDone) {
                         onDone();
                     }
                 },
-                { once: true }
+                { once: true },
             );
         }
 
         function showShort(el) {
-            el.style.display = 'inline';
+            el.style.display = "inline";
         }
 
         function hideShort(el) {
-            el.style.display = 'none';
+            el.style.display = "none";
         }
 
-        if (shortAuthors.style.display == 'none') {
+        if (shortAuthors.style.display == "none") {
             hideLong(longAuthors, function () {
                 showShort(shortAuthors);
             });
 
-            shortAuthors.setAttribute('aria-hidden', 'false');
-            longAuthors.setAttribute('aria-hidden', 'true');
+            shortAuthors.setAttribute("aria-hidden", "false");
+            longAuthors.setAttribute("aria-hidden", "true");
         } else {
             hideShort(shortAuthors);
             showLong(longAuthors);
 
-            shortAuthors.setAttribute('aria-hidden', 'true');
-            longAuthors.setAttribute('aria-hidden', 'false');
+            shortAuthors.setAttribute("aria-hidden", "true");
+            longAuthors.setAttribute("aria-hidden", "false");
         }
     }
 
     // loop through all spans with class 'hide-authors'
-    var hideAuthors = document.getElementsByClassName('hide-authors');
+    var hideAuthors = document.getElementsByClassName("hide-authors");
     for (var i = 0; i < hideAuthors.length; i++) {
         var innerText = hideAuthors[i].textContent;
         // count the number of commas in the span
-        var num_authors = innerText.split(',').length - 1;
+        var num_authors = innerText.split(",").length - 1;
 
         // if there are less than 3 authors, skip to the next span
         if (num_authors < 3) {
@@ -129,35 +133,39 @@
         // replace the inner html with two spans:
         // - one contains the text '{num_authors} authors' and is visible
         // - the other contains the text '{innerText}' and is hidden
-        hideAuthors[i].innerHTML = (
-            '<span class="short-authors">+' + num_authors + ' authors </span>' +
-            '<span class="long-authors">' + innerText + '</span>'
-        )
-        shortAuthorsSpan = hideAuthors[i].getElementsByClassName('short-authors')[0];
-        longAuthorsSpan = hideAuthors[i].getElementsByClassName('long-authors')[0];
+        hideAuthors[i].innerHTML =
+            '<span class="short-authors">+' +
+            num_authors +
+            " authors </span>" +
+            '<span class="long-authors">' +
+            innerText +
+            "</span>";
+        shortAuthorsSpan = hideAuthors[i].getElementsByClassName("short-authors")[0];
+        longAuthorsSpan = hideAuthors[i].getElementsByClassName("long-authors")[0];
 
         // set title of 'short-authors' and 'long-authors' spans
-        shortAuthorsSpan.title = 'Click to show full author list.';
-        longAuthorsSpan.title = 'Click to hide full author list.';
+        shortAuthorsSpan.title = "Click to show full author list.";
+        longAuthorsSpan.title = "Click to hide full author list.";
 
         // set aria visibility of 'short-authors' and 'long-authors' spans
-        shortAuthorsSpan.setAttribute('aria-hidden', 'false');
-        longAuthorsSpan.setAttribute('aria-hidden', 'true');
+        shortAuthorsSpan.setAttribute("aria-hidden", "false");
+        longAuthorsSpan.setAttribute("aria-hidden", "true");
 
         // set the `short-authors` span to be visible and the `long-authors` span to be hidden
-        shortAuthorsSpan.style.display = 'inline';
-        longAuthorsSpan.style.display = 'none';
+        shortAuthorsSpan.style.display = "inline";
+        longAuthorsSpan.style.display = "none";
 
         // attach the toggleAuthors function to the onclick event of the span
-        hideAuthors[i].onclick = function() { toggleAuthors(this); };
+        hideAuthors[i].onclick = function () {
+            toggleAuthors(this);
+        };
     }
 
     // change the text of all spans with class `preprint` to 'preprint'
-    var preprints = document.getElementsByClassName('preprint');
+    var preprints = document.getElementsByClassName("preprint");
     for (var i = 0; i < preprints.length; i++) {
-        preprints[i].innerText = 'preprint';
+        preprints[i].innerText = "preprint";
     }
-
     function buildFootnotePopovers() {
         var footnoteList = document.querySelector('.post-content .footnotes');
         if (!footnoteList) {
@@ -202,15 +210,73 @@
     }
 
     buildFootnotePopovers();
-
 </script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X15XFHYC4L"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-X15XFHYC4L');
+    gtag("config", "G-X15XFHYC4L");
+</script>
+
+<!-- Greetings -->
+<script>
+    const fallbacks = [
+        "a mysterious corner of the internet! 🌐",
+        "planet Earth! 🌎",
+        "this side of the galaxy! 🪐",
+        "a lovely place, no doubt! 🏡",
+        "parts unknown! 🗺️",
+        "the other side of the cloud! ☁️",
+        "off the map! 🧭",
+        "the great somewhere! ✨",
+        "a land over the rainbow! 🌈",
+    ];
+
+    // Countries that take "the" — by country code for reliability
+    const theCountries = new Set([
+        "BS", // the Bahamas
+        "KY", // the Cayman Islands
+        "CF", // the Central African Republic
+        "KM", // the Comoros
+        "CD", // the Democratic Republic of the Congo
+        "CG", // the Republic of the Congo
+        "CZ", // the Czech Republic (also Czechia now, but API may vary)
+        "DO", // the Dominican Republic
+        "FK", // the Falkland Islands
+        "FO", // the Faroe Islands
+        "GM", // the Gambia
+        "MP", // the Northern Mariana Islands
+        "MH", // the Marshall Islands
+        "MV", // the Maldives
+        "NL", // the Netherlands
+        "PH", // the Philippines
+        "SB", // the Solomon Islands
+        "TC", // the Turks and Caicos Islands
+        "AE", // the United Arab Emirates
+        "GB", // the United Kingdom
+        "US", // the United States
+        "VI", // the U.S. Virgin Islands
+        "VG", // the British Virgin Islands
+    ]);
+
+    const flag = (code) =>
+        String.fromCodePoint(...[...code.toUpperCase()].map((c) => 0x1f1e6 + c.charCodeAt(0) - 65));
+
+    const el = document.getElementById("greeting");
+    el.textContent = fallbacks[Math.floor(Math.random() * fallbacks.length)];
+
+    fetch("https://ipwho.is/")
+        .then((r) => r.json())
+        .then(({ country, country_code }) => {
+            if (!country || !country_code) return;
+            const the = theCountries.has(country_code) ? "the " : "";
+            el.textContent = `${the}${country}! ${flag(country_code)}`;
+        })
+        .catch(() => {});
 </script>
