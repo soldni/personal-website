@@ -42,12 +42,26 @@ def preview_png():
             except Exception:
                 time.sleep(0.5)
 
-        subprocess.run([sys.executable, "-m", "playwright", "install", "chromium"], check=True)
+        result = subprocess.run(
+            [sys.executable, "-m", "playwright", "install", "chromium"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        if result.returncode != 0:
+            print("Warning: playwright install failed; attempting with existing browser", file=sys.stderr)
 
         from playwright.sync_api import sync_playwright
 
         with sync_playwright() as p:
-            browser = p.chromium.launch()
+            browser = p.chromium.launch(
+                args=[
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--disable-dev-shm-usage",
+                    "--disable-setuid-sandbox",
+                    "--single-process",
+                ],
+            )
             page = browser.new_page(viewport={"width": 1440, "height": 1800})
             page.goto(url, wait_until="networkidle")
             page.screenshot(path=str(screenshot_path), full_page=True)
