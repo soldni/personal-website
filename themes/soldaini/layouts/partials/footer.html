@@ -166,6 +166,50 @@
     for (var i = 0; i < preprints.length; i++) {
         preprints[i].innerText = "preprint";
     }
+    function buildFootnotePopovers() {
+        var footnoteList = document.querySelector('.post-content .footnotes');
+        if (!footnoteList) {
+            return;
+        }
+
+        var notes = footnoteList.querySelectorAll('li');
+        var footnoteMap = {};
+        for (var i = 0; i < notes.length; i++) {
+            var noteId = notes[i].getAttribute('id');
+            if (!noteId) {
+                continue;
+            }
+            var clone = notes[i].cloneNode(true);
+            var backref = clone.querySelector('.footnote-backref');
+            if (backref) {
+                backref.remove();
+            }
+            footnoteMap[noteId] = clone.innerHTML;
+        }
+
+        var refs = document.querySelectorAll('.post-content .footnote-ref');
+        for (var i = 0; i < refs.length; i++) {
+            var href = refs[i].getAttribute('href');
+            if (!href || href.charAt(0) !== '#') {
+                continue;
+            }
+            var targetId = href.substring(1);
+            var content = footnoteMap[targetId];
+            if (!content) {
+                continue;
+            }
+            var popup = document.createElement('span');
+            var popupId = 'footnote-popup-' + targetId;
+            popup.className = 'footnote-popup';
+            popup.setAttribute('role', 'tooltip');
+            popup.setAttribute('id', popupId);
+            popup.innerHTML = content;
+            refs[i].setAttribute('aria-describedby', popupId);
+            refs[i].parentNode.appendChild(popup);
+        }
+    }
+
+    buildFootnotePopovers();
 </script>
 
 <!-- Google tag (gtag.js) -->

@@ -4,6 +4,19 @@ title = "Luca Soldaini"
 theme = "soldaini"
 enableEmoji = true
 math = false  # enable KaTeX (https://katex.org/) globally
+enableRobotsTXT = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[pagination]
+  pagerSize = 8
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [params]
   author = "Luca Soldaini"
@@ -15,19 +28,24 @@ math = false  # enable KaTeX (https://katex.org/) globally
   msvalidate_01 = "6A330A58006408660C4D6B81B04E8740"
 
 [permalinks]
-  "/" = "/:filename"
+  "/" = "/:contentbasename"
 
 [menu]
 
   [[menu.main]]
-    name = "Misc"
-    url = "/misc"
+    name = "Writings"
+    url = "/blog"
     weight = 1
 
   [[menu.main]]
     name = "Publications"
     url = "/publications"
     weight = 2
+
+  [[menu.main]]
+    name = "Misc"
+    url = "/misc"
+    weight = 3
 
 [markup.goldmark.renderer]
   unsafe = true  # allow raw HTML in markdown files

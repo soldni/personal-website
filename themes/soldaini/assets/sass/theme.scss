@@ -70,6 +70,8 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--paper);
+    background-image: none;
 }
 
 body {
@@ -78,18 +80,9 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     color: var(--ink);
-    background-color: var(--paper);
-    background-image:
-        radial-gradient(1200px 600px at 10% -10%, rgba(194, 77, 58, 0.06), transparent 60%),
-        radial-gradient(1000px 500px at 95% 0%, rgba(42, 111, 106, 0.05), transparent 55%);
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-image:
-            radial-gradient(1200px 600px at 10% -10%, rgba(255, 139, 106, 0.08), transparent 60%),
-            radial-gradient(1000px 500px at 95% 0%, rgba(127, 209, 199, 0.06), transparent 55%);
-    }
+    background: var(--paper);
+    background-image: none;
+    min-height: 100vh;
 }
 
 img {
@@ -108,6 +101,11 @@ hr {
     max-width: $max-width;
     margin: 0 auto;
     padding: 0 $gutter;
+}
+
+.site-header {
+    padding-top: 3rem;
+    background: var(--paper);
 }
 
 #content {
@@ -260,6 +258,118 @@ hr {
     tbody tr:last-child {
         border-bottom: 0;
     }
+}
+
+.page-header {
+    margin-bottom: 1.5rem;
+}
+
+.page-description {
+    color: var(--muted);
+    margin-top: 0.5rem;
+}
+
+.post-list {
+    display: grid;
+    gap: 1.75rem;
+    margin: 2rem 0;
+}
+
+.post-card {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.post-card h2 {
+    margin-bottom: 0.4rem;
+}
+
+.post-meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+}
+
+.post-read-more {
+    font-weight: 600;
+}
+
+.post {
+    margin-bottom: 3rem;
+}
+
+.post-tags {
+    margin-left: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0 2rem;
+}
+
+.pagination-status {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.image-grid {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(var(--grid-columns, 3), minmax(0, 1fr));
+    margin: 1.5rem 0;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 0.4rem;
+    display: block;
+}
+
+.post-content .footnotes {
+    border-top: 1px solid var(--line);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    font-size: 0.92rem;
+}
+
+.post-content sup {
+    position: relative;
+}
+
+.footnote-popup {
+    position: absolute;
+    left: 0;
+    bottom: 1.2rem;
+    min-width: 14rem;
+    max-width: 20rem;
+    padding: 0.6rem 0.75rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 0.4rem;
+    box-shadow: 0 12px 32px var(--shadow);
+    opacity: 0;
+    transform: translateY(0.2rem);
+    pointer-events: none;
+    transition:
+        opacity 160ms ease,
+        transform 160ms ease;
+    z-index: 2;
+}
+
+.footnote-popup p {
+    margin: 0;
+}
+
+sup:hover .footnote-popup,
+sup:focus-within .footnote-popup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .navbar {
