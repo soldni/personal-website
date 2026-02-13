@@ -1,0 +1,5 @@
+# Project-local Codex config
+# Use this from the repo root with:
+#   codex --config .codex/config.toml
+
+notify = ["bash", "-lc", "$PWD/.codex/hooks/append_agentsmd_context.sh"]

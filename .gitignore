@@ -272,3 +272,6 @@ Cargo.lock
 
 # ignore workspace files
 *.code-workspace
+
+# preview screenshots
+.artifacts/

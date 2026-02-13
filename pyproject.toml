@@ -9,12 +9,14 @@ authors = [
 ]
 dependencies = [
     "hugo==0.153.0",
+    "playwright==1.55.0",
 ]
 
 
 [project.scripts]
 hugo-cli = "personal_website.__init__:hugo_cli_entrypoint"
 hugo-preview = "personal_website.__init__:preview"
+preview-png = "personal_website.__init__:preview_png"
 
 [build-system]
 requires = ["hatchling"]

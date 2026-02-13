@@ -9,7 +9,7 @@
 - `assets/` is for Hugo Pipes assets at the site root; theme-specific Sass lives in `themes/soldaini/assets/`.
 - `resources/` is Hugo’s generated cache; `archetypes/` defines templates for `hugo new`.
 - `pyproject.toml` defines the `uv`-managed Python project and CLI entrypoints for Hugo commands.
-- `src/personal_website/__init__.py` contains the command wrappers used by `uv run hugo-cli` and `uv run hugo-preview`.
+- `src/personal_website/__init__.py` contains the command wrappers used by `uv run hugo-cli`, `uv run hugo-preview`, and `uv run preview-png`.
 
 ## Repository Philosophy (Comprehensive)
 
@@ -61,7 +61,14 @@
 - `uv sync` installs project dependencies (including pinned Hugo).
 - `uv run hugo-preview` runs `hugo server --disableFastRender -D` for local preview, including drafts.
 - `uv run hugo-cli` runs Hugo directly (e.g., production build to `public/` by default).
+- `uv run preview-png -- <page path>` starts a temporary Hugo server and saves a full-page screenshot to `.artifacts/preview-<slug>.png` (example: `uv run preview-png -- /publications/`).
 - Pass-through flags are supported, e.g., `uv run hugo-cli --minify`.
+
+
+## Agent Hooks (Claude + Codex)
+- Claude hook is configured in `.claude/settings.json` and runs `.claude/hooks/append_agentsmd_context.sh` at `SessionStart`.
+- Codex hook script is at `.codex/hooks/append_agentsmd_context.sh`; use it from project config with `codex --config .codex/config.toml`.
+- The Codex config uses `notify` to run the hook command and print `AGENTS.md` context after each turn.
 
 ## Coding Style & Naming Conventions
 - Keep Markdown concise and consistent with existing pages; prefer short sections and clear headings.
