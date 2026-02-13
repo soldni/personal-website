@@ -9,7 +9,10 @@ Here is a list of papers that I have authored, also available on my <a class="ic
 
 ## 2026
 
+- Mayee F. Chen, Tyler Murray, David Heineman, Matt Jordan, Hannaneh Hajishirzi, Christopher Ré, **Luca Soldaini**, and Kyle Lo. ["Olmix: A Framework for Data Mixing Throughout LM Development"](https://arxiv.org/abs/2602.12237). ArXiv 2602.12237. <span class="call-in">preprint</span>
+- Dawn Lawrie, Sean MacAvaney, James Mayfield, **Luca Soldaini**, and Eugene Yang. ["Overview of the TREC 2025 RAGTIME Track"](https://arxiv.org/abs/2602.10024). ArXiv 2602.10024. <span class="call-in">preprint</span>
 - Yapei Chang, Kyle Lo, Mohit Iyyer, and **Luca Soldaini**. ["How2Everything: Mining the Web for How-To Procedures to Evaluate and Improve LLMs"](https://arxiv.org/abs/2602.08808). ArXiv 2602.08808. <span class="call-in">preprint</span>
+- Dawn Lawrie, James Mayfield, Eugene Yang, Andrew Yates, Sean MacAvaney, Ronak Pradeep, Scott Miller, Paul McNamee, and **Luca Soldaini**. ["NeuCLIRTech: Chinese Monolingual and Cross-Language Information Retrieval Evaluation in a Challenging Domain"](https://arxiv.org/abs/2602.05334). ArXiv 2602.05334. <span class="call-in">preprint</span>
 
 ## 2025
 
