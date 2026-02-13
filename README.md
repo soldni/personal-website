@@ -16,7 +16,7 @@ Visit it at [soldaini.net](http://soldaini.net).
 - Pages are in [`content/`](content/)
 - Assets are in [`static/`](static/)
 
-Preview locally (includes drafts):
+Preview locally (published content only):
 
 ```bash
 uv run hugo-preview

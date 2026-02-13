@@ -1,10 +1,10 @@
 +++
-title = "Blog Post Feature Reference (Draft)"
+title = "Blog Post Feature Reference"
 date = "2026-02-13T09:00:00-08:00"
 lastmod = "2026-02-13T09:00:00-08:00"
 description = "Reference page showing the post features supported by this site."
 tags = ["reference", "hugo", "markdown"]
-draft = true
+draft = false
 math = true
 summary = "Use this file as a copy/paste reference when writing new blog posts."
 aliases = ["/blog/post-feature-reference"]

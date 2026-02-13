@@ -9,7 +9,8 @@
 
     {{ .Content }}
 
-    {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+    {{ $published_posts := where .RegularPages "Draft" false }}
+    {{ $paginator := .Paginate ($published_posts.ByDate.Reverse) }}
     <div class="post-list">
         {{ range $paginator.Pages }}
             <article class="post-card">

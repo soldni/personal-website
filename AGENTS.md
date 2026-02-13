@@ -59,7 +59,7 @@
 
 ## Build, Test, and Development Commands
 - `uv sync` installs project dependencies (including pinned Hugo).
-- `uv run hugo-preview` runs `hugo server --disableFastRender -D` for local preview, including drafts.
+- `uv run hugo-preview` runs `hugo server --disableFastRender` for local preview of published content.
 - `uv run hugo-cli` runs Hugo directly (e.g., production build to `public/` by default).
 - Pass-through flags are supported, e.g., `uv run hugo-cli --minify`.
 
