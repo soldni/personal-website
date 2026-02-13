@@ -225,14 +225,15 @@
         String.fromCodePoint(...[...code.toUpperCase()].map((c) => 0x1f1e6 + c.charCodeAt(0) - 65));
 
     const el = document.getElementById("greeting");
+    if (!el) return;
     el.textContent = fallbacks[Math.floor(Math.random() * fallbacks.length)];
 
-    fetch("https://ipwho.is/")
+    fetch("https://freeipapi.com/api/json")
         .then((r) => r.json())
-        .then(({ country, country_code }) => {
-            if (!country || !country_code) return;
-            const the = theCountries.has(country_code) ? "the " : "";
-            el.textContent = `${the}${country}! ${flag(country_code)}`;
+        .then(({ countryName, countryCode }) => {
+            if (!countryName || !countryCode) return;
+            const the = theCountries.has(countryCode) ? "the " : "";
+            el.textContent = `${the}${countryName}! ${flag(countryCode)}`;
         })
         .catch(() => {});
 </script>
