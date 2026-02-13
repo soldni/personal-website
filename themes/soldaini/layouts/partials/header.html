@@ -1,6 +1,6 @@
-<div class="container mt-5">
+<div class="container site-header">
     <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
-        <a class="navbar-brand mx-0 mr-sm-auto" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
             {{ with .Site.Params.logo }}
             <img src="{{ . | absURL }}" alt="logo">
             {{ end }}
@@ -8,8 +8,18 @@
         </a>
         <div class="navbar-nav flex-row flex-wrap justify-content-end ms-sm-auto">
             {{ with .Site.Menus.main }}
-            {{ $navbar_len := len . }}
-            {{ range $i, $nav_item := . }}
+            {{ $blog_posts := where $.Site.RegularPages "Section" "blog" }}
+            {{ $published_blog_posts := where $blog_posts "Draft" false }}
+            {{ $has_blog_posts := gt (len $published_blog_posts) 0 }}
+            {{ $visible_items := slice }}
+            {{ range . }}
+            {{ $is_blog_menu := hasPrefix .URL "/blog" }}
+            {{ if or (not $is_blog_menu) $has_blog_posts }}
+            {{ $visible_items = $visible_items | append . }}
+            {{ end }}
+            {{ end }}
+            {{ $navbar_len := len $visible_items }}
+            {{ range $i, $nav_item := $visible_items }}
             <a class="nav-item nav-link" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
                 {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
             </a>

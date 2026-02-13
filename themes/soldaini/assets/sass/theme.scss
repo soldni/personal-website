@@ -70,6 +70,8 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--paper);
+    background-image: none;
 }
 
 body {
@@ -78,18 +80,9 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     color: var(--ink);
-    background-color: var(--paper);
-    background-image:
-        radial-gradient(1200px 600px at 10% -10%, rgba(194, 77, 58, 0.06), transparent 60%),
-        radial-gradient(1000px 500px at 95% 0%, rgba(42, 111, 106, 0.05), transparent 55%);
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-image:
-            radial-gradient(1200px 600px at 10% -10%, rgba(255, 139, 106, 0.08), transparent 60%),
-            radial-gradient(1000px 500px at 95% 0%, rgba(127, 209, 199, 0.06), transparent 55%);
-    }
+    background: var(--paper);
+    background-image: none;
+    min-height: 100vh;
 }
 
 img {
@@ -108,6 +101,11 @@ hr {
     max-width: $max-width;
     margin: 0 auto;
     padding: 0 $gutter;
+}
+
+.site-header {
+    padding-top: 3rem;
+    background: var(--paper);
 }
 
 #content {
