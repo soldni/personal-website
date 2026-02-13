@@ -15,7 +15,6 @@
         {{ $keywords = delimit . ", " }}
     {{ end }}
     <title>{{ $pageTitle }}</title>
-    <base href="{{ .Site.BaseURL }}">
     <meta name="description" content="{{ $description }}">
     <meta name="author" content="{{ .Site.Params.author }}">
     <meta name="keywords" content="{{ $keywords }}">
@@ -44,8 +43,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    {{ $style := resources.Get "sass/theme.scss" | toCSS | minify }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ $style := resources.Get "sass/theme.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
 
     {{ with .Site.Params.favicon }}
     <link rel="shortcut icon" href="{{ . | relURL }}">
@@ -71,5 +70,7 @@
     <link rel="manifest" href="/2nd-gen-favicon/composed/light/manifest.json">
     <meta name="msapplication-TileColor" content="#f7f3ed">
     <meta name="msapplication-TileImage" content="/2nd-gen-favicon/composed/light/favicon-144-precomposed.png">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f3ed">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1f2227">
     <meta name="theme-color" content="#f7f3ed">
 </head>
