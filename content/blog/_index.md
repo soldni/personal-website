@@ -1,6 +1,5 @@
 +++
-title = "Blog"
-description = "Writing, notes, and updates."
+title = "Writings"
 +++
 
-Occasional essays, research notes, and small updates. Expect experiments, reflections, and links worth keeping.
+I write unfrequent blog posts on for experiments and musing that do not quite fit in a paper.

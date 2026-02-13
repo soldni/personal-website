@@ -28,13 +28,13 @@ enableRobotsTXT = true
   msvalidate_01 = "6A330A58006408660C4D6B81B04E8740"
 
 [permalinks]
-  "/" = "/:filename"
+  "/" = "/:contentbasename"
 
 [menu]
 
   [[menu.main]]
-    name = "Misc"
-    url = "/misc"
+    name = "Writings"
+    url = "/blog"
     weight = 1
 
   [[menu.main]]
@@ -43,8 +43,8 @@ enableRobotsTXT = true
     weight = 2
 
   [[menu.main]]
-    name = "Blog"
-    url = "/blog"
+    name = "Misc"
+    url = "/misc"
     weight = 3
 
 [markup.goldmark.renderer]
