@@ -10,6 +10,8 @@ Here is a list of papers that I have authored, also available on my <a class="ic
 ## 2026
 
 
+
+- William Merrill<sup>†</sup>, Yanhong Li<sup>†</sup>, Tyler Romero<sup>†</sup>, Anej Svete<sup>†</sup>, Caia Costello<sup>†</sup><span class="hide-authors">, Pradeep Dasigi, Dirk Groeneveld, David Heineman, Bailey Kuehl, Nathan Lambert, Chuan Li, Kyle Lo, Saumya Malik, DJ Matusz, Benjamin Minixhofer, Jacob Morrison, **Luca Soldaini**, Finbarr Timbers, Pete Walsh, Noah A. Smith, Hannaneh Hajishirzi,</span> and Ashish Sabharwal<sup>†</sup>. [Olmo Hybrid: From Theory to Practice](https://allenai.org/papers/olmo-hybrid). <span class="call-in">preprint</span>
 - Mayee F. Chen, Tyler Murray, David Heineman, Matt Jordan, Hannaneh Hajishirzi, Christopher Ré, **Luca Soldaini**, and Kyle Lo. ["Olmix: A Framework for Data Mixing Throughout LM Development"](https://arxiv.org/abs/2602.12237). ArXiv 2602.12237. <span class="call-in">preprint</span>
 - Yapei Chang, Kyle Lo, Mohit Iyyer, and **Luca Soldaini**. ["How2Everything: Mining the Web for How-To Procedures to Evaluate and Improve LLMs"](https://arxiv.org/abs/2602.08808). ArXiv 2602.08808. <span class="call-in">preprint</span>
 - Akari Asai, Jacqueline He, Rulin Shao, Weijia Shi, Amanpreet Singh, Joseph Chee Chang, Kyle Lo, **Luca Soldaini**, Sergey Feldman, Mike D'Arcy, David Wadden<span class="hide-authors">, Matt Latzke, Minyang Tian, Pan Ji, Shengyan Liu, Hao Tong, Bohao Wu, Yanyu Xiong, Luke Zettlemoyer, Graham Neubig, Dan Weld, Doug Downey, Wen-tau Yih,</span> Pang Wei Koh, and Hannaneh Hajishirzi. ["Synthesizing scientific literature with retrieval-augmented language models"](https://www.nature.com/articles/s41586-025-10072-4). Nature 2026.

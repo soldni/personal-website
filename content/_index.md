@@ -38,7 +38,7 @@ When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8]
 
 These days, my research focuses on maximizing transparency in all aspects of how large language models (LLMs) are created, trained, and evaluated.
 
-- I co-lead the **data team for [Olmo][35]**, Ai2's language model project with [Kyle Lo][43]. Olmo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. In the last 3 years, we released [dense][38] and [mixture-of-experts][37] variants, alongside the data, code, recipes, and checkpoints we used to build them. Our latest is [Olmo 3][46]: we release instruct and thinking 7B/32B models that are about competitive with Qwen 3.
+- I co-lead the **data team for [Olmo][35]**, Ai2's language model project with [Kyle Lo][43]. Olmo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. In the last 3 years, we released [dense][38], [mixture-of-experts][37], and [hybrid][49] variants, alongside the data, code, recipes, and checkpoints we used to build them. Our latest is [Olmo 3][46]: we release instruct and thinking 7B/32B models that are about competitive with Qwen 3.
 - With my colleagues at Ai2, I develop **recipes for adaptation** of language models. In 2024, we launched [Tulu 3][39], a state-of-the-art pipeline to post-train language models [up to 405B parameters][40]. I worked on [Molmo][41], a family of open multimodal AI models that are as good as closed-source VLMs. We recently released [DR Tulu][47], a fully-open recipe for building deep research systems; [better than][48] Gemini 3 Pro and GPT-5!
 - collaborated on several **toolkits** for pretraining **data curation**. [olmOCR](https://olmocr.allenai.org) is a high-performance model for PDF text extraction; [v2](https://arxiv.org/abs/2510.19817) is even better thanks to RL on verifiable unit tests! [WebOrganizer](https://weborganizer.allen.ai) can partition large-scale web data by topic and format.
 
@@ -49,17 +49,13 @@ Hop over to the [publications page](/publications) for a complete list of my wor
 
 ## Contacts
 
-I am mostly active on Twitter/X, and host most of my code on GitHub. The best way to reach out is via email; my Signal contact is available upon request.
+I am mostly active on Twitter/X, and host most of my code on GitHub. The best way to reach out is via email or Signal.
 
 <div id="contact-list">
 <ul class="fa-ul contact-list">
     <li class="contact-item">
-        <span class="list-icon icon-twitter" aria-hidden="true"></span>
-        <a href="https://twitter.com/soldni">Twitter / X</a>
-    </li>
-    <li class="contact-item">
-        <span class="list-icon icon-linkedin" aria-hidden="true"></span>
-        <a href="https://www.linkedin.com/in/soldni" target="_blank">LinkedIn</a>
+        <span class="list-icon icon-email" aria-hidden="true"></span>
+        <a href="mailto:luca@soldaini.net">Email</a>
     </li>
     <li class="contact-item">
         <span class="list-icon icon-github" aria-hidden="true"></span>
@@ -70,8 +66,16 @@ I am mostly active on Twitter/X, and host most of my code on GitHub. The best wa
         <a href="https://scholar.google.com/citations?user=3KPvwcgAAAAJ" target="_blank">Google Scholar</a>
     </li>
     <li class="contact-item">
-        <span class="list-icon icon-email" aria-hidden="true"></span>
-        <a href="mailto:luca@soldaini.net">Email</a>
+        <span class="list-icon icon-linkedin" aria-hidden="true"></span>
+        <a href="https://www.linkedin.com/in/soldni" target="_blank">LinkedIn</a>
+    </li>
+    <li class="contact-item">
+        <span class="list-icon icon-signal" aria-hidden="true"></span>
+        <a href="https://signal.me/#u/soldni.01">Signal</a>
+    </li>
+    <li class="contact-item">
+        <span class="list-icon icon-twitter" aria-hidden="true"></span>
+        <a href="https://twitter.com/soldni">Twitter / X</a>
     </li>
 </ul>
 </div>
@@ -124,6 +128,7 @@ I am mostly active on Twitter/X, and host most of my code on GitHub. The best wa
 [46]: https://allenai.org/blog/olmo3
 [47]: https://allenai.org/blog/dr-tulu
 [48]: https://x.com/AkariAsai/status/1993336112237117819
+[49]: https://allenai.org/blog/olmohybrid
 
 
 <!-- <li>
