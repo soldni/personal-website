@@ -1,0 +1,28 @@
+{
+  "order": [
+    "LLM Development",
+    "LLM Data Curation",
+    "Model Evaluation",
+    "Core Information Retrieval",
+    "Scientific Document Intelligence",
+    "Multimodal Models",
+    "Question Answering",
+    "Medical Information Retrieval",
+    "Medical NLP",
+    "Responsible AI",
+    "Applied NLP"
+  ],
+  "icons": {
+    "LLM Development": "llm-development.svg",
+    "LLM Data Curation": "llm-development.svg",
+    "Model Evaluation": "model-evaluation.svg",
+    "Core Information Retrieval": "core-infromation-retrieval.svg",
+    "Scientific Document Intelligence": "scientific-document-intelligence.svg",
+    "Multimodal Models": "mutlimodal-models.svg",
+    "Question Answering": "question-answering.svg",
+    "Medical Information Retrieval": "medical-information-retrieval.svg",
+    "Medical NLP": "medical-nlp.svg",
+    "Responsible AI": "responsible-ai.svg",
+    "Applied NLP": "model-evaluation.svg"
+  }
+}

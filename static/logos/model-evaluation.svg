@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>model-evaluation</title>
+    <g id="model-evaluation" stroke="none" fill="none" transform="translate(-0, 0)" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g id="Group" stroke="#000000">
+            <path d="M13,7 L8.7,2.7 C7.75978842,1.76432628 6.24021158,1.76432628 5.3,2.7 L2.7,5.3 C1.76432628,6.24021158 1.76432628,7.75978842 2.7,8.7 L7,13" id="Path" stroke-width="2"></path>
+            <line x1="8" y1="6" x2="10" y2="4" id="Path" stroke-width="2"></line>
+            <line x1="18" y1="16" x2="20" y2="14" id="Path" stroke-width="2"></line>
+            <path d="M17,11 L21.3,15.3 C22.24,16.24 22.24,17.76 21.3,18.7 L18.7,21.3 C17.76,22.24 16.24,22.24 15.3,21.3 L11,17" id="Path" stroke-width="2"></path>
+            <path d="M21.174,6.812 C22.2749796,5.71129649 22.2752035,3.92647967 21.1745,2.82550003 C20.0737965,1.72452039 18.2889797,1.72429652 17.188,2.825 L3.842,16.174 C3.60981939,16.4055002 3.43811365,16.6905317 3.342,17.004 L2.021,21.356 C1.96834538,21.5321953 2.01665857,21.7230736 2.1467962,21.8530024 C2.27693383,21.9829311 2.46788955,22.0309376 2.644,21.978 L6.997,20.658 C7.31016916,20.5627512 7.59517322,20.3920922 7.827,20.161 L21.174,6.812 Z" id="Path" stroke-width="2"></path>
+            <line x1="15" y1="5" x2="19" y2="9" id="Path" stroke-width="2"></line>
+        </g>
+    </g>
+</svg>

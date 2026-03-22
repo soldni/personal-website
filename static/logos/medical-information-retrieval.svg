@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>medical-information-retrieval</title>
+    <g id="medical-information-retrieval" stroke="none" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g id="Group" stroke="#000000">
+            <path d="M14.508,19.313 C14.1310674,19.7459173 12.5862941,20.9960095 12.0122886,20.9998005 C11.4382831,21.0032802 10.8903858,20.7601083 10.508,20.332 L5,15 C3.5,13.5 2,11.8 2,9.5 C2,7.22194594 3.40444382,5.17969022 5.53160871,4.36439899 C7.65877361,3.54910776 10.0683896,4.12954197 11.591,5.824 C11.6968906,5.93722184 11.8449774,6.00148333 12,6.00148333 C12.1550226,6.00148333 12.3031094,5.93722184 12.409,5.824 C13.9271181,4.11820364 16.342614,3.53023894 18.4748747,4.34748325 C20.6071353,5.16472756 22.0108778,7.21651462 22.0001248,9.5" id="Path" stroke-width="2"></path>
+            <g transform="translate(1, -3)" stroke-width="2">
+                <path d="M18,21 C19.6568542,21 21,19.6568542 21,18 C21,16.3431458 19.6568542,15 18,15 C16.3431458,15 15,16.3431458 15,18 C15,19.6568542 16.3431458,21 18,21 Z" id="Path"></path>
+                <circle id="Oval" cx="18" cy="18" r="3"></circle>
+                <line x1="22" y1="22" x2="20.5" y2="20.5" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

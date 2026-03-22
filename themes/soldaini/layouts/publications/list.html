@@ -1,0 +1,133 @@
+{{ define "main" }}
+{{ $data := site.Data.generated.publications }}
+{{ $topics := site.Data.publication_topics }}
+<div class="container publications-page">
+    <div class="publications-page-intro">
+        {{ .Content }}
+    </div>
+
+    {{ if $data }}
+    <p class="publications-summary">
+        {{ len $data.entries }} papers across {{ len $topics.order }} topics.
+    </p>
+
+    <div class="publication-filters" aria-label="Filter publications by topic">
+        <button class="publication-topic-toggle is-active" type="button" data-topic-filter="all" aria-pressed="true">
+            <span>All Topics</span>
+        </button>
+        {{ range $topics.order }}
+            {{ $topic := . }}
+            {{ $count := index $data.topic_counts $topic | default 0 }}
+            {{ if gt $count 0 }}
+                {{ $icon := index $topics.icons $topic }}
+                <button class="publication-topic-toggle" type="button" data-topic-filter="{{ $topic }}" aria-pressed="false">
+                    <span
+                        class="publication-topic-icon"
+                        aria-hidden="true"
+                        style="--topic-icon: url('/logos/{{ $icon }}');"
+                    ></span>
+                    <span>{{ $topic }}</span>
+                    <span class="publication-topic-count">{{ $count }}</span>
+                </button>
+            {{ end }}
+        {{ end }}
+    </div>
+
+    <div class="publication-year-groups">
+        {{ range $data.years }}
+            {{ $year := . }}
+            {{ $yearCount := index $data.year_counts $year | default 0 }}
+            <section class="publication-year-group" data-publication-year="{{ $year }}">
+                <header class="publication-year-header">
+                    <h2>{{ $year }}</h2>
+                    <p>{{ $yearCount }} publications</p>
+                </header>
+                <ul class="publication-list">
+                    {{ range where $data.entries "year" $year }}
+                        {{ $icon := index $topics.icons .topic }}
+                        <li class="publication-entry" data-publication-entry data-topic="{{ .topic }}">
+                            <span
+                                class="publication-topic-icon publication-entry-icon"
+                                aria-hidden="true"
+                                style="--topic-icon: url('/logos/{{ $icon }}');"
+                            ></span>
+                            <div class="publication-entry-body">
+                                <span class="publication-entry-authors">{{ .authors_display | safeHTML }}</span>
+                                <a class="publication-entry-title" href="{{ .url }}">{{ .title }}</a>.
+                                {{ if or .venue_display .badge }}
+                                    <span class="publication-entry-meta">
+                                        {{ if .venue_display }}{{ .venue_display }}{{ end }}
+                                        {{ if .badge }} <span class="{{ .badge_style }}">{{ .badge }}</span>{{ end }}
+                                    </span>
+                                {{ end }}
+                            </div>
+                        </li>
+                    {{ end }}
+                </ul>
+            </section>
+        {{ end }}
+    </div>
+    {{ else }}
+    <p>Publication data is temporarily unavailable.</p>
+    {{ end }}
+</div>
+
+<script>
+    (function () {
+        var filterButtons = document.querySelectorAll(".publication-topic-toggle");
+        var entries = document.querySelectorAll("[data-publication-entry]");
+        var yearGroups = document.querySelectorAll("[data-publication-year]");
+        if (!filterButtons.length || !entries.length) {
+            return;
+        }
+
+        var activeTopics = new Set();
+
+        function syncButtons() {
+            for (var i = 0; i < filterButtons.length; i++) {
+                var button = filterButtons[i];
+                var topic = button.getAttribute("data-topic-filter");
+                var isActive = topic === "all" ? activeTopics.size === 0 : activeTopics.has(topic);
+                button.classList.toggle("is-active", isActive);
+                button.setAttribute("aria-pressed", isActive ? "true" : "false");
+            }
+        }
+
+        function syncEntries() {
+            for (var i = 0; i < entries.length; i++) {
+                var entry = entries[i];
+                var topic = entry.getAttribute("data-topic");
+                var visible = activeTopics.size === 0 || activeTopics.has(topic);
+                entry.hidden = !visible;
+            }
+
+            for (var j = 0; j < yearGroups.length; j++) {
+                var group = yearGroups[j];
+                var visibleEntries = group.querySelectorAll("[data-publication-entry]:not([hidden])");
+                group.hidden = visibleEntries.length === 0;
+            }
+        }
+
+        function toggleTopic(topic) {
+            if (topic === "all") {
+                activeTopics.clear();
+            } else if (activeTopics.has(topic)) {
+                activeTopics.delete(topic);
+            } else {
+                activeTopics.add(topic);
+            }
+            syncButtons();
+            syncEntries();
+        }
+
+        for (var i = 0; i < filterButtons.length; i++) {
+            filterButtons[i].addEventListener("click", function () {
+                toggleTopic(this.getAttribute("data-topic-filter"));
+            });
+        }
+
+        syncButtons();
+        syncEntries();
+    })();
+</script>
+{{ end }}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>scientific-document-intelligence</title>
+    <g id="scientific-document-intelligence" stroke="none" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g id="Group" stroke="#000000">
+            <path d="M4,11.9999928 L4,3.99999277 C4,2.8954305 4.8954305,1.99999277 6,1.99999277 L14,1.99999277 C14.6400579,1.99843032 15.2542264,2.25259384 15.706,2.706 L19.294,6.294 C19.7474062,6.74577362 20.0015697,7.35994212 20,7.99999277 L20,19.9999928 C20,21.1045695 19.1045695,21.9999928 18,21.9999928" id="Path" stroke-width="2"></path>
+            <path d="M14,2 L14,7 C14,7.55228475 14.4477153,8 15,8 L20,8" id="Path" stroke-width="2"></path>
+            <polyline id="Path" stroke-width="2" points="10 16 12 16 12 22"></polyline>
+            <line x1="10" y1="22" x2="14" y2="22" id="Path" stroke-width="2"></line>
+            <rect id="Rectangle" stroke-width="2" x="2" y="16" width="4" height="6" rx="2"></rect>
+        </g>
+    </g>
+</svg>
