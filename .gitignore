@@ -275,3 +275,4 @@ Cargo.lock
 
 # preview screenshots
 .artifacts/
+.claude/worktrees
