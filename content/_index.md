@@ -4,7 +4,12 @@ title = "Luca Soldaini"
 
 <div id="avatar-container">
     <div id="front-avatar">
-        <img src="personal-me/me-512.webp" alt="Half bust portrait picture of Luca Soldaini." class="avatar">
+        <img src="personal-me/me-512.webp"
+             srcset="personal-me/me-512.webp 512w, personal-me/me-1024.webp 1024w"
+             sizes="256px"
+             width="512" height="512"
+             fetchpriority="high"
+             alt="Half bust portrait picture of Luca Soldaini." class="avatar">
     </div>
     <div id="back-avatar">
         <img src="/alt.webp" loading="lazy" alt="A raccoon wearing a top hat and holding a pizza slice." class="avatar">
