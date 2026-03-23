@@ -8,7 +8,7 @@
 
     {{ if $data }}
     <div class="publication-filter-bar has-right-fade" data-publication-filter-mask>
-        <div class="publication-filters-scroll" data-publication-filter-scroll aria-label="Filter publications by topic">
+        <div class="publication-filters-scroll" data-publication-filter-scroll role="toolbar" aria-label="Filter publications by topic">
             <div class="publication-filters">
                 <button class="publication-topic-toggle is-active" type="button" data-topic-filter="all" aria-pressed="true">
                     <span>All Topics</span>
@@ -35,7 +35,6 @@
     <div class="publication-year-groups">
         {{ range $data.years }}
             {{ $year := . }}
-            {{ $yearCount := index $data.year_counts $year | default 0 }}
             <section class="publication-year-group" data-publication-year="{{ $year }}">
                 <header class="publication-year-header">
                     <h2>{{ $year }}</h2>
