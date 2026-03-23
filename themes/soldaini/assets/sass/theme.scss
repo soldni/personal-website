@@ -463,7 +463,7 @@ hr {
 
 .publication-entry-venue {
     color: var(--muted);
-    font-size: 0.84rem;
+    font-size: 0.95rem;
     line-height: 1.1;
 }
 
@@ -482,9 +482,20 @@ hr {
     font-size: 0.7rem;
     padding: 0.03rem 0.34rem;
     border-radius: 0.35rem;
+}
+
+.publication-entry-badges .call-in {
     color: var(--muted);
-    background: transparent;
-    border-color: var(--muted);
+    background: var(--shadow);
+    border-color: transparent;
+    font-weight: 600;
+}
+
+.publication-entry-badges .call-out {
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-color: transparent;
+    font-weight: 600;
 }
 
 .publication-entry .short-authors {
@@ -1138,7 +1149,6 @@ span.call-out {
     font-size: 0.85em;
     padding: 0.05rem 0.35rem;
     border-radius: 0.4rem;
-    border: 1px solid var(--accent);
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
@@ -1148,14 +1158,17 @@ span.call-out {
 }
 
 span.call-in {
-    color: var(--accent);
-    background: transparent;
+    color: var(--muted);
+    background: var(--shadow);
+    border: 1px solid transparent;
+    font-weight: 600;
 }
 
 span.call-out {
-    color: #ffffff;
-    background: var(--accent);
-    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid transparent;
+    font-weight: 600;
 }
 
 span.short-authors {
