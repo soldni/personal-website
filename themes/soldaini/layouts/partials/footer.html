@@ -122,8 +122,15 @@
     var hideAuthors = document.getElementsByClassName("hide-authors");
     for (var i = 0; i < hideAuthors.length; i++) {
         var innerText = hideAuthors[i].textContent;
-        // count the number of commas in the span
-        var num_authors = innerText.split(",").length - 1;
+        var hiddenAuthors = innerText
+            .split(",")
+            .map(function (part) {
+                return part.trim();
+            })
+            .filter(function (part) {
+                return part.length > 0;
+            });
+        var num_authors = hiddenAuthors.length;
 
         // if there are less than 3 authors, skip to the next span
         if (num_authors < 3) {

@@ -14,15 +14,15 @@
   ],
   "icons": {
     "LLM Development": "llm-development.svg",
-    "LLM Data Curation": "llm-development.svg",
+    "LLM Data Curation": "llm-data-curation.svg",
     "Model Evaluation": "model-evaluation.svg",
-    "Core Information Retrieval": "core-infromation-retrieval.svg",
+    "Core Information Retrieval": "core-information-retrieval.svg",
     "Scientific Document Intelligence": "scientific-document-intelligence.svg",
-    "Multimodal Models": "mutlimodal-models.svg",
+    "Multimodal Models": "multimodal-models.svg",
     "Question Answering": "question-answering.svg",
     "Medical Information Retrieval": "medical-information-retrieval.svg",
     "Medical NLP": "medical-nlp.svg",
     "Responsible AI": "responsible-ai.svg",
-    "Applied NLP": "model-evaluation.svg"
+    "Applied NLP": "applied-nlp.svg"
   }
 }

@@ -7,30 +7,29 @@
     </div>
 
     {{ if $data }}
-    <p class="publications-summary">
-        {{ len $data.entries }} papers across {{ len $topics.order }} topics.
-    </p>
-
-    <div class="publication-filters" aria-label="Filter publications by topic">
-        <button class="publication-topic-toggle is-active" type="button" data-topic-filter="all" aria-pressed="true">
-            <span>All Topics</span>
-        </button>
-        {{ range $topics.order }}
-            {{ $topic := . }}
-            {{ $count := index $data.topic_counts $topic | default 0 }}
-            {{ if gt $count 0 }}
-                {{ $icon := index $topics.icons $topic }}
-                <button class="publication-topic-toggle" type="button" data-topic-filter="{{ $topic }}" aria-pressed="false">
-                    <span
-                        class="publication-topic-icon"
-                        aria-hidden="true"
-                        style="--topic-icon: url('/logos/{{ $icon }}');"
-                    ></span>
-                    <span>{{ $topic }}</span>
-                    <span class="publication-topic-count">{{ $count }}</span>
+    <div class="publication-filter-bar has-right-fade" data-publication-filter-mask>
+        <div class="publication-filters-scroll" data-publication-filter-scroll aria-label="Filter publications by topic">
+            <div class="publication-filters">
+                <button class="publication-topic-toggle is-active" type="button" data-topic-filter="all" aria-pressed="true">
+                    <span>All Topics</span>
                 </button>
-            {{ end }}
-        {{ end }}
+                {{ range $topics.order }}
+                    {{ $topic := . }}
+                    {{ $count := index $data.topic_counts $topic | default 0 }}
+                    {{ if gt $count 0 }}
+                        {{ $icon := index $topics.icons $topic }}
+                        <button class="publication-topic-toggle" type="button" data-topic-filter="{{ $topic }}" aria-pressed="false">
+                            <span
+                                class="publication-topic-icon"
+                                aria-hidden="true"
+                                style="--topic-icon: url('/logos/{{ $icon }}');"
+                            ></span>
+                            <span>{{ $topic }}</span>
+                        </button>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
     </div>
 
     <div class="publication-year-groups">
@@ -40,7 +39,6 @@
             <section class="publication-year-group" data-publication-year="{{ $year }}">
                 <header class="publication-year-header">
                     <h2>{{ $year }}</h2>
-                    <p>{{ $yearCount }} publications</p>
                 </header>
                 <ul class="publication-list">
                     {{ range where $data.entries "year" $year }}
@@ -51,16 +49,20 @@
                                 aria-hidden="true"
                                 style="--topic-icon: url('/logos/{{ $icon }}');"
                             ></span>
-                            <div class="publication-entry-body">
-                                <span class="publication-entry-authors">{{ .authors_display | safeHTML }}</span>
-                                <a class="publication-entry-title" href="{{ .url }}">{{ .title }}</a>.
-                                {{ if or .venue_display .badge }}
-                                    <span class="publication-entry-meta">
-                                        {{ if .venue_display }}{{ .venue_display }}{{ end }}
-                                        {{ if .badge }} <span class="{{ .badge_style }}">{{ .badge }}</span>{{ end }}
-                                    </span>
+                            <article class="publication-entry-body">
+                                <p class="publication-entry-title">
+                                    <a href="{{ .url }}">{{ .title }}</a>
+                                </p>
+                                <p class="publication-entry-authors">{{ .authors_html | safeHTML }}</p>
+                                {{ if .venue_text }}
+                                    <p class="publication-entry-venue">{{ .venue_text }}</p>
                                 {{ end }}
-                            </div>
+                                {{ if .badge }}
+                                    <div class="publication-entry-badges">
+                                        <span class="{{ .badge_style }}">{{ .badge }}</span>
+                                    </div>
+                                {{ end }}
+                            </article>
                         </li>
                     {{ end }}
                 </ul>
@@ -77,6 +79,8 @@
         var filterButtons = document.querySelectorAll(".publication-topic-toggle");
         var entries = document.querySelectorAll("[data-publication-entry]");
         var yearGroups = document.querySelectorAll("[data-publication-year]");
+        var filterMask = document.querySelector("[data-publication-filter-mask]");
+        var filterScroller = document.querySelector("[data-publication-filter-scroll]");
         if (!filterButtons.length || !entries.length) {
             return;
         }
@@ -108,6 +112,20 @@
             }
         }
 
+        function syncFilterFades() {
+            if (!filterScroller) {
+                return;
+            }
+
+            var maxScrollLeft = filterScroller.scrollWidth - filterScroller.clientWidth;
+            if (!filterMask) {
+                return;
+            }
+
+            filterMask.classList.toggle("has-left-fade", filterScroller.scrollLeft > 8);
+            filterMask.classList.toggle("has-right-fade", maxScrollLeft - filterScroller.scrollLeft > 8);
+        }
+
         function toggleTopic(topic) {
             if (topic === "all") {
                 activeTopics.clear();
@@ -126,8 +144,14 @@
             });
         }
 
+        if (filterScroller) {
+            filterScroller.addEventListener("scroll", syncFilterFades);
+            window.addEventListener("resize", syncFilterFades);
+        }
+
         syncButtons();
         syncEntries();
+        syncFilterFades();
     })();
 </script>
 {{ end }}
