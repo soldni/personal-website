@@ -35,6 +35,8 @@ def render_venue_text(entry: dict[str, str]) -> str:
     archiveprefix = entry.get("archiveprefix", "")
     eprint = entry.get("eprint", "")
     if archiveprefix and eprint:
+        if entry.get("badge") == "preprint":
+            return ""
         return f"arXiv {eprint}"
 
     if entry.get("journal"):

@@ -467,6 +467,10 @@ hr {
     line-height: 1.1;
 }
 
+.author-marker {
+    color: var(--muted);
+}
+
 .publication-entry-badges {
     margin-top: 0.02rem;
     line-height: 1;
@@ -478,6 +482,9 @@ hr {
     font-size: 0.7rem;
     padding: 0.03rem 0.34rem;
     border-radius: 0.35rem;
+    color: var(--muted);
+    background: transparent;
+    border-color: var(--muted);
 }
 
 .publication-entry .short-authors {
