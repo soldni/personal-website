@@ -15,6 +15,7 @@ Visit it at [soldaini.net](http://soldaini.net).
 
 - Pages are in [`content/`](content/)
 - Assets are in [`static/`](static/)
+- Publications are authored in [`content/publications.bib`](content/publications.bib) as BibTeX entries
 
 Preview locally (published content only):
 
@@ -25,12 +26,14 @@ uv run hugo-preview
 Build production output into `public/`:
 
 ```bash
-uv run hugo-cli
+uv run hugo-build
 ```
 
 Pass any Hugo flags through either command, for example:
 
 ```bash
 uv run hugo-preview --bind 0.0.0.0 --port 1313
-uv run hugo-cli --minify
+uv run hugo-build --baseURL https://example.com/
 ```
+
+All commands automatically generate `data/generated/publications.json` from the `.bib` file before invoking Hugo.

@@ -8,15 +8,17 @@ authors = [
     { name = "Luca Soldaini", email = "luca@soldaini.net" }
 ]
 dependencies = [
+    "bibtexparser>=2.0.0b7",
     "hugo==0.153.0",
     "playwright==1.55.0",
 ]
 
 
 [project.scripts]
-hugo-cli = "personal_website.__init__:hugo_cli_entrypoint"
-hugo-preview = "personal_website.__init__:preview"
-preview-png = "personal_website.__init__:preview_png"
+hugo-cli = "personal_website.cli:hugo_cli_entrypoint"
+hugo-preview = "personal_website.cli:preview"
+hugo-build = "personal_website.cli:hugo_build"
+preview-png = "personal_website.cli:preview_png"
 
 [build-system]
 requires = ["hatchling"]

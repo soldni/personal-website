@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>core-infromation-retrieval</title>
+    <g id="core-infromation-retrieval" stroke="none" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g id="Group" stroke="#000000">
+            <path d="M11.1,21.9999928 L6,21.9999928 C4.8954305,21.9999928 4,21.1045695 4,19.9999928 L4,3.99999277 C4,2.8954305 4.8954305,1.99999277 6,1.99999277 L14,1.99999277 C14.6400579,1.99843032 15.2542264,2.25259384 15.706,2.706 L19.295,6.294 C19.7480394,6.74593825 20.0018345,7.36008635 20,7.99999277 L20,11.25" id="Path" stroke-width="2"></path>
+            <path d="M14,2 L14,7 C14,7.55228475 14.4477153,8 15,8 L20,8" id="Path" stroke-width="2"></path>
+            <line x1="21" y1="22" x2="18.12" y2="19.12" id="Path" stroke-width="2"></line>
+            <circle id="Oval" stroke-width="2" cx="16" cy="17" r="3"></circle>
+        </g>
+    </g>
+</svg>

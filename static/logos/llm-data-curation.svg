@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>llm-data-curation</title>
+    <g id="llm-data-curation" stroke="none" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g id="Group" stroke="#000000">
+            <ellipse id="Oval" stroke-width="2" cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M2.99993274,5 L2.99993274,19 C2.9886977,19.9759461 4.40230838,20.8927289 6.78963567,21.4577297 C9.17696296,22.0227305 12.2395948,22.1653251 15,21.84" id="Path" stroke-width="2"></path>
+            <line x1="21" y1="5" x2="21" y2="8" id="Path" stroke-width="2"></line>
+            <polyline id="Path" stroke-width="2" points="21 12 18 17 22 17 19 22"></polyline>
+            <path d="M3,12 C3.00293045,12.9480104 4.34996171,13.8397782 6.63296444,14.405112 C8.91596718,14.9704457 11.8662784,15.142817 14.59,14.87" id="Path" stroke-width="2"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mutlimodal-models</title>
+    <g id="mutlimodal-models" stroke="none" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g id="Group" stroke="#000000">
+            <path d="M22,11 L20.704,9.704 C20.2533602,9.24964964 19.6399301,8.99408402 19,8.99408402 C18.3600699,8.99408402 17.7466398,9.24964964 17.296,9.704 L11,16" id="Path" stroke-width="2"></path>
+            <path d="M4,8 C2.8954305,8 2,8.8954305 2,10 L2,20 C2,21.1045695 2.8954305,22 4,22 L14,22 C15.1045695,22 16,21.1045695 16,20" id="Path" stroke-width="2"></path>
+            <circle id="Oval" stroke-width="2" fill="#000000" cx="13" cy="7" r="1"></circle>
+            <rect id="Rectangle" stroke-width="2" x="8" y="2" width="14" height="14" rx="2"></rect>
+        </g>
+    </g>
+</svg>

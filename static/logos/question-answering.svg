@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>question-answering</title>
+    <g id="question-answering" stroke="none" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g id="Group" stroke="#000000">
+            <path d="M16,10 C16,11.1045695 15.1045695,12 14,12 L6.828,12 C6.29761037,12.0001133 5.78898546,12.2109013 5.414,12.586 L3.212,14.788 C3.00894303,14.9910199 2.70359175,15.0517466 2.43830716,14.941868 C2.17302256,14.8319894 2,14.5731397 2,14.286 L2,4 C2,2.8954305 2.8954305,2 4,2 L14,2 C15.1045695,2 16,2.8954305 16,4 L16,10 Z" id="Path" stroke-width="2"></path>
+            <path d="M20,9 C21.1045695,9 22,9.8954305 22,11 L22,21.286 C22,21.5731397 21.8269774,21.8319894 21.5616928,21.941868 C21.2964082,22.0517466 20.991057,21.9910199 20.788,21.788 L18.586,19.586 C18.2110145,19.2109013 17.7023896,19.0001133 17.172,19 L10,19 C8.8954305,19 8,18.1045695 8,17 L8,16" id="Path" stroke-width="2"></path>
+        </g>
+    </g>
+</svg>

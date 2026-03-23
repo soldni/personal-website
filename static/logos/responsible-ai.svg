@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>responsible-ai</title>
+    <g id="responsible-ai" stroke="none" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g id="Group" stroke="#000000">
+            <line x1="12" y1="3" x2="12" y2="21" id="Path" stroke-width="2"></line>
+            <path d="M19,8 L22,16 C20.2222222,17.3333333 17.7777778,17.3333333 16,16 L19,8 Z M19,8 L19,7" id="Shape" stroke-width="2"></path>
+            <path d="M3,7 L4,7 C6.79039418,7 9.53788749,6.31312667 12,5 C14.4621125,6.31312667 17.2096058,7 20,7 L21,7" id="Path" stroke-width="2"></path>
+            <path d="M5,8 L8,16 C6.22222222,17.3333333 3.77777778,17.3333333 2,16 L5,8 Z M5,8 L5,7" id="Shape" stroke-width="2"></path>
+            <line x1="7" y1="21" x2="17" y2="21" id="Path" stroke-width="2"></line>
+        </g>
+    </g>
+</svg>
