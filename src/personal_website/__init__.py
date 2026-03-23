@@ -176,7 +176,7 @@ def _render_authors_html(entry: dict[str, str]) -> str:
     core_authors = set(_split_bibtex_name_list(entry.get("author_core", "")))
     formatted_authors = [_format_author(author, equal_authors, core_authors) for author in authors]
 
-    if len(formatted_authors) >= 9:
+    if len(formatted_authors) >= 16:
         leading = ", ".join(formatted_authors[:4])
         hidden = ", ".join(formatted_authors[4:-2])
         trailing = ", ".join(formatted_authors[-2:])
