@@ -121,6 +121,7 @@
     // loop through all spans with class 'hide-authors'
     var hideAuthors = document.getElementsByClassName("hide-authors");
     for (var i = 0; i < hideAuthors.length; i++) {
+        var innerHTML = hideAuthors[i].innerHTML;
         var innerText = hideAuthors[i].textContent;
         var hiddenAuthors = innerText
             .split(",")
@@ -145,10 +146,10 @@
             num_authors +
             " authors </span>" +
             '<span class="long-authors">' +
-            innerText +
+            innerHTML +
             "</span>";
-        shortAuthorsSpan = hideAuthors[i].getElementsByClassName("short-authors")[0];
-        longAuthorsSpan = hideAuthors[i].getElementsByClassName("long-authors")[0];
+        var shortAuthorsSpan = hideAuthors[i].getElementsByClassName("short-authors")[0];
+        var longAuthorsSpan = hideAuthors[i].getElementsByClassName("long-authors")[0];
 
         // set title of 'short-authors' and 'long-authors' spans
         shortAuthorsSpan.title = "Click to show full author list.";
