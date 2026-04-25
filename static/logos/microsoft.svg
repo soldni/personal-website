@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>microsoft</title>
+    <g id="microsoft" stroke="none" fill="none" fill-rule="evenodd" stroke-width="1">
+        <g transform="translate(8, 8)" fill="#2B2F38" id="Path">
+            <polygon points="21.9953645 0 0 0 0 22 22 22 22 0"></polygon>
+            <polygon points="48 0 26 0 26 22 48 22"></polygon>
+            <polygon points="21.9953645 26 0 26 0 48 22 48 22 26"></polygon>
+            <polygon points="48 26 26 26 26 48 48 48"></polygon>
+        </g>
+    </g>
+</svg>
