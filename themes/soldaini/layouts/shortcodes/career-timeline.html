@@ -7,7 +7,9 @@
         <li class="career-timeline-item{{ if .current }} is-current{{ end }}">
             <span class="career-timeline-marker" aria-hidden="true">
                 {{ if and .logo .current }}
-                <span class="career-timeline-logo career-timeline-logo-current" style="--career-logo: url('{{ printf "logos/%s" .logo | relURL }}')"></span>
+                <span class="career-timeline-logo career-timeline-logo-current" style="--career-logo: url('{{ printf "logos/%s" .logo | relURL }}')">
+                    <span class="career-timeline-logo-fill"></span>
+                </span>
                 {{ else if .logo }}
                 <img class="career-timeline-logo" src="{{ printf "logos/%s" .logo | relURL }}" alt="" loading="lazy">
                 {{ else }}

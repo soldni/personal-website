@@ -25,12 +25,6 @@
     initial-value: 0;
 }
 
-@property --career-logo-angle {
-    syntax: "<angle>";
-    inherits: false;
-    initial-value: 0deg;
-}
-
 :root {
     color-scheme: light dark;
     --paper: #{$paper};
@@ -381,16 +375,11 @@ hr {
 }
 
 .career-timeline-logo-current {
+    position: relative;
+    overflow: hidden;
     width: 1.2rem;
     height: 1.2rem;
-    background: conic-gradient(
-        from var(--career-logo-angle),
-        rgba(var(--accent-glow-1-rgb), 1),
-        rgba(var(--accent-glow-2-rgb), 0.95),
-        rgba(var(--accent-glow-3-rgb), 1),
-        rgba(var(--accent-glow-4-rgb), 0.94),
-        rgba(var(--accent-glow-1-rgb), 1)
-    );
+    background: rgba(var(--accent-glow-2-rgb), 0.76);
     mask-image: var(--career-logo);
     mask-size: contain;
     mask-repeat: no-repeat;
@@ -399,12 +388,30 @@ hr {
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    animation: career-logo-swirl 5.4s linear infinite;
 }
 
-@keyframes career-logo-swirl {
+.career-timeline-logo-fill {
+    position: absolute;
+    inset: -70%;
+    background:
+        radial-gradient(circle at 30% 28%, rgba(var(--accent-glow-3-rgb), 0.92) 0 12%, transparent 31%),
+        radial-gradient(circle at 78% 32%, rgba(var(--accent-glow-1-rgb), 0.86) 0 16%, transparent 38%),
+        radial-gradient(circle at 46% 78%, rgba(var(--accent-glow-2-rgb), 0.82) 0 18%, transparent 42%),
+        linear-gradient(
+            120deg,
+            rgba(var(--accent-glow-4-rgb), 0.82) 0%,
+            rgba(var(--accent-glow-1-rgb), 0.84) 28%,
+            rgba(var(--accent-glow-3-rgb), 0.76) 58%,
+            rgba(var(--accent-glow-2-rgb), 0.86) 100%
+        );
+    transform-origin: center;
+    animation: career-logo-spin 5.8s linear infinite;
+    will-change: transform;
+}
+
+@keyframes career-logo-spin {
     to {
-        --career-logo-angle: 360deg;
+        transform: rotate(360deg);
     }
 }
 
@@ -415,7 +422,7 @@ hr {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .career-timeline-logo-current {
+    .career-timeline-logo-fill {
         animation: none;
     }
 }
@@ -950,7 +957,7 @@ h1.navbar-h1 {
     position: absolute;
     z-index: 0;
     pointer-events: none;
-    filter: blur(28px);
+    filter: blur(16px);
     opacity: calc(var(--avatar-glow) * var(--blob-opacity, 1));
     transform: scale(calc(0.65 + var(--avatar-glow) * 0.25));
     will-change: transform, opacity;
@@ -992,15 +999,16 @@ h1.navbar-h1 {
         rgba(var(--accent-glow-1-rgb), 0.22) 50%,
         transparent 70%
     );
+    filter: blur(16px);
     animation: avatar-swirl-1 3s ease-in-out infinite;
 }
 
 .avatar-blob-2 {
     --blob-opacity: 0.7;
-    top: -8%;
-    left: -8%;
-    width: 116%;
-    height: 116%;
+    top: -6%;
+    left: -6%;
+    width: 112%;
+    height: 112%;
     border-radius: 65% 35% 40% 60% / 35% 60% 40% 65%;
     clip-path: polygon(
         52% 0%,
@@ -1028,15 +1036,16 @@ h1.navbar-h1 {
         rgba(var(--accent-glow-2-rgb), 0.2) 50%,
         transparent 68%
     );
+    filter: blur(20px);
     animation: avatar-swirl-2 3.8s ease-in-out infinite;
 }
 
 .avatar-blob-3 {
-    --blob-opacity: 0.85;
-    top: -6%;
-    left: -6%;
-    width: 114%;
-    height: 114%;
+    --blob-opacity: 0.8;
+    top: -2%;
+    left: -2%;
+    width: 108%;
+    height: 108%;
     border-radius: 45% 55% 70% 30% / 55% 40% 60% 45%;
     clip-path: polygon(
         48% 0%,
@@ -1068,11 +1077,11 @@ h1.navbar-h1 {
 }
 
 .avatar-blob-4 {
-    --blob-opacity: 0.6;
-    top: -12%;
-    left: -12%;
-    width: 122%;
-    height: 122%;
+    --blob-opacity: 0.50;
+    top: -10%;
+    left: -10%;
+    width: 100%;
+    height: 100%;
     border-radius: 55% 45% 35% 65% / 40% 65% 35% 60%;
     clip-path: polygon(
         50% 0%,
@@ -1099,16 +1108,16 @@ h1.navbar-h1 {
         rgba(var(--accent-glow-4-rgb), 0.18) 55%,
         transparent 72%
     );
-    filter: blur(32px);
+    filter: blur(28px);
     animation: avatar-swirl-4 4.4s ease-in-out infinite;
 }
 
 .avatar-blob-5 {
-    --blob-opacity: 0.65;
-    top: -7%;
-    left: -7%;
-    width: 116%;
-    height: 116%;
+    --blob-opacity: 0.60;
+    top: -2%;
+    left: -2%;
+    width: 110%;
+    height: 110%;
     border-radius: 40% 60% 65% 35% / 60% 30% 70% 40%;
     clip-path: polygon(
         50% 0%,
@@ -1135,7 +1144,7 @@ h1.navbar-h1 {
         rgba(var(--accent-glow-2-rgb), 0.18) 45%,
         transparent 65%
     );
-    filter: blur(26px);
+    filter: blur(32px);
     animation: avatar-swirl-5 3.3s ease-in-out infinite;
 }
 
