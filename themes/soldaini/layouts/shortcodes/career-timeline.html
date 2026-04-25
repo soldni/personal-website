@@ -1,0 +1,39 @@
+{{- $timeline := .Site.GetPage "/career-timeline" -}}
+{{- with $timeline -}}
+<section class="career-timeline" aria-label="{{ .Title }}">
+    {{ with .Params.entries }}
+    <ol class="career-timeline-list">
+        {{ range . }}
+        <li class="career-timeline-item{{ if .current }} is-current{{ end }}">
+            <span class="career-timeline-marker" aria-hidden="true">
+                {{ if and .logo .current }}
+                <span class="career-timeline-logo career-timeline-logo-current" style="--career-logo: url('{{ printf "logos/%s" .logo | relURL }}')"></span>
+                {{ else if .logo }}
+                <img class="career-timeline-logo" src="{{ printf "logos/%s" .logo | relURL }}" alt="" loading="lazy">
+                {{ else }}
+                <span class="career-timeline-logo-fallback"></span>
+                {{ end }}
+            </span>
+            <div class="career-timeline-body">
+                <div class="career-timeline-roleline">
+                    <span class="career-timeline-role">{{ .role }}</span>
+                </div>
+                <div class="career-timeline-affiliation">
+                    {{ if .url }}
+                    <a href="{{ .url }}" target="_blank" rel="noopener">{{ .organization }}</a>
+                    {{ else }}
+                    <span>{{ .organization }}</span>
+                    {{ end }}
+                    {{ with .team }}<span>{{ . }}</span>{{ end }}
+                    {{ with .period }}<span class="career-timeline-period">{{ . }}</span>{{ end }}
+                </div>
+                {{ with .summary }}
+                <p class="career-timeline-summary">{{ . | markdownify }}</p>
+                {{ end }}
+            </div>
+        </li>
+        {{ end }}
+    </ol>
+    {{ end }}
+</section>
+{{- end -}}

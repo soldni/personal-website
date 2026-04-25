@@ -25,6 +25,12 @@
     initial-value: 0;
 }
 
+@property --career-logo-angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
 :root {
     color-scheme: light dark;
     --paper: #{$paper};
@@ -297,6 +303,176 @@ hr {
 .page-description {
     color: var(--muted);
     margin-top: 0.5rem;
+}
+
+.career-timeline {
+    clear: both;
+    margin: 1.4rem 0 0.4rem;
+}
+
+.career-timeline-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#content .career-timeline-list {
+    padding-left: 0;
+}
+
+.career-timeline-item {
+    position: relative;
+    margin: 0;
+    padding: 0 0 1.05rem 1.58rem;
+    border-left: 1px solid var(--line);
+}
+
+#content .career-timeline-item {
+    margin: 0;
+}
+
+.career-timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.career-timeline-body {
+    min-width: 0;
+}
+
+.career-timeline-marker {
+    position: absolute;
+    top: -0.02rem;
+    left: -0.68rem;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 1.36rem;
+    height: 1.36rem;
+    border-radius: 999px;
+    background: var(--paper);
+    box-shadow: 0 0 0 0.16rem var(--paper);
+}
+
+.career-timeline-logo {
+    position: relative;
+    margin-top: -0.16rem;
+    z-index: 2;
+    display: block;
+    width: 1.08rem;
+    height: 1.08rem;
+    object-fit: contain;
+}
+
+.career-timeline-logo-fallback {
+    width: 0.58rem;
+    height: 0.58rem;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: var(--paper);
+}
+
+.career-timeline-item.is-current .career-timeline-marker {
+    top: -0.08rem;
+    left: -0.78rem;
+    width: 1.56rem;
+    height: 1.56rem;
+    background: var(--paper);
+    box-shadow: 0 0 0 0.18rem var(--paper);
+}
+
+.career-timeline-logo-current {
+    width: 1.2rem;
+    height: 1.2rem;
+    background: conic-gradient(
+        from var(--career-logo-angle),
+        rgba(var(--accent-glow-1-rgb), 1),
+        rgba(var(--accent-glow-2-rgb), 0.95),
+        rgba(var(--accent-glow-3-rgb), 1),
+        rgba(var(--accent-glow-4-rgb), 0.94),
+        rgba(var(--accent-glow-1-rgb), 1)
+    );
+    mask-image: var(--career-logo);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: var(--career-logo);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    animation: career-logo-swirl 5.4s linear infinite;
+}
+
+@keyframes career-logo-swirl {
+    to {
+        --career-logo-angle: 360deg;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .career-timeline-logo:not(.career-timeline-logo-current) {
+        filter: invert(1) brightness(0.92);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .career-timeline-logo-current {
+        animation: none;
+    }
+}
+
+.career-timeline-roleline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.6rem;
+    align-items: baseline;
+}
+
+.career-timeline-role {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.career-timeline-affiliation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+    align-items: baseline;
+    margin-top: 0.06rem;
+    color: var(--muted);
+    font-size: 0.93rem;
+    line-height: 1.25;
+}
+
+.career-timeline-period {
+    color: var(--muted);
+    font-weight: 400;
+}
+
+.career-timeline-affiliation > * + *::before {
+    content: "/";
+    margin-right: 0.5rem;
+    color: var(--line);
+}
+
+#content .career-timeline-summary {
+    margin: 0.34rem 0 0;
+    color: var(--muted);
+}
+
+#content .career-timeline-summary a {
+    color: var(--muted);
+    background-image: linear-gradient(var(--line), var(--line));
+}
+
+#content .career-timeline-summary a:hover {
+    color: var(--muted);
+    background-size: 100% 1.4em;
+}
+
+@media (max-width: $mobile-width) {
+    .career-timeline {
+        margin-top: 1.2rem;
+    }
 }
 
 .publication-topic-icon {
@@ -1043,8 +1219,16 @@ p.center {
     background-color: var(--paper);
 }
 
+#contacts {
+    margin: 0.55rem 0 1rem;
+    container-type: inline-size;
+}
+
 #contact-list {
-    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
 }
 
 ul.fa-ul {
@@ -1068,6 +1252,11 @@ ul.fa-ul {
     justify-content: center;
 }
 
+.contact-list-icons {
+    gap: 0.58rem;
+    justify-content: center;
+}
+
 #contact-list a {
     line-height: 1.2;
     background-position: 0 88%;
@@ -1076,6 +1265,32 @@ ul.fa-ul {
 
 #contact-list a:hover {
     background-size: 100% 1.4em;
+}
+
+.contact-list-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1rem;
+    height: 2rem;
+    padding: 0;
+    background-image: none !important;
+}
+
+.contact-list-icons .list-icon {
+    width: 1.45rem;
+    height: 1.45rem;
+    flex: none;
+}
+
+.contact-label {
+    display: none;
+}
+
+.contact-list-icons a:hover,
+.contact-list-icons a:focus-visible,
+.contact-list-icons a:active {
+    color: var(--accent);
 }
 
 .list-icon {
@@ -1091,11 +1306,57 @@ ul.fa-ul {
     -webkit-mask-position: center;
     vertical-align: middle;
     background-color: var(--ink);
-    transition: background-color 160ms ease;
+    transition: background-color 260ms ease;
 }
 
 .contact-item:hover .list-icon {
     background-color: var(--accent);
+}
+
+@container (min-width: 40rem) {
+    .contact-list-icons {
+        gap: 0.3rem 1rem;
+        justify-content: center;
+    }
+
+    .contact-list-icons a {
+        width: auto;
+        height: 2.15rem;
+        padding: 0 0.3rem;
+    }
+
+    .contact-label {
+        display: inline;
+        margin-left: 0.38rem;
+        color: var(--accent);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.2;
+        background-image: linear-gradient(var(--accent-soft), var(--accent-soft));
+        background-repeat: no-repeat;
+        background-size: 100% 0.4em;
+        background-position: 0 100%;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        transition:
+            color 260ms ease,
+            background-size 360ms ease;
+    }
+
+    .contact-list-icons a:hover .contact-label,
+    .contact-list-icons a:focus-visible .contact-label,
+    .contact-list-icons a:active .contact-label {
+        transform: none;
+        color: var(--accent);
+        font-weight: 400;
+        background-size: 100% 1.4em;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    #contacts {
+        margin: 0.25rem 0 0.5rem;
+    }
 }
 
 .href-icon {
