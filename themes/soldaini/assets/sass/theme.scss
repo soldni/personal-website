@@ -397,6 +397,7 @@ hr {
         radial-gradient(circle at 30% 28%, rgba(var(--accent-glow-3-rgb), 0.92) 0 12%, transparent 31%),
         radial-gradient(circle at 78% 32%, rgba(var(--accent-glow-1-rgb), 0.86) 0 16%, transparent 38%),
         radial-gradient(circle at 46% 78%, rgba(var(--accent-glow-2-rgb), 0.82) 0 18%, transparent 42%),
+        radial-gradient(circle at 46% 78%, rgba(var(--accent-glow-4-rgb), 0.60) 0 36%, transparent 60%),
         linear-gradient(
             120deg,
             rgba(var(--accent-glow-4-rgb), 0.82) 0%,
@@ -405,7 +406,7 @@ hr {
             rgba(var(--accent-glow-2-rgb), 0.86) 100%
         );
     transform-origin: center;
-    animation: career-logo-spin 5.8s linear infinite;
+    animation: career-logo-spin 3.2s linear infinite;
     will-change: transform;
 }
 
