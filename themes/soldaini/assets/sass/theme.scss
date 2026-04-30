@@ -327,12 +327,18 @@ hr {
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
     vertical-align: -0.25em;
-    transition: background-color 180ms ease;
+    transition: background-color 360ms ease;
 }
 
 .company:hover::before,
 .company:focus-within::before {
     background-color: var(--accent);
+}
+
+#content .company:hover a,
+#content .company:focus-within a {
+    color: var(--accent);
+    background-size: 150% 1.8em;
 }
 
 .company-microsoft {
