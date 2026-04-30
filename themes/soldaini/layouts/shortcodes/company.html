@@ -1,0 +1,17 @@
+{{- $key := .Get 0 | default (.Get "name") -}}
+{{- $companies := dict
+    "microsoft" (dict "label" "Microsoft AI" "href" "https://microsoft.ai/")
+    "ai2" (dict "label" "Ai2" "href" "https://allenai.org")
+    "amazon" (dict "label" "Amazon Alexa" "href" "https://www.amazon.science/search?q=Luca+Soldaini&type=91d74bfc-4a20-30f0-8926-e52f02f15c04&type=5be10472-b2e0-37b5-b6f8-8f381832e94f&type=4f8e492c-6f2f-390e-bc61-f176d3a37ab9&s=0&expandedFilters=Type%2CResearch%2520area%2CTag%2CConference%2CJournal%2CAuthor%2CDate%2C")
+    "georgetown" (dict "label" "Georgetown University" "href" "https://cs.georgetown.edu/")
+-}}
+{{- $defaultLabel := $key -}}
+{{- $defaultHref := "" -}}
+{{- with index $companies $key -}}
+    {{- $defaultLabel = .label -}}
+    {{- $defaultHref = .href -}}
+{{- end -}}
+{{- $label := .Get 1 | default (.Get "label") | default $defaultLabel -}}
+{{- $href := .Get 2 | default (.Get "href") | default $defaultHref -}}
+{{- $class := printf "company company-%s" $key -}}
+{{- if $href -}}<span class="{{ $class }}"><a href="{{ $href | safeURL }}">{{ $label }}</a></span>{{- else -}}<span class="{{ $class }}">{{ $label }}</span>{{- end -}}

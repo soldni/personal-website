@@ -98,6 +98,9 @@ body {
     background: var(--paper);
     background-image: none;
     min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -113,6 +116,7 @@ hr {
 }
 
 .container {
+    width: 100%;
     max-width: $max-width;
     margin: 0 auto;
     padding: 0 $gutter;
@@ -141,7 +145,8 @@ hr {
 #content {
     position: relative;
     z-index: 0;
-    margin-top: 1.5rem;
+    flex: 1 0 auto;
+    margin-top: 0.55rem;
     padding-bottom: 0;
 
     p {
@@ -299,188 +304,51 @@ hr {
     margin-top: 0.5rem;
 }
 
-.career-timeline {
-    clear: both;
-    margin: 1.4rem 0 0.4rem;
+.company {
+    --company-logo: none;
+    display: inline;
+    color: inherit;
+    white-space: nowrap;
 }
 
-.career-timeline-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#content .career-timeline-list {
-    padding-left: 0;
-}
-
-.career-timeline-item {
-    position: relative;
-    margin: 0;
-    padding: 0 0 1.05rem 1.58rem;
-    border-left: 1px solid var(--line);
-}
-
-#content .career-timeline-item {
-    margin: 0;
-}
-
-.career-timeline-item:last-child {
-    padding-bottom: 0;
-}
-
-.career-timeline-body {
-    min-width: 0;
-}
-
-.career-timeline-marker {
-    position: absolute;
-    top: -0.02rem;
-    left: -0.68rem;
-    z-index: 1;
-    display: grid;
-    place-items: center;
-    width: 1.36rem;
-    height: 1.36rem;
-    border-radius: 999px;
-    background: var(--paper);
-    box-shadow: 0 0 0 0.16rem var(--paper);
-}
-
-.career-timeline-logo {
-    position: relative;
-    margin-top: -0.16rem;
-    z-index: 2;
-    display: block;
-    width: 1.08rem;
-    height: 1.08rem;
-    object-fit: contain;
-}
-
-.career-timeline-logo-fallback {
-    width: 0.58rem;
-    height: 0.58rem;
-    border: 1px solid var(--accent);
-    border-radius: 999px;
-    background: var(--paper);
-}
-
-.career-timeline-item.is-current .career-timeline-marker {
-    top: -0.08rem;
-    left: -0.78rem;
-    width: 1.56rem;
-    height: 1.56rem;
-    background: var(--paper);
-    box-shadow: 0 0 0 0.18rem var(--paper);
-}
-
-.career-timeline-logo-current {
-    position: relative;
-    overflow: hidden;
-    width: 1.2rem;
-    height: 1.2rem;
-    background: rgba(var(--accent-glow-2-rgb), 0.76);
-    mask-image: var(--career-logo);
+.company::before {
+    content: "";
+    display: inline-block;
+    width: 1.06em;
+    height: 1.06em;
+    margin-right: 0.08em;
+    background-color: var(--ink);
+    mask-image: var(--company-logo);
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
-    -webkit-mask-image: var(--career-logo);
+    -webkit-mask-image: var(--company-logo);
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
+    vertical-align: -0.25em;
+    transition: background-color 180ms ease;
 }
 
-.career-timeline-logo-fill {
-    position: absolute;
-    inset: -70%;
-    background:
-        radial-gradient(circle at 30% 28%, rgba(var(--accent-glow-3-rgb), 0.92) 0 12%, transparent 31%),
-        radial-gradient(circle at 78% 32%, rgba(var(--accent-glow-1-rgb), 0.86) 0 16%, transparent 38%),
-        radial-gradient(circle at 46% 78%, rgba(var(--accent-glow-2-rgb), 0.82) 0 18%, transparent 42%),
-        radial-gradient(circle at 46% 78%, rgba(var(--accent-glow-4-rgb), 0.60) 0 36%, transparent 60%),
-        linear-gradient(
-            120deg,
-            rgba(var(--accent-glow-4-rgb), 0.82) 0%,
-            rgba(var(--accent-glow-1-rgb), 0.84) 28%,
-            rgba(var(--accent-glow-3-rgb), 0.76) 58%,
-            rgba(var(--accent-glow-2-rgb), 0.86) 100%
-        );
-    transform-origin: center;
-    animation: career-logo-spin 3.2s linear infinite;
-    will-change: transform;
+.company:hover::before,
+.company:focus-within::before {
+    background-color: var(--accent);
 }
 
-@keyframes career-logo-spin {
-    to {
-        transform: rotate(360deg);
-    }
+.company-microsoft {
+    --company-logo: url("/logos/microsoft.svg");
 }
 
-@media (prefers-color-scheme: dark) {
-    .career-timeline-logo:not(.career-timeline-logo-current) {
-        filter: invert(1) brightness(0.92);
-    }
+.company-ai2 {
+    --company-logo: url("/logos/Ai2.svg");
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .career-timeline-logo-fill {
-        animation: none;
-    }
+.company-amazon {
+    --company-logo: url("/logos/Amazon.svg");
 }
 
-.career-timeline-roleline {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem 0.6rem;
-    align-items: baseline;
-}
-
-.career-timeline-role {
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-.career-timeline-affiliation {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem 0.5rem;
-    align-items: baseline;
-    margin-top: 0.06rem;
-    color: var(--muted);
-    font-size: 0.93rem;
-    line-height: 1.25;
-}
-
-.career-timeline-period {
-    color: var(--muted);
-    font-weight: 400;
-}
-
-.career-timeline-affiliation > * + *::before {
-    content: "/";
-    margin-right: 0.5rem;
-    color: var(--line);
-}
-
-#content .career-timeline-summary {
-    margin: 0.34rem 0 0;
-    color: var(--muted);
-}
-
-#content .career-timeline-summary a {
-    color: var(--muted);
-    background-image: linear-gradient(var(--line), var(--line));
-}
-
-#content .career-timeline-summary a:hover {
-    color: var(--muted);
-    background-size: 100% 1.4em;
-}
-
-@media (max-width: $mobile-width) {
-    .career-timeline {
-        margin-top: 1.2rem;
-    }
+.company-georgetown::before {
+    display: none;
 }
 
 .publication-topic-icon {
@@ -853,7 +721,7 @@ sup:focus-within .footnote-popup {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.2rem;
     gap: 0.5rem;
 }
 
@@ -928,11 +796,11 @@ h1.navbar-h1 {
     transition: --avatar-glow 1.5s cubic-bezier(0.16, 1, 0.3, 1);
 
     @media (max-width: $mobile-width) {
-        margin: 0 auto 2rem;
+        margin: 0 auto 1.35rem;
     }
 
     @media (min-width: $mobile-width) {
-        margin: 0 0 1.5rem 1.5rem;
+        margin: 0 0 0.85rem 1rem;
         float: right;
     }
 }
@@ -1556,6 +1424,7 @@ span.long-authors {
 
 #license {
     margin: 2rem auto 1rem;
+    flex-shrink: 0;
     text-align: center;
     color: var(--muted-accessible);
     font-size: 0.7em;
@@ -1629,22 +1498,57 @@ span.long-authors {
     -webkit-mask-image: url(/logos/by.svg);
 }
 
-.icon-wave {
-    mask-image: url(/logos/wave.svg);
-    -webkit-mask-image: url(/logos/wave.svg);
+.greeting-wave {
+    position: relative;
     display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
+    width: 1.14em;
+    height: 1.14em;
+    overflow: hidden;
+    background: rgba(var(--accent-glow-2-rgb), 0.46);
+    mask-image: url(/logos/wave.svg);
     mask-size: 100%;
     mask-repeat: no-repeat;
     mask-position: center;
+    -webkit-mask-image: url(/logos/wave.svg);
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    background-color: var(--accent);
-    vertical-align: middle;
-    transform: translateY(-0.05em);
-    margin-left: 0.3em;
+    vertical-align: -0.19em;
+    transform: translateY(-0.02em);
+    margin-left: 0.15em;
+}
+
+.greeting-wave-fill {
+    position: absolute;
+    inset: -70%;
+    filter: saturate(0.72) brightness(0.92);
+    background:
+        radial-gradient(circle at 30% 28%, rgba(var(--accent-glow-3-rgb), 0.62) 0 12%, transparent 31%),
+        radial-gradient(circle at 78% 32%, rgba(var(--accent-glow-1-rgb), 0.56) 0 16%, transparent 38%),
+        radial-gradient(circle at 46% 78%, rgba(var(--accent-glow-2-rgb), 0.54) 0 18%, transparent 42%),
+        radial-gradient(circle at 46% 78%, rgba(var(--accent-glow-4-rgb), 0.38) 0 36%, transparent 60%),
+        linear-gradient(
+            120deg,
+            rgba(var(--accent-glow-4-rgb), 0.46) 0%,
+            rgba(var(--accent-glow-1-rgb), 0.48) 28%,
+            rgba(var(--accent-glow-3-rgb), 0.44) 58%,
+            rgba(var(--accent-glow-2-rgb), 0.50) 100%
+        );
+    transform-origin: center;
+    animation: greeting-wave-spin 3.2s linear infinite;
+    will-change: transform;
+}
+
+@keyframes greeting-wave-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .greeting-wave-fill {
+        animation: none;
+    }
 }
 
 @media (max-width: $tiny-width) {

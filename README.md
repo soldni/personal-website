@@ -17,27 +17,22 @@ Visit it at [soldaini.net](http://soldaini.net).
 - Assets are in [`static/`](static/)
 - Publications are authored in [`content/publications.bib`](content/publications.bib) as BibTeX entries
 
-### Home page and career timeline
+### Home page
 
 - Main home page prose lives in [`content/_index.md`](content/_index.md).
-- Career timeline entries live in [`content/career-timeline/_index.md`](content/career-timeline/_index.md). This is a headless Hugo content bundle, so it feeds the home page but does not publish its own page.
-- The home page renders the timeline with `{{< career-timeline >}}`; the renderer is [`themes/soldaini/layouts/shortcodes/career-timeline.html`](themes/soldaini/layouts/shortcodes/career-timeline.html).
-- Timeline styling lives in [`themes/soldaini/assets/sass/theme.scss`](themes/soldaini/assets/sass/theme.scss).
+- Reusable homepage HTML lives in shortcodes under [`themes/soldaini/layouts/shortcodes/`](themes/soldaini/layouts/shortcodes/), including `avatar`, `visitor-greeting`, `contacts`, and `company`.
+- Company/logo styles live in [`themes/soldaini/assets/sass/theme.scss`](themes/soldaini/assets/sass/theme.scss), and the logo masks live in [`static/logos/`](static/logos/).
 
-Each timeline entry is a TOML block in the Markdown file:
+Use shortcodes in the Markdown file:
 
-```toml
-[[entries]]
-period = "2022-2026"
-role = "Lead Research Scientist"
-organization = "Ai2"
-team = "Olmo and Semantic Scholar"
-url = "https://allenai.org/"
-logo = "Ai2.svg"
-summary = "One short Markdown-friendly placeholder about the work."
+```go-html-template
+{{< avatar >}}
+{{< visitor-greeting >}}
+{{< company microsoft >}}
+{{< contacts >}}
 ```
 
-Use `logo` for a file in [`static/logos/`](static/logos/). Use `current = true` on the active role to add the animated current-role marker. `summary` supports inline Markdown links. The rendered timeline intentionally stays compact: role first, affiliation/team/period second, then one short description.
+Current company keys with built-in labels and links: `microsoft`, `ai2`, `amazon`, and `georgetown`. You can override the label and URL with positional arguments, e.g. `{{< company microsoft "Microsoft AI" "https://microsoft.ai/" >}}`.
 
 Preview locally (published content only):
 
