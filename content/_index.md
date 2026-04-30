@@ -9,7 +9,7 @@ title = "Luca Soldaini"
 I am a **member of technical staff** at {{< company microsoft >}} on the **Super Intelligence** team.
 My work has moved across open language models, question answering, information retrieval, and medical NLP, but the through-line has been building AI systems that make knowledge easier to find, inspect, and use.
 
-Before Microsoft, I was a lead research scientist at {{< company ai2 >}}, a senior applied scientist at {{< company amazon >}}, and a Ph.D. student in computer science at {{< company georgetown >}} in the [Information Retrieval Lab][34] with [Nazli Goharian][33].
+Before Microsoft, I was a lead research scientist at {{< company ai2 >}}, a senior applied scientist at [Amazon Alexa][1], and a Ph.D. student in computer science at {{< company georgetown >}} in the [Information Retrieval Lab][34] with [Nazli Goharian][33].
 
 When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], dreaming about utopian [mass transit systems][10], curating my ever-growing [laptop stickers collection][11], and hanging out with my [handsome][44] [cats][45]. Raccoons are [the best][13].
 
