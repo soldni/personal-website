@@ -35,12 +35,24 @@ def prepare_entry(entry: dict[str, str]) -> dict[str, str]:
     return prepared
 
 
+def _safe_int(value: str, default: int = 0) -> int:
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
+
+
 def generate_publications_data() -> None:
     if not PUBLICATIONS_BIB.exists():
         return
 
     entries = parse_bib_file(PUBLICATIONS_BIB)
-    entries.sort(key=lambda entry: (-(int(entry.get("year", "0"))), int(entry.get("order", "0"))))
+    entries.sort(
+        key=lambda entry: (
+            -_safe_int(entry.get("year", "0")),
+            -_safe_int(entry.get("order", "0")),
+        )
+    )
     prepared_entries = [prepare_entry(entry) for entry in entries]
 
     years: list[str] = []
