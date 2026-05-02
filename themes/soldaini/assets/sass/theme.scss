@@ -25,6 +25,66 @@
     initial-value: 0;
 }
 
+@property --wave-glow-1-x {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 30%;
+}
+
+@property --wave-glow-1-y {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 45%;
+}
+
+@property --wave-glow-2-x {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 65%;
+}
+
+@property --wave-glow-2-y {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --wave-glow-3-x {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 40%;
+}
+
+@property --wave-glow-3-y {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 40%;
+}
+
+@property --wave-glow-4-x {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 55%;
+}
+
+@property --wave-glow-4-y {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 60%;
+}
+
+@property --wave-glow-5-x {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --wave-glow-5-y {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 55%;
+}
+
 :root {
     color-scheme: light dark;
     --paper: #{$paper};
@@ -141,7 +201,6 @@ hr {
     position: relative;
     z-index: 2;
     padding-top: 3rem;
-    background: var(--paper);
 }
 
 #content {
@@ -1418,12 +1477,16 @@ span.long-authors {
 }
 
 #license {
-    margin: 2rem auto 1rem;
+    margin: 0rem auto 0rem;
     flex-shrink: 0;
     text-align: center;
     color: var(--muted-accessible);
     font-size: 0.7em;
     opacity: 0.5;
+
+    p {
+        margin-bottom: 0.3rem;
+    }
 
     a {
         color: inherit;
@@ -1496,8 +1559,8 @@ span.long-authors {
 .greeting-wave {
     position: relative;
     display: inline-block;
-    width: 1.14em;
-    height: 1.14em;
+    width: 1.5em;
+    height: 1.5em;
     overflow: hidden;
     background: rgba(var(--accent-glow-2-rgb), 0.46);
     mask-image: url(/logos/wave.svg);
@@ -1508,35 +1571,159 @@ span.long-authors {
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    vertical-align: -0.19em;
+    vertical-align: -0.45em;
     transform: translateY(-0.02em);
-    margin-left: 0.15em;
+    margin-left: -0.2em;
 }
 
 .greeting-wave-fill {
     position: absolute;
     inset: -70%;
-    filter: saturate(0.72) brightness(0.92);
+    --wave-glow-1-x: 30%;
+    --wave-glow-1-y: 45%;
+    --wave-glow-2-x: 65%;
+    --wave-glow-2-y: 50%;
+    --wave-glow-3-x: 40%;
+    --wave-glow-3-y: 40%;
+    --wave-glow-4-x: 55%;
+    --wave-glow-4-y: 60%;
+    --wave-glow-5-x: 50%;
+    --wave-glow-5-y: 55%;
+    filter: blur(0.03em);
     background:
-        radial-gradient(circle at 30% 28%, rgba(var(--accent-glow-3-rgb), 0.62) 0 12%, transparent 31%),
-        radial-gradient(circle at 78% 32%, rgba(var(--accent-glow-1-rgb), 0.56) 0 16%, transparent 38%),
-        radial-gradient(circle at 46% 78%, rgba(var(--accent-glow-2-rgb), 0.54) 0 18%, transparent 42%),
-        radial-gradient(circle at 46% 78%, rgba(var(--accent-glow-4-rgb), 0.38) 0 36%, transparent 60%),
-        linear-gradient(
-            120deg,
-            rgba(var(--accent-glow-4-rgb), 0.46) 0%,
-            rgba(var(--accent-glow-1-rgb), 0.48) 28%,
-            rgba(var(--accent-glow-3-rgb), 0.44) 58%,
-            rgba(var(--accent-glow-2-rgb), 0.50) 100%
+        radial-gradient(
+            ellipse at var(--wave-glow-1-x) var(--wave-glow-1-y),
+            rgba(var(--accent-glow-1-rgb), 0.92),
+            rgba(var(--accent-glow-1-rgb), 0.18) 38%,
+            transparent 58%
+        ),
+        radial-gradient(
+            ellipse at var(--wave-glow-2-x) var(--wave-glow-2-y),
+            rgba(var(--accent-glow-2-rgb), 0.86),
+            rgba(var(--accent-glow-2-rgb), 0.16) 38%,
+            transparent 56%
+        ),
+        radial-gradient(
+            ellipse at var(--wave-glow-3-x) var(--wave-glow-3-y),
+            rgba(var(--accent-glow-3-rgb), 0.96),
+            rgba(var(--accent-glow-3-rgb), 0.2) 34%,
+            transparent 54%
+        ),
+        radial-gradient(
+            ellipse at var(--wave-glow-4-x) var(--wave-glow-4-y),
+            rgba(var(--accent-glow-4-rgb), 0.82),
+            rgba(var(--accent-glow-4-rgb), 0.14) 44%,
+            transparent 62%
+        ),
+        radial-gradient(
+            ellipse at var(--wave-glow-5-x) var(--wave-glow-5-y),
+            rgba(var(--accent-glow-2-rgb), 0.78),
+            rgba(var(--accent-glow-2-rgb), 0.14) 34%,
+            transparent 52%
         );
     transform-origin: center;
-    animation: greeting-wave-spin 3.2s linear infinite;
-    will-change: transform;
+    animation:
+        greeting-wave-spin 1.8s linear infinite,
+        greeting-wave-chaos 2.35s ease-in-out infinite;
+    will-change: transform, background;
 }
 
 @keyframes greeting-wave-spin {
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes greeting-wave-chaos {
+    0% {
+        --wave-glow-1-x: 30%;
+        --wave-glow-1-y: 45%;
+        --wave-glow-2-x: 65%;
+        --wave-glow-2-y: 50%;
+        --wave-glow-3-x: 40%;
+        --wave-glow-3-y: 40%;
+        --wave-glow-4-x: 55%;
+        --wave-glow-4-y: 60%;
+        --wave-glow-5-x: 50%;
+        --wave-glow-5-y: 55%;
+    }
+
+    14% {
+        --wave-glow-1-x: 18%;
+        --wave-glow-1-y: 66%;
+        --wave-glow-2-x: 78%;
+        --wave-glow-2-y: 24%;
+        --wave-glow-3-x: 48%;
+        --wave-glow-3-y: 70%;
+        --wave-glow-4-x: 34%;
+        --wave-glow-4-y: 38%;
+        --wave-glow-5-x: 68%;
+        --wave-glow-5-y: 58%;
+    }
+
+    31% {
+        --wave-glow-1-x: 72%;
+        --wave-glow-1-y: 34%;
+        --wave-glow-2-x: 42%;
+        --wave-glow-2-y: 76%;
+        --wave-glow-3-x: 22%;
+        --wave-glow-3-y: 30%;
+        --wave-glow-4-x: 76%;
+        --wave-glow-4-y: 62%;
+        --wave-glow-5-x: 36%;
+        --wave-glow-5-y: 50%;
+    }
+
+    49% {
+        --wave-glow-1-x: 44%;
+        --wave-glow-1-y: 20%;
+        --wave-glow-2-x: 82%;
+        --wave-glow-2-y: 68%;
+        --wave-glow-3-x: 62%;
+        --wave-glow-3-y: 44%;
+        --wave-glow-4-x: 26%;
+        --wave-glow-4-y: 72%;
+        --wave-glow-5-x: 54%;
+        --wave-glow-5-y: 24%;
+    }
+
+    67% {
+        --wave-glow-1-x: 76%;
+        --wave-glow-1-y: 74%;
+        --wave-glow-2-x: 28%;
+        --wave-glow-2-y: 34%;
+        --wave-glow-3-x: 70%;
+        --wave-glow-3-y: 18%;
+        --wave-glow-4-x: 48%;
+        --wave-glow-4-y: 76%;
+        --wave-glow-5-x: 22%;
+        --wave-glow-5-y: 56%;
+    }
+
+    83% {
+        --wave-glow-1-x: 24%;
+        --wave-glow-1-y: 30%;
+        --wave-glow-2-x: 58%;
+        --wave-glow-2-y: 78%;
+        --wave-glow-3-x: 76%;
+        --wave-glow-3-y: 52%;
+        --wave-glow-4-x: 36%;
+        --wave-glow-4-y: 24%;
+        --wave-glow-5-x: 72%;
+        --wave-glow-5-y: 36%;
+    }
+
+    100% {
+        --wave-glow-1-x: 30%;
+        --wave-glow-1-y: 45%;
+        --wave-glow-2-x: 65%;
+        --wave-glow-2-y: 50%;
+        --wave-glow-3-x: 40%;
+        --wave-glow-3-y: 40%;
+        --wave-glow-4-x: 55%;
+        --wave-glow-4-y: 60%;
+        --wave-glow-5-x: 50%;
+        --wave-glow-5-y: 55%;
     }
 }
 

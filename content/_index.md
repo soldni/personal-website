@@ -6,12 +6,16 @@ title = "Luca Soldaini"
 
 {{< visitor-greeting >}}
 
-I am a **member of technical staff** at {{< company microsoft >}} on the **Super Intelligence** team.
-My work has moved across open language models, question answering, information retrieval, and medical NLP, but the through-line has been building AI systems that make knowledge easier to find, inspect, and use.
+I am a machine learning researcher working on **scalable data methods for language model pre-training & post-training**. Currently, I am member of the technical staff at {{< company microsoft >}} on the Super Intelligence team, building pipelines for synthetic RL environments.
 
-Before Microsoft, I was a lead research scientist at {{< company ai2 >}}, a senior applied scientist at [Amazon Alexa][1], and a Ph.D. student in computer science at {{< company georgetown >}} in the [Information Retrieval Lab][34] with [Nazli Goharian][33].
 
-When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], dreaming about utopian [mass transit systems][10], curating my ever-growing [laptop stickers collection][11], and hanging out with my [handsome][44] [cats][45]. Raccoons are [the best][13].
+From 2022 to early 2026, I was a lead research scientist at {{< company ai2 >}}, co-leading the [Olmo project][35]. Olmo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. During my tenure, we released [three][38] [generations][36] of [dense][46], [mixture-of-experts][37], [hybrid][49], and [multimodal][41] variants, alongside the data, code, recipes, and checkpoints we used to build them.
+
+Before Ai2, I was a senior applied scientist at [Amazon Alexa][1] working on efficient question answering systems for long-tail knowledge. In 2021, we [scaled](https://aclanthology.org/2021.findings-acl.374/) [up](https://aclanthology.org/2022.aacl-main.27/) generative question answering to millions of users!
+
+I completed my Ph.D. in computer science at {{< company georgetown >}} in the [Information Retrieval Lab][34] working with [Nazli Goharian][33] in 2018. My doctoral thesis focuses on information retrieval systems for medical experts and lay health users.
+
+When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8], curating my ever-growing [stickers collection][11], and hanging out with my [handsome][44] [cats][45].
 
 {{< contacts >}}
 
@@ -27,7 +31,7 @@ When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8]
 [8]: /marathon.webp
 [9]: /espresso.webp
 [10]: /transit.webp
-[11]: /laptop.webp
+[11]: /laptop2.webp
 [12]: https://twitter.com/soldni/status/1444411540480749569
 [13]: https://www.youtube.com/watch?v=Ofp26_oc4CA
 [14]: http://hdl.handle.net/10822/1050758
