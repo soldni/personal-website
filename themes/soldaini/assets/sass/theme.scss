@@ -385,6 +385,11 @@ hr {
 
 .company {
     --company-logo: none;
+    --company-logo-height: 1.06em;
+    --company-logo-width: var(--company-logo-height);
+    --company-logo-gap: 0.08em;
+    --company-logo-align: -0.25em;
+    --company-logo-position: center;
     display: inline;
     color: inherit;
     white-space: nowrap;
@@ -393,19 +398,19 @@ hr {
 .company::before {
     content: "";
     display: inline-block;
-    width: 1.06em;
-    height: 1.06em;
-    margin-right: 0.08em;
+    width: var(--company-logo-width);
+    height: var(--company-logo-height);
+    margin-right: var(--company-logo-gap);
     background-color: var(--ink);
     mask-image: var(--company-logo);
-    mask-size: contain;
+    mask-size: auto 100%;
     mask-repeat: no-repeat;
-    mask-position: center;
+    mask-position: var(--company-logo-position);
     -webkit-mask-image: var(--company-logo);
-    -webkit-mask-size: contain;
+    -webkit-mask-size: auto 100%;
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    vertical-align: -0.25em;
+    -webkit-mask-position: var(--company-logo-position);
+    vertical-align: var(--company-logo-align);
     transition: background-color 360ms ease;
 }
 
@@ -422,14 +427,24 @@ hr {
 
 .company-microsoft {
     --company-logo: url("/logos/microsoft.svg");
+    --company-logo-height: 1.06em;
+    --company-logo-width: 1.06em;
+    --company-logo-align: -0.22em;
 }
 
 .company-ai2 {
     --company-logo: url("/logos/Ai2.svg");
+    --company-logo-height: 1.20em;
+    --company-logo-width: 1.20em;
+    --company-logo-align: -0.35em;
+    --company-logo-gap: 0em;
 }
 
 .company-amazon {
-    --company-logo: url("/logos/Amazon.svg");
+    --company-logo: url("/logos/amzn-full.svg");
+    --company-logo-height: 1.06em;
+    --company-logo-width: auto;
+    --company-logo-align: -0.26em;
 }
 
 .company-georgetown::before {
@@ -843,6 +858,8 @@ h1.navbar-h1 {
 }
 
 .nav-link {
+    --nav-link-background-height: 0.45em;
+    --nav-link-background-hover-height: 1.2em;
     color: var(--accent);
     text-decoration: none;
     font-weight: 600;
@@ -852,7 +869,7 @@ h1.navbar-h1 {
     border-bottom: 0;
     background-image: linear-gradient(var(--accent-soft), var(--accent-soft));
     background-repeat: no-repeat;
-    background-size: 100% 0.45em;
+    background-size: 100% var(--nav-link-background-height);
     background-position: 0 100%;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -863,7 +880,12 @@ h1.navbar-h1 {
 
 .nav-link:hover {
     color: var(--accent);
-    background-size: 100% 1.2em;
+    background-size: 100% var(--nav-link-background-hover-height);
+}
+
+body:has(.greeting-wave:hover, #avatar-container:hover) .nav-link {
+    --nav-link-background-height: 0;
+    --nav-link-background-hover-height: 0;
 }
 
 .navbar-text {

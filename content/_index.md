@@ -6,12 +6,15 @@ title = "Luca Soldaini"
 
 {{< visitor-greeting >}}
 
-I am a machine learning researcher working on **scalable data methods for language model pre-training & post-training**. Currently, I am member of the technical staff at {{< company microsoft >}} on the Super Intelligence team, building pipelines for synthetic RL environments.
+I am a machine learning researcher working on **scalable data methods for language models**, from pre-training to post-training.
+
+
+Currently, I am member of the technical staff at {{< company microsoft >}} on the Super Intelligence team, building pipelines for synthetic RL environments.
 
 
 From 2022 to early 2026, I was a lead research scientist at {{< company ai2 >}}, co-leading the [Olmo project][35]. Olmo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. During my tenure, we released [three][38] [generations][36] of [dense][46], [mixture-of-experts][37], [hybrid][49], and [multimodal][41] variants, alongside the data, code, recipes, and checkpoints we used to build them.
 
-Before Ai2, I was a senior applied scientist at [Amazon Alexa][1] working on efficient question answering systems for long-tail knowledge. In 2021, we [scaled](https://aclanthology.org/2021.findings-acl.374/) [up](https://aclanthology.org/2022.aacl-main.27/) generative question answering to millions of users!
+Before Ai2, I was a senior applied scientist at {{< company amazon >}} working on efficient question answering systems for long-tail knowledge. In 2021, we [scaled](https://aclanthology.org/2021.findings-acl.374/) [up](https://aclanthology.org/2022.aacl-main.27/) generative question answering to millions of users!
 
 I completed my Ph.D. in computer science at {{< company georgetown >}} in the [Information Retrieval Lab][34] working with [Nazli Goharian][33] in 2018. My doctoral thesis focuses on information retrieval systems for medical experts and lay health users.
 
