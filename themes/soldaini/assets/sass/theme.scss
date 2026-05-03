@@ -722,6 +722,10 @@ hr {
     margin: 0 0.25rem 0 0;
 }
 
+.hide-authors:has(> .short-authors[aria-hidden="false"]) {
+    white-space: nowrap;
+}
+
 @media (max-width: $mobile-width) {
     .publication-filter-bar {
         margin-bottom: 0.85rem;
