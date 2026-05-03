@@ -144,9 +144,9 @@
         // - one contains the text '{num_authors} authors' and is visible
         // - the other contains the text '{innerText}' and is hidden
         hideAuthors[i].innerHTML =
-            ' <span class="short-authors">+' +
+            '<span class="short-authors">+' +
             num_authors +
-            " authors </span>" +
+            " authors</span>" +
             '<span class="long-authors">' +
             innerHTML +
             "</span>";
@@ -162,7 +162,7 @@
         longAuthorsSpan.setAttribute("aria-hidden", "true");
 
         // set the `short-authors` span to be visible and the `long-authors` span to be hidden
-        shortAuthorsSpan.style.display = "inline";
+        shortAuthorsSpan.style.display = "inline-flex";
         longAuthorsSpan.style.display = "none";
 
         // attach the toggleAuthors function to the onclick event of the span
