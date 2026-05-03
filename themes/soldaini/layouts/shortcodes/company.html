@@ -14,4 +14,8 @@
 {{- $label := .Get 1 | default (.Get "label") | default $defaultLabel -}}
 {{- $href := .Get 2 | default (.Get "href") | default $defaultHref -}}
 {{- $class := printf "company company-%s" $key -}}
-{{- if $href -}}<span class="{{ $class }}"><a href="{{ $href | safeURL }}">{{ $label }}</a></span>{{- else -}}<span class="{{ $class }}">{{ $label }}</span>{{- end -}}
+{{- if $href -}}
+<span class="{{ $class }}"><a href="{{ $href | safeURL }}"><span class="company-logo" aria-hidden="true"></span><span class="company-label">{{ $label }}</span></a></span>
+{{- else -}}
+<span class="{{ $class }}"><span class="company-logo" aria-hidden="true"></span><span class="company-label">{{ $label }}</span></span>
+{{- end -}}
