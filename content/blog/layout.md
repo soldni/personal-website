@@ -33,7 +33,7 @@ slug = "custom-url-slug" # optional permalink override
 Notes:
 
 - `description` appears in metadata and in blog list cards.
-- Blog list cards use `description` first, then fallback to `.Summary`.
+- Blog list cards use `description` first, then fall back to `.Summary`.
 - Set `math = true` only for posts that contain equations.
 
 ## Summary break (`<!--more-->`)
