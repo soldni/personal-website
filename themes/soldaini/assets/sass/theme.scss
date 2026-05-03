@@ -386,7 +386,8 @@ hr {
 .company {
     --company-logo: none;
     --company-logo-height: 1.06em;
-    --company-logo-width: var(--company-logo-height);
+    --company-logo-width: auto;
+    --company-logo-aspect-ratio: 1 / 1;
     --company-logo-gap: 0.08em;
     --company-logo-align: -0.25em;
     --company-logo-position: center;
@@ -400,6 +401,7 @@ hr {
     display: inline-block;
     width: var(--company-logo-width);
     height: var(--company-logo-height);
+    aspect-ratio: var(--company-logo-aspect-ratio);
     margin-right: var(--company-logo-gap);
     background-color: var(--ink);
     mask-image: var(--company-logo);
@@ -428,23 +430,26 @@ hr {
 .company-microsoft {
     --company-logo: url("/logos/microsoft.svg");
     --company-logo-height: 1.06em;
-    --company-logo-width: 1.06em;
+    --company-logo-width: auto;
+    --company-logo-aspect-ratio: 1 / 1;
     --company-logo-align: -0.22em;
 }
 
 .company-ai2 {
     --company-logo: url("/logos/Ai2.svg");
     --company-logo-height: 1.20em;
-    --company-logo-width: 1.20em;
+    --company-logo-width: auto;
+    --company-logo-aspect-ratio: 1 / 1;
     --company-logo-align: -0.35em;
     --company-logo-gap: 0em;
 }
 
 .company-amazon {
     --company-logo: url("/logos/amzn-full.svg");
-    --company-logo-height: 1.06em;
+    --company-logo-height: 0.96em;
     --company-logo-width: auto;
-    --company-logo-align: -0.26em;
+    --company-logo-aspect-ratio: 221 / 64;
+    --company-logo-align: -0.43em;
 }
 
 .company-georgetown::before {
