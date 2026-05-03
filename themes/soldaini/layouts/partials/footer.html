@@ -48,12 +48,14 @@
         var shortAuthors = span.getElementsByClassName("short-authors")[0];
         var longAuthors = span.getElementsByClassName("long-authors")[0];
         var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var isTouchDevice = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+        var allowAuthorAnimation = !prefersReduced && !isTouchDevice;
 
         function showLong(el) {
             el.style.display = "inline";
             el.classList.remove("author-reveal-out");
             el.classList.remove("author-reveal-static");
-            if (prefersReduced) {
+            if (!allowAuthorAnimation) {
                 el.classList.add("author-reveal-static");
                 return;
             }
@@ -69,7 +71,7 @@
         }
 
         function hideLong(el, onDone) {
-            if (prefersReduced) {
+            if (!allowAuthorAnimation) {
                 el.style.display = "none";
                 el.classList.remove("author-reveal-static");
                 if (onDone) {
