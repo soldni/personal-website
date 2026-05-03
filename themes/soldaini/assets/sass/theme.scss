@@ -425,6 +425,7 @@ hr {
     --company-logo-width: auto;
     --company-logo-aspect-ratio: 1 / 1;
     --company-logo-align: -0.22em;
+    --company-logo-gap: 0.1em;
 }
 
 .company-ai2 {
@@ -433,7 +434,7 @@ hr {
     --company-logo-width: auto;
     --company-logo-aspect-ratio: 1 / 1;
     --company-logo-align: -0.32em;
-    --company-logo-gap: 0em;
+    --company-logo-gap: 0.05em;
 }
 
 .company-amazon {
@@ -442,7 +443,7 @@ hr {
     --company-logo-width: auto;
     --company-logo-aspect-ratio: 221 / 64;
     --company-logo-align: -0.42em;
-    --company-logo-gap: 0.35em;
+    --company-logo-gap: 0.2em;
 }
 
 .company-georgetown .company-logo {
@@ -901,11 +902,11 @@ body:has(.greeting-wave:hover, #avatar-container:hover) .nav-link {
     transition: --avatar-glow 1.5s cubic-bezier(0.16, 1, 0.3, 1);
 
     @media (max-width: $mobile-width) {
-        margin: 0 auto 1.35rem;
+        margin: 1rem auto 1rem;
     }
 
     @media (min-width: $mobile-width) {
-        margin: 0 0 0.85rem 1rem;
+        margin: 0 0 0.85rem 0.85rem;
         float: right;
     }
 }
@@ -1236,7 +1237,7 @@ p.center {
 }
 
 #contacts {
-    margin: 1.5rem 0 1.5rem;
+    margin: 2rem 0 2rem;
     container-type: inline-size;
 }
 
@@ -1258,7 +1259,7 @@ ul.fa-ul {
     padding: 0;
 }
 
-.contact-item {
+#contact-list .contact-item {
     margin: 0;
     display: flex;
     align-items: center;
@@ -1331,7 +1332,11 @@ ul.fa-ul {
 
 @media (max-width: $mobile-width) {
     #contacts {
-        margin: 0.25rem 0 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-list-icons {
+        row-gap: 0.5rem;
     }
 }
 
