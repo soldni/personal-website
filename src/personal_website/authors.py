@@ -23,7 +23,7 @@ def format_author(name: str, equal_authors: set[str], core_authors: set[str]) ->
     if markers:
         formatted += f'<sup class="author-marker">{escape(markers)}</sup>'
 
-    return formatted
+    return f'<span class="author-name">{formatted}</span>'
 
 
 def render_authors_html(entry: dict[str, str]) -> str:
@@ -83,7 +83,7 @@ def render_authors_html(entry: dict[str, str]) -> str:
     if not team_prefix:
         return authors_html
 
-    escaped_prefix = escape(team_prefix)
+    escaped_prefix = f'<span class="author-name">{escape(team_prefix)}</span>'
     if not authors_html:
         return escaped_prefix
     return f"{escaped_prefix}{authors_html}"

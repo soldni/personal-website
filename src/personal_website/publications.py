@@ -21,7 +21,7 @@ def validate_entry(entry: dict[str, str]) -> None:
 def derive_badge_style(badge: str) -> str:
     if not badge:
         return ""
-    if badge in {"preprint", "technical report"}:
+    if badge in {"preprint", "tech report"}:
         return "call-in"
     return "call-out"
 
@@ -31,7 +31,9 @@ def prepare_entry(entry: dict[str, str]) -> dict[str, str]:
     prepared = dict(entry)
     prepared["authors_html"] = render_authors_html(entry)
     prepared["venue_text"] = render_venue_text(entry)
-    prepared["badge_style"] = derive_badge_style(entry.get("badge", ""))
+    if prepared["venue_text"] == "preprint" and prepared.get("badge") == "preprint":
+        prepared["badge"] = ""
+    prepared["badge_style"] = derive_badge_style(prepared.get("badge", ""))
     return prepared
 
 

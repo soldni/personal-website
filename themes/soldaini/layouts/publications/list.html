@@ -53,12 +53,14 @@
                                     <a href="{{ .url }}">{{ .title }}</a>
                                 </p>
                                 <p class="publication-entry-authors">{{ .authors_html | safeHTML }}</p>
-                                {{ if .venue_text }}
-                                    <p class="publication-entry-venue">{{ .venue_text }}</p>
-                                {{ end }}
-                                {{ if .badge }}
-                                    <div class="publication-entry-badges">
-                                        <span class="{{ .badge_style }}">{{ .badge }}</span>
+                                {{ if or .venue_text .badge }}
+                                    <div class="publication-entry-meta">
+                                        {{ if .venue_text }}
+                                            <span class="publication-entry-venue">{{ .venue_text }}</span>
+                                        {{ end }}
+                                        {{ if .badge }}
+                                            <span class="publication-entry-badge {{ .badge_style }}">{{ .badge }}</span>
+                                        {{ end }}
                                     </div>
                                 {{ end }}
                             </article>
@@ -80,6 +82,9 @@
         var yearGroups = document.querySelectorAll("[data-publication-year]");
         var filterMask = document.querySelector("[data-publication-filter-mask]");
         var filterScroller = document.querySelector("[data-publication-filter-scroll]");
+        var titleLinks = document.querySelectorAll(".publication-entry-title a");
+        var minContinuationLineRatio = 0.25;
+        var titleBalanceFrame = null;
         if (!filterButtons.length || !entries.length) {
             return;
         }
@@ -125,6 +130,131 @@
             filterMask.classList.toggle("has-right-fade", maxScrollLeft - filterScroller.scrollLeft > 8);
         }
 
+        function setTitleContent(link, words, breakIndex) {
+            link.textContent = "";
+            for (var i = 0; i < words.length; i++) {
+                if (i > 0) {
+                    link.appendChild(document.createTextNode(" "));
+                }
+                if (i === breakIndex) {
+                    link.appendChild(document.createElement("br"));
+                }
+                link.appendChild(document.createTextNode(words[i]));
+            }
+        }
+
+        function getLineWidths(link) {
+            var range = document.createRange();
+            range.selectNodeContents(link);
+            var rects = Array.prototype.slice.call(range.getClientRects());
+            if (range.detach) {
+                range.detach();
+            }
+
+            var lines = [];
+            for (var i = 0; i < rects.length; i++) {
+                var rect = rects[i];
+                if (rect.width < 1 || rect.height < 1) {
+                    continue;
+                }
+
+                var line = null;
+                for (var j = 0; j < lines.length; j++) {
+                    if (Math.abs(lines[j].top - rect.top) < 2) {
+                        line = lines[j];
+                        break;
+                    }
+                }
+
+                if (!line) {
+                    line = { top: rect.top, left: rect.left, right: rect.right };
+                    lines.push(line);
+                } else {
+                    line.left = Math.min(line.left, rect.left);
+                    line.right = Math.max(line.right, rect.right);
+                }
+            }
+
+            lines.sort(function (a, b) {
+                return a.top - b.top;
+            });
+
+            return lines.map(function (line) {
+                return line.right - line.left;
+            });
+        }
+
+        function hasShortContinuationLine(lineWidths) {
+            if (lineWidths.length < 2) {
+                return false;
+            }
+
+            for (var i = 1; i < lineWidths.length; i++) {
+                var minimumContinuationWidth = Math.floor(lineWidths[i - 1] * minContinuationLineRatio);
+                if (lineWidths[i] < minimumContinuationWidth) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function balanceTitle(link) {
+            var originalTitle = link.getAttribute("data-original-publication-title");
+            if (!originalTitle) {
+                originalTitle = link.textContent.replace(/\s+/g, " ").trim();
+                link.setAttribute("data-original-publication-title", originalTitle);
+            }
+
+            var words = originalTitle.split(/\s+/).filter(function (word) {
+                return word.length > 0;
+            });
+
+            if (words.length < 2) {
+                return;
+            }
+
+            setTitleContent(link, words, null);
+
+            if (link.offsetWidth <= 0) {
+                return;
+            }
+
+            var naturalLineWidths = getLineWidths(link);
+            if (!hasShortContinuationLine(naturalLineWidths)) {
+                return;
+            }
+
+            for (var i = words.length - 1; i > 0; i--) {
+                setTitleContent(link, words, i);
+                if (!hasShortContinuationLine(getLineWidths(link))) {
+                    return;
+                }
+            }
+
+            setTitleContent(link, words, null);
+        }
+
+        function balancePublicationTitles() {
+            for (var i = 0; i < titleLinks.length; i++) {
+                var entry = titleLinks[i].closest("[data-publication-entry]");
+                if (entry && entry.hidden) {
+                    continue;
+                }
+                balanceTitle(titleLinks[i]);
+            }
+        }
+
+        function scheduleTitleBalance() {
+            if (titleBalanceFrame !== null) {
+                window.cancelAnimationFrame(titleBalanceFrame);
+            }
+
+            titleBalanceFrame = window.requestAnimationFrame(function () {
+                titleBalanceFrame = null;
+                balancePublicationTitles();
+            });
+        }
+
         function toggleTopic(topic) {
             if (topic === "all") {
                 activeTopics.clear();
@@ -135,6 +265,7 @@
             }
             syncButtons();
             syncEntries();
+            scheduleTitleBalance();
         }
 
         for (var i = 0; i < filterButtons.length; i++) {
@@ -147,10 +278,16 @@
             filterScroller.addEventListener("scroll", syncFilterFades);
             window.addEventListener("resize", syncFilterFades);
         }
+        window.addEventListener("resize", scheduleTitleBalance);
+        window.addEventListener("load", scheduleTitleBalance);
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(scheduleTitleBalance);
+        }
 
         syncButtons();
         syncEntries();
         syncFilterFades();
+        scheduleTitleBalance();
     })();
 </script>
 {{ end }}

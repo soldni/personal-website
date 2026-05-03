@@ -32,13 +32,6 @@ def venue_short_name(name: str) -> str:
 
 
 def render_venue_text(entry: dict[str, str]) -> str:
-    archiveprefix = entry.get("archiveprefix", "")
-    eprint = entry.get("eprint", "")
-    if archiveprefix and eprint:
-        if entry.get("badge") == "preprint":
-            return ""
-        return f"{archiveprefix} {eprint}"
-
     if entry.get("journal"):
         parts = [venue_short_name(entry["journal"]), entry.get("year", "")]
         return " ".join(part for part in parts if part)
@@ -51,4 +44,10 @@ def render_venue_text(entry: dict[str, str]) -> str:
         parts = [venue_short_name(entry["booktitle"]), entry.get("year", ""), entry.get("venue_note", "")]
         return " ".join(part for part in parts if part)
 
-    return ""
+    archiveprefix = entry.get("archiveprefix", "")
+    if archiveprefix.lower() == "arxiv":
+        return "arXiv"
+    elif archiveprefix:
+        return " ".join([w.capitalize() for w in archiveprefix.split()])
+
+    return "preprint"
