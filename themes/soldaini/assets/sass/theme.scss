@@ -224,6 +224,7 @@ hr {
 
     p {
         margin: 0 0 1rem 0;
+        text-wrap: pretty;
     }
 
     a {
@@ -257,6 +258,7 @@ hr {
         letter-spacing: -0.01em;
         margin: 2rem 0 0.75rem 0;
         line-height: base-line-height(89.2857%);
+        text-wrap: balance;
     }
 
     h1 {
@@ -642,10 +644,15 @@ hr {
     line-height: base-line-height(95%);
 }
 
+#content .publication-entry-title {
+    text-wrap: balance;
+}
+
 .publication-entry-authors {
     color: var(--ink);
     font-size: 0.95rem;
     line-height: base-line-height(90%);
+    text-wrap: pretty;
 }
 
 .publication-entry-venue {
@@ -927,6 +934,8 @@ body:has(.greeting-wave:hover, #avatar-container:hover) .nav-link {
     @media (min-width: $mobile-width) {
         margin: 0 0 0.85rem 0.85rem;
         float: right;
+        shape-outside: circle(50%);
+        shape-margin: 0.35rem;
     }
 }
 
