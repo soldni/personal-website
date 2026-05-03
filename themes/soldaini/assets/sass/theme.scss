@@ -165,7 +165,7 @@ body {
     margin: 0;
     font-family: "Atkinson Hyperlegible", "Atkinson Fallback", sans-serif;
     font-size: $base-font-size;
-    line-height: $base-line-height;
+    line-height: base-line-height(100%);
     color: var(--ink);
     background: var(--paper);
     background-image: none;
@@ -256,7 +256,7 @@ hr {
         font-weight: 600;
         letter-spacing: -0.01em;
         margin: 2rem 0 0.75rem 0;
-        line-height: 1.25;
+        line-height: base-line-height(89.2857%);
     }
 
     h1 {
@@ -336,7 +336,7 @@ hr {
         font-size: 0.82em;
         border-top: 2px solid var(--line);
         border-bottom: 2px solid var(--line);
-        line-height: 1.35;
+        line-height: base-line-height(96.4286%);
     }
 
     th,
@@ -554,7 +554,7 @@ hr {
     cursor: pointer;
     font: inherit;
     font-size: 0.88rem;
-    line-height: 1.2;
+    line-height: base-line-height(85.7143%);
     text-align: left;
     white-space: nowrap;
     transition:
@@ -587,7 +587,6 @@ hr {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    margin-bottom: 0.35rem;
     padding: 0.28rem 0;
 }
 
@@ -640,29 +639,34 @@ hr {
 .publication-entry-title {
     font-size: 0.98rem;
     font-weight: 600;
-    line-height: 1.16;
+    line-height: base-line-height(95%);
 }
 
 .publication-entry-authors {
     color: var(--ink);
     font-size: 0.95rem;
-    line-height: 1.14;
+    line-height: base-line-height(90%);
 }
 
 .publication-entry-venue {
     color: var(--muted);
     font-size: 0.95rem;
-    line-height: 1.1;
+    line-height: base-line-height(90%);
 }
 
 .author-marker {
+    position: relative;
+    top: -0.4em;
     margin-left: 0.1em;
     color: var(--muted);
+    font-size: 0.7rem;
+    line-height: base-line-height(0%);
+    vertical-align: baseline;
 }
 
 .publication-entry-badges {
     margin-top: 0.02rem;
-    line-height: 1;
+    line-height: base-line-height(71.4286%);
 }
 
 .publication-entry-badges .call-in,
@@ -793,6 +797,9 @@ hr {
 
 .post-content sup {
     position: relative;
+    top: -0.2em;
+    line-height: base-line-height(0%);
+    vertical-align: baseline;
 }
 
 .footnote-popup {
@@ -875,7 +882,7 @@ h1.navbar-h1 {
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
-    line-height: 1.2;
+    line-height: base-line-height(85.7143%);
     padding: 0 0.08em;
     border-bottom: 0;
     background-image: linear-gradient(var(--accent-soft), var(--accent-soft));
@@ -1292,7 +1299,7 @@ ul.fa-ul {
 }
 
 #contact-list a {
-    line-height: 1.2;
+    line-height: base-line-height(85.7143%);
     white-space: nowrap;
     background-position: 0 100%;
     background-size: 100% 0.4em;
@@ -1372,11 +1379,15 @@ ul.fa-ul {
     background-color: var(--accent);
 }
 
+.icon-link-lead {
+    white-space: nowrap;
+}
+
 span.username-link {
     font-size: 0.75em;
     color: var(--muted);
     margin-left: 0.2rem;
-    line-height: 1;
+    line-height: base-line-height(71.4286%);
     vertical-align: baseline;
 }
 
@@ -1389,7 +1400,7 @@ span.call-out {
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
-    line-height: 1;
+    line-height: base-line-height(71.4286%);
     vertical-align: middle;
     margin-left: 0.2rem;
 }
@@ -1418,7 +1429,7 @@ span.short-authors {
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
-    line-height: 1;
+    line-height: base-line-height(71.4286%);
     vertical-align: middle;
     margin: 0 0.2rem;
     transform-origin: left center;
@@ -1433,7 +1444,7 @@ span.long-authors {
 }
 
 .long-authors {
-    background-color: rgba(128, 128, 128, 0.12);
+    background-color: rgba(128, 128, 128, 0.10);
     padding: 0.05em 0.12em;
     border-radius: 0.2em;
     -webkit-box-decoration-break: clone;
@@ -1442,7 +1453,7 @@ span.long-authors {
 }
 
 .hide-authors:hover .long-authors {
-    background-color: rgba(128, 128, 128, 0.18);
+    background-color: rgba(128, 128, 128, 0.10);
 }
 
 .long-authors.author-reveal-in,

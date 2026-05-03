@@ -9,6 +9,10 @@ $tiny-width: 360px;
 $base-font-size: 15px;
 $base-line-height: 1.4;
 
+@function base-line-height($percentage) {
+    @return $base-line-height * ($percentage / 100%);
+}
+
 // Colors (light)
 $paper: #f7f3ed;
 $paper-soft: #fbf8f3;
