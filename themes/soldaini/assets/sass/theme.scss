@@ -902,7 +902,7 @@ body:has(.greeting-wave:hover, #avatar-container:hover) .nav-link {
     transition: --avatar-glow 1.5s cubic-bezier(0.16, 1, 0.3, 1);
 
     @media (max-width: $mobile-width) {
-        margin: 1rem auto 1rem;
+        margin: 1rem auto 1.5rem;
     }
 
     @media (min-width: $mobile-width) {
@@ -1336,7 +1336,11 @@ ul.fa-ul {
     }
 
     .contact-list-icons {
-        row-gap: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        gap: 0.5rem 1.1rem;
+        justify-content: center;
+        justify-items: start;
     }
 }
 
