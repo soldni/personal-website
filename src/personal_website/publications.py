@@ -26,13 +26,19 @@ def derive_badge_style(badge: str) -> str:
     return "call-out"
 
 
+def is_preprint(entry: dict[str, str]) -> bool:
+    return entry.get("badge", "").strip().lower() == "preprint"
+
+
 def prepare_entry(entry: dict[str, str]) -> dict[str, str]:
     validate_entry(entry)
     prepared = dict(entry)
     prepared["authors_html"] = render_authors_html(entry)
     prepared["venue_text"] = render_venue_text(entry)
-    if prepared["venue_text"] == "preprint" and prepared.get("badge") == "preprint":
-        prepared["badge"] = ""
+    if is_preprint(prepared) and (
+        prepared["venue_text"] == "preprint" or entry.get("booktitle") or entry.get("journal") or entry.get("school")
+    ):
+        prepared["venue_text"] = ""
     prepared["badge_style"] = derive_badge_style(prepared.get("badge", ""))
     return prepared
 

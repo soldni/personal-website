@@ -44,10 +44,5 @@ def render_venue_text(entry: dict[str, str]) -> str:
         parts = [venue_short_name(entry["booktitle"]), entry.get("year", ""), entry.get("venue_note", "")]
         return " ".join(part for part in parts if part)
 
-    archiveprefix = entry.get("archiveprefix", "")
-    if archiveprefix.lower() == "arxiv":
-        return "arXiv"
-    elif archiveprefix:
-        return " ".join([w.capitalize() for w in archiveprefix.split()])
-
-    return "preprint"
+    if entry.get("badge") == "preprint":
+        return ""

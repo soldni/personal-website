@@ -1495,6 +1495,37 @@ span.long-authors {
     background-color: rgba(128, 128, 128, 0.10);
 }
 
+@media (prefers-color-scheme: dark) {
+    .publications-page .publication-topic-icon {
+        background-color: $accent-dark;
+    }
+
+    .publications-page .publication-topic-toggle.is-active {
+        color: $accent-dark;
+        border-color: $accent-dark;
+    }
+
+    .publication-entry-badge.call-in,
+    span.call-in {
+        color: $muted-dark;
+        background: rgba($muted-dark, 0.16);
+        border-color: rgba($muted-dark, 0.24);
+    }
+
+    .hide-authors .short-authors {
+        color: $muted-dark;
+        border-color: rgba($muted-dark, 0.32);
+    }
+
+    .long-authors {
+        background-color: rgba($muted-dark, 0.14);
+    }
+
+    .hide-authors:hover .long-authors {
+        background-color: rgba($muted-dark, 0.20);
+    }
+}
+
 .long-authors.author-reveal-in,
 .long-authors.author-reveal-out,
 .long-authors.author-reveal-static {
