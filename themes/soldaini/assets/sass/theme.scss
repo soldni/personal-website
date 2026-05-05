@@ -675,10 +675,6 @@ hr {
     text-wrap: balance;
 }
 
-.author-name {
-    white-space: nowrap;
-}
-
 .author-marker {
     position: relative;
     top: -0.4em;
@@ -720,10 +716,6 @@ hr {
 
 .publication-entry .short-authors {
     margin: 0 0.25rem 0 0;
-}
-
-.hide-authors:has(> .short-authors[aria-hidden="false"]) {
-    white-space: nowrap;
 }
 
 @media (max-width: $mobile-width) {
