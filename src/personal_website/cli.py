@@ -1,3 +1,4 @@
+import argparse
 import subprocess
 import sys
 import time
@@ -24,28 +25,28 @@ def preview() -> None:
 
 def preview_png() -> None:
     generate_publications_data()
-    args = [arg for arg in sys.argv[1:] if arg != "--"]
-    if len(args) != 1:
-        print("Usage: uv run preview-png -- <page path>", file=sys.stderr)
-        raise SystemExit(2)
+    parser = argparse.ArgumentParser(prog="preview-png")
+    parser.add_argument("paths", nargs="+", help="Page paths to capture, e.g. /publications/")
+    parser.add_argument("--scheme", choices=["light", "dark"], default="light", help="Preferred color scheme")
+    parser.add_argument("--label", help="Optional label to include in screenshot filenames")
+    parser.add_argument("--output-dir", default=".artifacts", help="Directory for generated screenshots")
+    parser.add_argument("--width", type=int, default=1440, help="Viewport width in pixels")
+    parser.add_argument("--height", type=int, default=1800, help="Viewport height in pixels")
+    args = parser.parse_args([arg for arg in sys.argv[1:] if arg != "--"])
 
-    page_path = args[0].strip()
-    normalized = "/" + page_path.strip("/")
-
-    output_dir = Path(".artifacts")
+    output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-
-    slug = normalized.strip("/").replace("/", "-") or "home"
-    screenshot_path = output_dir / f"preview-{slug}.png"
 
     server_cmd = [str(HUGO_EXECUTABLE), "server", "--disableFastRender", "-D", "--bind", "127.0.0.1", "--port", "1313"]
     server = subprocess.Popen(server_cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    screenshot_paths = []
 
     try:
-        url = f"http://127.0.0.1:1313{normalized}"
+        base_url = "http://127.0.0.1:1313"
+        home_url = f"{base_url}/"
         for _ in range(30):
             try:
-                urllib.request.urlopen(url, timeout=1)
+                urllib.request.urlopen(home_url, timeout=1)
                 break
             except Exception:
                 time.sleep(0.5)
@@ -56,15 +57,24 @@ def preview_png() -> None:
 
         with sync_playwright() as playwright:
             browser = playwright.chromium.launch()
-            page = browser.new_page(viewport={"width": 1440, "height": 1800})
-            page.goto(url, wait_until="networkidle")
-            page.screenshot(path=str(screenshot_path), full_page=True)
+            page = browser.new_page(viewport={"width": args.width, "height": args.height})
+            page.emulate_media(color_scheme=args.scheme)
+            screenshot_paths = []
+            for page_path in args.paths:
+                normalized = "/" + page_path.strip().strip("/")
+                slug = normalized.strip("/").replace("/", "-") or "home"
+                label = f"{args.label}-" if args.label else ""
+                screenshot_path = output_dir / f"preview-{label}{slug}-{args.scheme}.png"
+                page.goto(f"{base_url}{normalized}", wait_until="networkidle")
+                page.screenshot(path=str(screenshot_path), full_page=True)
+                screenshot_paths.append(screenshot_path)
             browser.close()
     finally:
         server.terminate()
         server.wait(timeout=5)
 
-    print(screenshot_path)
+    for screenshot_path in screenshot_paths:
+        print(screenshot_path)
 
 
 def hugo_build() -> None:

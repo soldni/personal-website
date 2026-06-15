@@ -99,51 +99,12 @@
 
 :root {
     color-scheme: light dark;
-    --paper: #{$paper};
-    --paper-soft: #{$paper-soft};
-    --ink: #{$ink};
-    --muted: #{$muted};
-    --line: #{$line};
-    --accent: #{$accent};
-    --accent-strong: #{$accent-strong};
-    --accent-soft: #{$accent-soft};
-    --accent-rgb: #{red($accent)}, #{green($accent)}, #{blue($accent)};
-    --accent-strong-rgb: #{red($accent-strong)}, #{green($accent-strong)}, #{blue($accent-strong)};
-    --accent-glow-1-rgb: #{red($accent-glow-1)}, #{green($accent-glow-1)}, #{blue($accent-glow-1)};
-    --accent-glow-2-rgb: #{red($accent-glow-2)}, #{green($accent-glow-2)}, #{blue($accent-glow-2)};
-    --accent-glow-3-rgb: #{red($accent-glow-3)}, #{green($accent-glow-3)}, #{blue($accent-glow-3)};
-    --accent-glow-4-rgb: #{red($accent-glow-4)}, #{green($accent-glow-4)}, #{blue($accent-glow-4)};
-    --code: #{$code};
-    --code-background: #{$code-background};
-    --shadow: #{$shadow};
-    --muted-accessible: #5f6976;
+    @include emit-color-tokens($color-tokens-light);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --paper: #{$paper-dark};
-        --paper-soft: #{$paper-soft-dark};
-        --ink: #{$ink-dark};
-        --muted: #{$muted-dark};
-        --line: #{$line-dark};
-        --accent: #{$accent-dark};
-        --accent-strong: #{$accent-strong-dark};
-        --accent-soft: #{$accent-soft-dark};
-        --accent-rgb: #{red($accent-dark)}, #{green($accent-dark)}, #{blue($accent-dark)};
-        --accent-strong-rgb:
-            #{red($accent-strong-dark)}, #{green($accent-strong-dark)}, #{blue($accent-strong-dark)};
-        --accent-glow-1-rgb:
-            #{red($accent-glow-1-dark)}, #{green($accent-glow-1-dark)}, #{blue($accent-glow-1-dark)};
-        --accent-glow-2-rgb:
-            #{red($accent-glow-2-dark)}, #{green($accent-glow-2-dark)}, #{blue($accent-glow-2-dark)};
-        --accent-glow-3-rgb:
-            #{red($accent-glow-3-dark)}, #{green($accent-glow-3-dark)}, #{blue($accent-glow-3-dark)};
-        --accent-glow-4-rgb:
-            #{red($accent-glow-4-dark)}, #{green($accent-glow-4-dark)}, #{blue($accent-glow-4-dark)};
-        --code: #{$code-dark};
-        --code-background: #{$code-background-dark};
-        --shadow: #{$shadow-dark};
-        --muted-accessible: #{$muted-dark};
+        @include emit-color-tokens($color-tokens-dark);
     }
 }
 
@@ -457,12 +418,13 @@ hr {
     width: 0.95rem;
     height: 0.95rem;
     flex: none;
-    background-color: var(--accent);
-    mask-image: var(--topic-icon);
+    color: var(--topic-icon-color, var(--accent));
+    background-color: currentColor;
+    mask-image: var(--publication-topic-mask);
     mask-size: 100%;
     mask-repeat: no-repeat;
     mask-position: center;
-    -webkit-mask-image: var(--topic-icon);
+    -webkit-mask-image: var(--publication-topic-mask);
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
@@ -572,9 +534,9 @@ hr {
 }
 
 .publication-topic-toggle.is-active {
-    color: var(--accent);
-    border-color: var(--accent);
-    background-color: var(--accent-soft);
+    color: var(--topic-filter-active-color);
+    border-color: var(--topic-filter-active-color);
+    background-color: var(--topic-filter-active-background);
 }
 
 .publication-year-group {
@@ -702,20 +664,6 @@ hr {
     border-radius: 0.35rem;
     text-align: left;
     white-space: normal;
-}
-
-.publication-entry-badge.call-in {
-    color: var(--muted);
-    background: var(--shadow);
-    border-color: transparent;
-    font-weight: 600;
-}
-
-.publication-entry-badge.call-out {
-    color: var(--accent);
-    background: var(--accent-soft);
-    border-color: transparent;
-    font-weight: 600;
 }
 
 .publication-entry .short-authors {
@@ -1305,7 +1253,7 @@ p.center {
     justify-content: center;
     margin-top: 0;
     a {
-        color: var(--text);
+        color: inherit;
         background-image: none;
     }
 
@@ -1445,16 +1393,16 @@ span.call-out {
 }
 
 span.call-in {
-    color: var(--muted);
-    background: var(--shadow);
-    border: 1px solid transparent;
+    color: var(--call-in-color);
+    background: var(--call-in-background);
+    border: 1px solid var(--call-in-border);
     font-weight: 600;
 }
 
 span.call-out {
-    color: var(--accent);
-    background: var(--accent-soft);
-    border: 1px solid transparent;
+    color: var(--call-out-color);
+    background: var(--call-out-background);
+    border: 1px solid var(--call-out-border);
     font-weight: 600;
 }
 
@@ -1462,8 +1410,9 @@ span.short-authors {
     font-size: 0.8em;
     padding: 0.05rem 0.4rem;
     border-radius: 0.6rem;
-    border: 1px solid var(--line);
-    color: var(--muted);
+    border: 1px solid var(--author-chip-border);
+    color: var(--author-chip-color);
+    background: var(--author-chip-background);
     cursor: pointer;
     white-space: nowrap;
     display: inline-flex;
@@ -1483,7 +1432,7 @@ span.long-authors {
 }
 
 .long-authors {
-    background-color: rgba(128, 128, 128, 0.10);
+    background-color: var(--author-reveal-background);
     padding: 0.05em 0.12em;
     border-radius: 0.2em;
     -webkit-box-decoration-break: clone;
@@ -1492,38 +1441,7 @@ span.long-authors {
 }
 
 .hide-authors:hover .long-authors {
-    background-color: rgba(128, 128, 128, 0.10);
-}
-
-@media (prefers-color-scheme: dark) {
-    .publications-page .publication-topic-icon {
-        background-color: $accent-dark;
-    }
-
-    .publications-page .publication-topic-toggle.is-active {
-        color: $accent-dark;
-        border-color: $accent-dark;
-    }
-
-    .publication-entry-badge.call-in,
-    span.call-in {
-        color: $muted-dark;
-        background: rgba($muted-dark, 0.16);
-        border-color: rgba($muted-dark, 0.24);
-    }
-
-    .hide-authors .short-authors {
-        color: $muted-dark;
-        border-color: rgba($muted-dark, 0.32);
-    }
-
-    .long-authors {
-        background-color: rgba($muted-dark, 0.14);
-    }
-
-    .hide-authors:hover .long-authors {
-        background-color: rgba($muted-dark, 0.20);
-    }
+    background-color: var(--author-reveal-background-hover);
 }
 
 .long-authors.author-reveal-in,
@@ -1532,10 +1450,11 @@ span.long-authors {
     will-change: mask-size, opacity;
 }
 
-@supports (mask-image: linear-gradient(#000, #000)) or (-webkit-mask-image: linear-gradient(#000, #000)) {
+@supports (mask-image: linear-gradient($mask-fill, $mask-fill)) or
+    (-webkit-mask-image: linear-gradient($mask-fill, $mask-fill)) {
     .long-authors {
-        -webkit-mask-image: linear-gradient(#000, #000);
-        mask-image: linear-gradient(#000, #000);
+        -webkit-mask-image: linear-gradient($mask-fill, $mask-fill);
+        mask-image: linear-gradient($mask-fill, $mask-fill);
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
         -webkit-mask-position: left center;
@@ -1585,7 +1504,10 @@ span.long-authors {
     }
 }
 
-@supports not ((mask-image: linear-gradient(#000, #000)) or (-webkit-mask-image: linear-gradient(#000, #000))) {
+@supports not (
+    (mask-image: linear-gradient($mask-fill, $mask-fill)) or
+        (-webkit-mask-image: linear-gradient($mask-fill, $mask-fill))
+) {
     .long-authors.author-reveal-static {
         opacity: 1;
     }
