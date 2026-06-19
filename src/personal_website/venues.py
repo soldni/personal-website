@@ -14,6 +14,7 @@ VENUE_SHORT_NAMES = {
     "Conference on Neural Information Processing Systems": "NeurIPS",
     "European Conference on Information Retrieval": "ECIR",
     "International ACM SIGIR Conference on Research and Development in Information Retrieval": "SIGIR",
+    "ACM International Conference on Web Search and Data Mining": "WSDM",
     "International Conference on Computational Linguistics": "COLING",
     "International Conference on Intelligent User Interfaces": "IUI",
     "International Conference on Learning Representations": "ICLR",
