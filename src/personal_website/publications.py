@@ -18,10 +18,8 @@ def validate_entry(entry: dict[str, str]) -> None:
         raise ValueError(f"Missing required fields for {entry.get('key', '<unknown>')}: {', '.join(missing)}")
 
 
-def derive_badge_style(badge: str) -> str:
-    if not badge:
-        return ""
-    if badge in {"preprint", "tech report"}:
+def derive_badge_style(entry: dict[str, str]) -> str:
+    if is_preprint(entry) or is_tech_report(entry):
         return "call-in"
     return "call-out"
 
@@ -30,16 +28,26 @@ def is_preprint(entry: dict[str, str]) -> bool:
     return entry.get("badge", "").strip().lower() == "preprint"
 
 
+def is_tech_report(entry: dict[str, str]) -> bool:
+    return entry.get("badge", "").strip().lower() == "tech report"
+
+
+def is_no_venue(entry: dict[str, str]) -> bool:
+    return (
+        is_preprint(entry) or
+        is_tech_report(entry) or
+        not any(entry.get(field) for field in ["booktitle", "journal", "school"])
+    )
+
+
 def prepare_entry(entry: dict[str, str]) -> dict[str, str]:
     validate_entry(entry)
     prepared = dict(entry)
     prepared["authors_html"] = render_authors_html(entry)
     prepared["venue_text"] = render_venue_text(entry)
-    if is_preprint(prepared) and (
-        prepared["venue_text"] == "preprint" or entry.get("booktitle") or entry.get("journal") or entry.get("school")
-    ):
+    if is_no_venue(entry):
         prepared["venue_text"] = ""
-    prepared["badge_style"] = derive_badge_style(prepared.get("badge", ""))
+    prepared["badge_style"] = derive_badge_style(prepared)
     return prepared
 
 

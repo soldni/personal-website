@@ -176,6 +176,12 @@
     for (var i = 0; i < preprints.length; i++) {
         preprints[i].innerText = "preprint";
     }
+    // same for tech reports
+    var techReports = document.getElementsByClassName("tech-report");
+        for (var i = 0; i < techReports.length; i++) {
+            techReports[i].innerText = "tech report";
+        }
+
     function buildFootnotePopovers() {
         var footnoteList = document.querySelector('.post-content .footnotes');
         if (!footnoteList) {

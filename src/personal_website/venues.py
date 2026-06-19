@@ -44,5 +44,7 @@ def render_venue_text(entry: dict[str, str]) -> str:
         parts = [venue_short_name(entry["booktitle"]), entry.get("year", ""), entry.get("venue_note", "")]
         return " ".join(part for part in parts if part)
 
-    if entry.get("badge") == "preprint":
+    if entry.get("badge") in {"preprint", "tech report"}:
         return ""
+
+    return ""
