@@ -9,7 +9,7 @@ title = "Luca Soldaini"
 I am a machine learning researcher working on **scalable data methods for language models**, from pre-training to post-training.
 
 
-Currently, I am a member of the technical staff at {{< company microsoft >}} on the Super Intelligence team, building pipelines for synthetic RL environments.
+Currently, I am a member of the technical staff at {{< company microsoft >}}; I am taking a break from pretraining data to learn how to build pipelines for synthetic RL environments.
 
 
 From 2022 to early 2026, I was a lead research scientist at {{< company ai2 >}}, co-leading the [Olmo project][35]. Olmo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. During my tenure, we released [three][38] [generations][36] of [dense][46], [mixture-of-experts][37], [hybrid][49], and [multimodal][41] variants, alongside the data, code, recipes, and checkpoints we used to build them.
