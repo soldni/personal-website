@@ -6,11 +6,8 @@ title = "Luca Soldaini"
 
 {{< visitor-greeting >}}
 
-I am a machine learning researcher working on **scalable data methods for language models**, from pre-training to post-training.
 
-
-Currently, I am a member of the technical staff at {{< company microsoft >}}; I am taking a break from pretraining data to learn how to build pipelines for synthetic RL environments.
-
+I am a machine learning researcher working on **scalable data methods for language models**, from pre-training to post-training. Currently, I am a member of the technical staff at {{< company microsoft >}} working on [MAI-Thinking][51] models.
 
 From 2022 to early 2026, I was a lead research scientist at {{< company ai2 >}}, co-leading the [Olmo project][35]. Olmo is a state-of-the-art, fully-open model designed to accelerate the science of LLMs. During my tenure, we released [three][38] [generations][36] of [dense][46], [mixture-of-experts][37], [hybrid][49], and [multimodal][41] variants, alongside the data, code, recipes, and checkpoints we used to build them.
 
@@ -74,3 +71,4 @@ When not in front of a screen, I enjoy [brewing espresso][9], going on [runs][8]
 [48]: https://x.com/AkariAsai/status/1993336112237117819
 [49]: https://allenai.org/blog/olmohybrid
 [50]: https://microsoft.ai/
+[51]: https://microsoft.ai/news/introducing-mai-thinking-1/
