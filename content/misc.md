@@ -7,9 +7,10 @@ title = "Misc"
 In no particular order, here are some facts about me:
 
 - My last name is pronounced `sol-dah-ee-nee`; stress is on the first **i** (`/solda'ini/` in [IPA][22]).
-- My [Erdős number][23] is 3: I coauthored [at least one paper][24] with Ophir Frieder, Ophir Frieder [wrote a manuscript][25] with Frank Harary, Frank Harary was [a collaborator][26] of Paul Erdős.
+- My [Erdős number][23] is 3: I coauthored [a paper][44] with [Neil T. Heffernan][45],  Neil Heffernan [wrote a manuscript][46] with [Gábor N. Sárközy][48], Gábor Sárközy [collaborated][47] with Paul Erdős.
+  - What's your Erdős number? You can use [csauthors.net to find out][43]!
 - My [Bacon number][27] is 5 if you agree with [Saumya][28] that podcasts should count. [Nathan][29] invited Olmo leads on [his podcast][30], Nathan [podded][31] with [Lex Fridman][32], Lex interviewed [Kevin Spacey][33] [in 2024][34], Kevin co-starred with [Brad Pitt][35] in [Se7en (1995)][36], and Brad was in [Sleepers (1996)][37].
-- Adding the two, my [Erdős-Bacon number][38] is 8. I would like a less cursed Bacon path... Do you have a spot for me in your next movie/TV production?
+  - Adding the two, my [Erdős-Bacon number][38] is 8. I would like a less cursed Bacon path... Do you have a spot for me in your next movie/TV production?
 - Like [Helen][42], I enjoy building unnecessary things with machine learning.
 
 
@@ -86,3 +87,9 @@ Fun fact: when H.A. Newton joined Yale as faculty in 1855, he was the only profe
 [40]: https://twitter.com/soldni/status/1552342467915046913
 [41]: https://twitter.com/soldni/status/1419372837886902275
 [42]: https://www.mathemakitten.dev/#work
+[43]: https://www.csauthors.net/distance/luca-soldaini/paul-erdos
+[44]: https://aclanthology.org/2024.findings-emnlp.323/
+[45]: https://www.neilheffernan.net/
+[46]: https://doi.org/10.1007/978-3-642-30950-2_52/
+[47]: https://doi.org/10.37236/1323/
+[48]: https://web.cs.wpi.edu/~gsarkozy/
