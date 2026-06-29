@@ -54,3 +54,4 @@ uv run hugo-build --baseURL https://example.com/
 ```
 
 All commands automatically generate `data/generated/publications.json` from the `.bib` file before invoking Hugo.
+
